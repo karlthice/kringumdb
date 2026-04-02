@@ -1,0 +1,186 @@
+/* QuickDialog replacement styles */
+
+.kd-dialog {
+    position: absolute;
+    background-color: #EBF1FF;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 3500;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    max-width: 90vw;
+}
+
+.kd-dialog-header {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ccc;
+    padding-right: 24px;
+}
+
+.kd-dialog-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.kd-dialog-close:hover {
+    color: red;
+}
+
+.kd-dialog-column {
+    float: left;
+    margin-right: 8px;
+    box-sizing: border-box;
+}
+
+.kd-dialog-caption {
+    font-size: 12px;
+    font-weight: bold;
+    color: #005298;
+    margin-top: 6px;
+    margin-bottom: 2px;
+}
+
+.kd-dialog input[type="text"],
+.kd-dialog input[type="number"],
+.kd-dialog input[type="password"],
+.kd-dialog textarea,
+.kd-dialog select {
+    width: 90%;
+    font-size: 14px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.kd-dialog textarea {
+    resize: vertical;
+}
+
+.kd-dialog select[multiple] {
+    height: auto;
+    min-height: 60px;
+}
+
+.kd-dialog-footer {
+    clear: both;
+    border-top: 1px solid lightgray;
+    margin-top: 8px;
+    padding-top: 8px;
+}
+
+.kd-btn {
+    display: inline-block;
+    padding: 5px 14px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+}
+
+.kd-btn-primary {
+    background-color: limegreen;
+    color: white;
+    float: right;
+}
+
+.kd-btn-primary:hover {
+    background-color: #28a745;
+}
+
+.kd-btn-cancel {
+    background-color: #6c757d;
+    color: white;
+    float: right;
+    margin-left: 4px;
+}
+
+.kd-btn-cancel:hover {
+    background-color: #5a6268;
+}
+
+.kd-btn-action {
+    background-color: #17a2b8;
+    color: white;
+    margin-top: 4px;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.kd-btn-action:hover {
+    background-color: #138496;
+}
+
+/* Table inside dialog */
+.kd-dialog table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+}
+
+.kd-dialog table td {
+    padding: 3px 6px;
+    border-bottom: 1px solid #ddd;
+}
+
+.kd-dialog table tr:hover {
+    background-color: #e0e8f5;
+}
+
+.kd-clickable-key {
+    cursor: pointer;
+    color: #105590;
+}
+
+.kd-clickable-key:hover {
+    text-decoration: underline;
+}
+
+/* QuickSelect styles */
+.kd-select {
+    position: absolute;
+    background-color: #EBF1FF;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 3600;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    max-width: 500px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.kd-select-header {
+    font-weight: bold;
+    border-bottom: 1px solid silver;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+}
+
+.kd-select-item {
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.kd-select-item:hover {
+    background-color: #d0d8f0;
+}

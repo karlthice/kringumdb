@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kringum DB</title>
+    <link rel="stylesheet" href="/static/lib/select2.min.css">
+    <link rel="stylesheet" href="/static/css/dialog.css">
+    <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+    <div id="toolbar">
+        <div class="IceButton IceRefresh">Sækja aftur</div>
+        <div class="IceButton IceSingle" data-filter=", þjóðsaga">Þjóðsögur</div>
+        <div class="IceButton IceArea">Svæði</div>
+        <div class="IceButton IceNew">Ný skráning</div>
+        <div class="IceButton IceExport">Export</div>
+        <div class="IceButton IceExportEng">Export ENG</div>
+        <input class="IceSearchField" type="text" placeholder="Leita..." />
+        <div class="IceButton IceSearch">Leita</div>
+        <div style="clear:both"></div>
+    </div>
+    <hr />
+    <div class="IceList"></div>
+
+    <script src="/static/lib/jquery.min.js"></script>
+    <script src="/static/lib/select2.min.js"></script>
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/dialog.js"></script>
+    <script src="/static/js/item-dialog.js"></script>
+    <script src="/static/js/area-dialog.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

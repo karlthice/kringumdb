@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 8px;
+}
+
+#toolbar {
+    margin-bottom: 0;
+}
+
+.IceButton {
+    cursor: pointer;
+    border-radius: 4px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px 10px;
+    float: left;
+    margin-right: 4px;
+    font-size: 13px;
+    user-select: none;
+}
+
+.IceButton:hover {
+    opacity: 0.85;
+}
+
+.IceRefresh { background-color: green; }
+.IceArea { background-color: green; }
+.IceSingle { background-color: darkcyan; }
+.IceNew { background-color: green; }
+.IceExport { background-color: green; }
+.IceExportEng { background-color: green; }
+.IceSearch { background-color: green; }
+
+.IceSearchField {
+    width: 150px;
+    padding: 5px;
+    float: left;
+    margin-right: 4px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.IceBadge {
+    padding: 2px 6px;
+    font-size: 90%;
+    background-color: darkorange;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.IceList {
+    margin-top: 8px;
+}
+
+.IceItem {
+    padding: 3px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.IceItemName {
+    cursor: pointer;
+}
+
+.IceItemName:hover {
+    text-decoration: underline;
+    color: #105590;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 8px 0;
+}
