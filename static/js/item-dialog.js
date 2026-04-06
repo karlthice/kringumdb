@@ -3,52 +3,64 @@
  * Port of doInsertUpdateItem from Default.js
  */
 
+var TAG_LIST = ['Náttúra', 'Saga', 'Menning', 'Fólk', 'Ferð', 'Bók', 'Kringum', 'Gisting'];
+
 function doInsertUpdateItem(inElement, inItem) {
-    // Fetch areas for the Tag multi-select
-    API.get("areas").then(function (areaData) {
-        var aAreas = areaData.Areas;
-        var aAreaList = aAreas.map(function (area) { return area.Caption; });
+    var dtDate = new Date();
+    var sDate = dtDate.getDate() + "." + (dtDate.getMonth() + 1) + "." + dtDate.getFullYear();
 
-        var dtDate = new Date();
-        var sDate = dtDate.getDate() + "." + (dtDate.getMonth() + 1) + "." + dtDate.getFullYear();
+    // Parse tag string into array for multi-select matching
+    var currentTags = inItem.Tag ? inItem.Tag.split(';') : [];
 
-        // Parse tag string into array for multi-select matching
-        var currentTags = inItem.Tag ? inItem.Tag.split(';') : [];
-
-        QuickDialog(inElement,
-            { Caption: "Skrá atriði", minWidth: '800px', tag: 'New', noautoclose: true },
-            {
-                ID: inItem.ID ? String(inItem.ID) : '',
-                Name: inItem.Name || '',
-                NameEng: inItem.NameEng || '',
-                GPS: inItem.GPS || '',
-                Tag: currentTags,
-                Story: inItem.Story || '',
-                StoryEng: inItem.StoryEng || '',
-                Link: inItem.Link || '',
-                LinkEng: inItem.LinkEng || '',
-                Visibility: inItem.Visibility != null ? String(inItem.Visibility) : '0',
-                Ref: inItem.Ref || ('Sótt af Wikipedia ' + sDate)
-            },
-            [
-                { Caption: 'ID', id: 'ID', PropertyType: 'String' },
-                { Caption: 'Nafn', id: 'Name', PropertyType: 'String' },
-                { Caption: 'GPS', id: 'GPS', PropertyType: 'String' },
-                { Caption: 'Tag', id: 'Tag', multiple: true, PropertyType: 'Select', ValueData: aAreaList, TextData: aAreaList },
-                { Caption: 'Texti', id: 'Story', PropertyType: 'Text', maxlength: 4000, rows: 9 },
-                { Caption: 'Reference', id: 'Ref', PropertyType: 'Text', maxlength: 3000 },
-                { Caption: 'Sýnileiki', id: 'Visibility', PropertyType: 'Select', Texts: 'Í aðallista;Einungis í svæði', Values: '0;1' },
-                { Caption: 'Link', id: 'Link', PropertyType: 'String', maxlength: 1000 },
-                { Caption: '', id: 'b', PropertyType: 'ColumnBreak' },
-                { Caption: 'Nafn (Enska)', id: 'NameEng', PropertyType: 'String' },
-                { Caption: 'Texti (Enska)', id: 'StoryEng', PropertyType: 'Text', maxlength: 4000, rows: 9 },
-                { Caption: 'Link (enska)', id: 'LinkEng', PropertyType: 'String', maxlength: 1000 },
-                { Caption: 'Þýða texta', id: 'DoTranslate', PropertyType: 'Button' },
-                { Caption: 'Lesa íslensku', id: 'ReadIcelandic', PropertyType: 'Button' },
-                { Caption: 'Lesa ensku', id: 'ReadEnglish', PropertyType: 'Button' },
-                { Caption: 'Nálægt', id: 'DisplayNear', PropertyType: 'Button' }
-            ],
+    QuickDialog(inElement,
+        { Caption: "Skrá atriði", minWidth: '800px', tag: 'New', noautoclose: true },
+        {
+            ID: inItem.ID ? String(inItem.ID) : '',
+            Name: inItem.Name || '',
+            NameEng: inItem.NameEng || '',
+            GPS: inItem.GPS || '',
+            Area: inItem.Area || '',
+            Tag: currentTags,
+            Story: inItem.Story || '',
+            StoryEng: inItem.StoryEng || '',
+            Link: inItem.Link || '',
+            LinkEng: inItem.LinkEng || '',
+            Visibility: inItem.Visibility != null ? String(inItem.Visibility) : '0',
+            Ref: inItem.Ref || ('Sótt af Wikipedia ' + sDate)
+        },
+        [
+            { Caption: 'ID', id: 'ID', PropertyType: 'String' },
+            { Caption: 'Nafn', id: 'Name', PropertyType: 'String' },
+            { Caption: 'GPS', id: 'GPS', PropertyType: 'String' },
+            { Caption: 'Svæði', id: 'Area', PropertyType: 'String', ReadOnly: true },
+            { Caption: 'Tag', id: 'Tag', multiple: true, PropertyType: 'Select', ValueData: TAG_LIST, TextData: TAG_LIST },
+            { Caption: 'Texti', id: 'Story', PropertyType: 'Text', maxlength: 4000, rows: 9 },
+            { Caption: 'Reference', id: 'Ref', PropertyType: 'Text', maxlength: 3000 },
+            { Caption: 'Sýnileiki', id: 'Visibility', PropertyType: 'Select', Texts: 'Í aðallista;Einungis í svæði', Values: '0;1' },
+            { Caption: 'Link', id: 'Link', PropertyType: 'String', maxlength: 1000 },
+            { Caption: '', id: 'b', PropertyType: 'ColumnBreak' },
+            { Caption: 'Nafn (Enska)', id: 'NameEng', PropertyType: 'String' },
+            { Caption: 'Texti (Enska)', id: 'StoryEng', PropertyType: 'Text', maxlength: 4000, rows: 9 },
+            { Caption: 'Link (enska)', id: 'LinkEng', PropertyType: 'String', maxlength: 1000 },
+            { Caption: 'Þýða texta', id: 'DoTranslate', PropertyType: 'Button' },
+            { Caption: 'Lesa íslensku', id: 'ReadIcelandic', PropertyType: 'Button' },
+            { Caption: 'Lesa ensku', id: 'ReadEnglish', PropertyType: 'Button' },
+            { Caption: 'Nálægt', id: 'DisplayNear', PropertyType: 'Button' },
+            { Caption: 'Eyða', id: 'DoDelete', PropertyType: 'Button', isred: true }
+        ],
             function (inObject) {
+                // Handle Delete button
+                if (inObject.DoDelete) {
+                    inObject.DoDelete = false;
+                    if (inObject.ID && confirm("Ertu viss um að þú viljir eyða þessu atriði?")) {
+                        API.call("items/delete", { id: inObject.ID }).then(function () {
+                            CloseQuickDialog("New");
+                            Render("");
+                        });
+                    }
+                    return false;
+                }
+
                 // Handle Translate button
                 if (inObject.DoTranslate) {
                     API.call("translate", { text: inObject.Story }).then(function (data) {
@@ -124,7 +136,6 @@ function doInsertUpdateItem(inElement, inItem) {
                 }
             }
         );
-    });
 }
 
 /**

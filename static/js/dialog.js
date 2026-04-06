@@ -80,9 +80,10 @@ function QuickDialog(inElement, inOptions, inObject, inLabels, inCallback) {
         }
 
         if (l.PropertyType === 'String') {
-            if (!firstEditId) firstEditId = l.id;
+            if (!firstEditId && !l.ReadOnly) firstEditId = l.id;
             var maxlen = l.maxlength || 120;
-            fieldHtml += "<input type='text' data-type='String' data-id='" + l.id + "' maxlength='" + maxlen + "' value='" + escapeAttr(v) + "'/>";
+            var readonlyAttr = l.ReadOnly ? " readonly style='width:90%;font-size:14px;padding:4px;border:1px solid #ccc;border-radius:3px;background:#e9ecef;color:#555'" : "";
+            fieldHtml += "<input type='text' data-type='String' data-id='" + l.id + "' maxlength='" + maxlen + "' value='" + escapeAttr(v) + "'" + readonlyAttr + "/>";
         }
         else if (l.PropertyType === 'Text') {
             if (!firstEditId) firstEditId = l.id;
@@ -127,7 +128,8 @@ function QuickDialog(inElement, inOptions, inObject, inLabels, inCallback) {
             fieldHtml += "</select>";
         }
         else if (l.PropertyType === 'Button') {
-            fieldHtml += "<div class='kd-btn kd-btn-action kd-dialog-button' data-type='Button' data-id='" + l.id + "' data-wasclicked='0'>" + l.Caption + "</div>";
+            var btnClass = l.isred ? 'kd-btn-danger' : 'kd-btn-action';
+            fieldHtml += "<div class='kd-btn " + btnClass + " kd-dialog-button' data-type='Button' data-id='" + l.id + "' data-wasclicked='0'>" + l.Caption + "</div>";
         }
         else if (l.PropertyType === 'Table') {
             fieldHtml += "<div data-type='Table' data-id='" + l.id + "' style='max-height:300px;overflow-y:auto'><table><tbody>";

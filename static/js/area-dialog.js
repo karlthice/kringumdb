@@ -37,11 +37,12 @@ function doInsertUpdateArea(inElement, areaId) {
         var oArea = data.Area;
         if (!oArea.Media) oArea.Media = "";
 
-        // Also fetch all items to find related ones
-        API.call("items", { filter: "" }).then(function (itemData) {
-            var relatedItems = itemData.Items.filter(function (item) {
-                return item.Tag === oArea.Caption;
-            });
+        // Fetch items within this area's geographic radius
+        var itemsPromise = oArea.ID
+            ? API.get("areas/" + oArea.ID + "/items")
+            : Promise.resolve({ Items: [] });
+        itemsPromise.then(function (itemData) {
+            var relatedItems = itemData.Items || [];
             oArea.TableData = relatedItems.map(function (item) {
                 return { key: item.Name, value: String(item.ID) };
             });

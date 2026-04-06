@@ -1,0 +1,243 @@
+UNRESOLVED GEOCODING REPORT
+==================================================
+
+Stories without location: 144
+Total unresolved place names: 704
+
+TOP UNRESOLVED PLACE NAMES:
+------------------------------
+  Hley: 10 occurrences
+  Vestfjörðum: 10 occurrences
+  Stefá: 9 occurrences
+  Þorlá: 9 occurrences
+  Suðurlandi: 7 occurrences
+  Guðmundur: 7 occurrences
+  Jóni: 6 occurrences
+  Vídal: 6 occurrences
+  Þingeyjarsýslu: 6 occurrences
+  Bjarna: 5 occurrences
+  Hörgslandi: 4 occurrences
+  Langadal: 4 occurrences
+  Múla: 4 occurrences
+  Melabergi: 4 occurrences
+  Árna: 4 occurrences
+  Skaga: 4 occurrences
+  Kristjá: 4 occurrences
+  Sigurður: 4 occurrences
+  Þorsteini: 4 occurrences
+  Hóla: 4 occurrences
+  Stað: 4 occurrences
+  Múlasýslu: 4 occurrences
+  Eyrarbakka: 4 occurrences
+  Útskálum: 3 occurrences
+  Hvalsnesskirkju: 3 occurrences
+  Eyvindarmúla: 3 occurrences
+  Nesjum: 3 occurrences
+  Ólafur: 3 occurrences
+  Axarfirði: 3 occurrences
+  Kolfrey: 3 occurrences
+
+
+STORIES WITHOUT LOCATION (144):
+------------------------------
+  arnljot: Arnljótur huldumaður [Álfar og huldufólk]
+  alfa-dr: Álfadrottning í álögum [Álfar og huldufólk]
+  sk-barn: Álfar skila barni [Álfar og huldufólk]
+  alfasiki: Álfasíki [Álfar og huldufólk]
+    Candidates tried: Rauðuskriðum, Múla
+  a-skart: Álfaskartið [Álfar og huldufólk]
+  alfabarn: Álfkona í barnsnauð [Álfar og huldufólk]
+    Candidates tried: Odda
+  a-ferda: Álfkonan og ferðamennirnir [Álfar og huldufólk]
+  18barna: 18 barna faðir í álfheimum [Álfar og huldufólk]
+  ba-blett: Barnið með blettinn á kinninni [Álfar og huldufólk]
+  bjorgolf: Björgólfur huldukaupmaður [Álfar og huldufólk]
+    Candidates tried: Björgólfi
+  a-hjalp: Bóndadóttir hjálpar álfkonu [Álfar og huldufólk]
+  b-prestk: Bóndadóttir prestkona í álfheimum [Álfar og huldufólk]
+  dr-alfum: Drengur elst upp með álfum [Álfar og huldufólk]
+  dvergur: Dvergurinn og smaladrengurinn einfætti [Álfar og huldufólk]
+  thyrst: Ertu þyrstur, viltu drekka [Álfar og huldufólk]
+  u-jord: Fólkið undir jörðinni [Álfar og huldufólk]
+  hildur: Hildur álfadrottning [Álfar og huldufólk]
+  h-dans: Huldufólksdansinn [Álfar og huldufólk]
+  m-huldu: Huldukonan mállausa [Álfar og huldufólk]
+    Candidates tried: Suðurlandi
+  hefndin: Huldukonuhefndin [Álfar og huldufólk]
+    Candidates tried: Sæmund
+  h-poka: Huldumaður með poka [Álfar og huldufólk]
+  hondur: Hver á hérna höndur? [Álfar og huldufólk]
+  hvit-mj: Hvít mjólkuð af huldukonu [Álfar og huldufólk]
+    Candidates tried: Hvít
+  jonas: Jónas á Melstað [Álfar og huldufólk]
+    Candidates tried: Melstað
+  karl-sk: Karlinn í skemmunni [Álfar og huldufólk]
+  karls-hv: Karlsstaðahvammur [Álfar og huldufólk]
+    Candidates tried: Ísafjarðarsýslu, Rafnseyri, Kallstöðum, Kallstaðahvammi, Arnarfjarðardölum, Rafnseyrarhlíð, Rafnsey
+  kross: Krossgötur [Álfar og huldufólk]
+  legg: "Legg í lófa karls, karls" [Álfar og huldufólk]
+  lappa: Ló, ló, min Lappa [Álfar og huldufólk]
+  menja: Man ég enn menjalundinn [Álfar og huldufólk]
+  raudhof: RAUÐHÖFÐI [Álfar og huldufólk]
+    Candidates tried: Geirfuglaskerja
+  saka-h: Sakamaðurinn og huldufólkið [Álfar og huldufólk]
+  selmat: Selmatseljan [Álfar og huldufólk]
+  sm-ask: Smalastúlkan og áfaaskurinn [Álfar og huldufólk]
+  a-barn: Stúlka hjálpar álfkonu í barnsnauð [Álfar og huldufólk]
+  a-syslum: Sýslumaður í álfheimum [Álfar og huldufólk]
+  tilordn: Tilorðning huldufólks [Álfar og huldufólk]
+  2jola-n: Tvær jólanætur [Álfar og huldufólk]
+  tokuma: Tökum á, tökum á [Álfar og huldufólk]
+  thyfi: Þar fór einn með þýfi [Álfar og huldufólk]
+  thordis2: Þórdís þrjóska [Álfar og huldufólk]
+    Candidates tried: Vestfjörðum
+  raudkl: Beinagrindin og rauðklæddi maðurinn [Draugar]
+    Candidates tried: Grallarinn
+  b-grind: Beinagrind staðarvinnumannsins [Draugar]
+    Candidates tried: Vestfjörðum
+  bjarnadi: Bjarna-Dísa [Draugar]
+    Candidates tried: Þorvaldur
+  vallatun: Bj�rg � Vallat�ni og sending hennar [Draugar]
+  drhufa: Draugs-húfan [Draugar]
+    Candidates tried: Hley
+  dr-son2: Draugssonurinn [Draugar]
+  draugson: Draugssonur verður prestur [Draugar]
+  dr-deyr: Draugur deyr [Draugar]
+    Candidates tried: Dvergasteini
+  dr-verk: Draugur gengur að verkum [Draugar]
+    Candidates tried: Vestfjörðum
+  dr-son: Draugur getur son [Draugar]
+  dr-hjup: Draugurinn hjúplausi [Draugar]
+    Candidates tried: Vestfjörðum
+  pening: Draugurinn og peningakistillinn [Draugar]
+  dr-smali: Draugurinn og smalinn [Draugar]
+  tobak: Draugurinn og tóbakskyllirinn [Draugar]
+  e-boli: Ei�isboli [Draugar]
+    Candidates tried: Dyrh
+  fepuki: Fépúkinn og hugdjarfi bóndinn [Draugar]
+  forukerl: Förukerlingin á Stóranúpi [Draugar]
+    Candidates tried: Stóranúpi
+  g-vest: Galdramenn á Vestfjörðum [Draugar]
+    Candidates tried: Vestfjörðum
+  g-pukar: Grafarpúkarnir [Draugar]
+    Candidates tried: Jóhanns, Jóhann
+  helltu: Helltu út úr einum kút [Draugar]
+  heygard: Heygarðsdraugurinn á Hvítárvöllum [Draugar]
+    Candidates tried: Hvítárvöllum
+  mannshn: Mannshnútan [Draugar]
+    Candidates tried: Vaðlaþingi
+  meirimol: Meiri mold, meiri mold [Draugar]
+    Candidates tried: Strá
+  kvikvi: "Móðir mín í kví, kví" [Draugar]
+  ofaelni: Ófælni drengurinn [Draugar]
+  pen-drau: PENINGADRAUGUR [Draugar]
+  myrkur: Skemmtilegt er myrkrið [Draugar]
+  tiskild: Tískildingurinn [Draugar]
+  nalin: Þú átt eftir að bíta úr nálinni [Draugar]
+  8herra: Átta herramannsdætur [Galdrar]
+  br-blad: Bræðurnir og blaðið [Galdrar]
+  1baen: Ein góð bæn [Galdrar]
+  finnabr: Finnabrækur [Galdrar]
+  magnus2: Frá séra Magnúsi á Hörgslandi [Galdrar]
+    Candidates tried: Hörgslandi, Skálholtsskóla, Magnús
+  g-forsp: Gísli forspái [Galdrar]
+    Candidates tried: Prestbakkaprestakalli, Ljótunnarstöðum, Prestbakka, Gísli
+  heyvinna: Heyvinnan [Galdrar]
+    Candidates tried: Vítisvelli
+  kon-sv: Konan sem fór í Svartaskólann [Galdrar]
+    Candidates tried: Svartaskólann
+  nafri: Nafri tafri bol bol bol [Galdrar]
+  jon: Sagan af Jóni sterka [Galdrar]
+    Candidates tried: Eyrarbakka, Jóni
+  skrif-k: Skrifarinn og kona herramannsins [Galdrar]
+  svarpils: Svarta pilsið [Galdrar]
+  afrif: Af hverju er þá rifið [Kímnisögur]
+  skonal: Fjórar skónálar fyrir gullkamb [Kímnisögur]
+    Candidates tried: Ennþá
+  geravel: Gott er að gera vel og hitta sjálfan sig fyrir [Kímnisögur]
+  heimsk: Heimskar kerlingar [Kímnisögur]
+  heimskk: Heimsku mennirnir [Kímnisögur]
+  himna: Himnaförin [Kímnisögur]
+    Candidates tried: Strá
+  hver-rif: Hver rífur svo langan fisk úr roði? [Kímnisögur]
+    Candidates tried: Hley
+  minaugu: Mín hefur augu og mitt hefur nef [Kímnisögur]
+  prest-dj: Presturinn og djákninn [Kímnisögur]
+  bolakalf: Rauðflekkóttur bolakálfur [Kímnisögur]
+  thegidu: Þegiðu, hún móðir mín gaf mér hann [Kímnisögur]
+  andra: Andrarímur og Hallgrímsrímur [Tröll]
+    Candidates tried: Hallgrímssá
+  skes2-mj: Enn frá Mjóafjarðarskessunni [Tröll]
+    Candidates tried: Mjóafjarðarskessunni, Firði, Mjóafirði, Mjóafjarðargilið, Miklabæjar, Miklabæ
+  gryla: Grýla og bændur hennar [Tröll]
+    Candidates tried: Arinhellu, Grýlukvæðum, Grýlu
+  grylu-th: Grýluþula [Tröll]
+    Candidates tried: Þorvarð
+  gudm-eyv: Guðmundur á Eyvindarmúla [Tröll]
+    Candidates tried: Eyvindarmúla
+  hakarl: Hákarlamenn frá Djúpavogi [Tröll]
+    Candidates tried: Djúpavogi
+  trollk-k: Kona numin af tröllkonu [Tröll]
+  smatt: Lítið ber smátt smátt [Tröll]
+    Candidates tried: Vestfjörðum
+  mjoa: Mjóafjarðarskessan [Tröll]
+    Candidates tried: Mjóafirði, Firði, Mjóafjarðargilið
+  nattroll: Nátttröllið [Tröll]
+  ovaett2: Óvætturin sem ásótti konuna [Tröll]
+  ragn-3: Ragnhildur í Rauðhömrum og þussinn í Þríhömrum [Tröll]
+    Candidates tried: Rauðhömrum, Þríhömrum
+  sig-trol: Sigurður og tröllin [Tröll]
+    Candidates tried: Sigurður
+  skinnvef: Skinnvefja [Tröll]
+  smala: Smalastúlkan [Tröll]
+    Candidates tried: Dalasýslu, Rauðhömrum, Þríhömrum
+  trunttr: Trunt, trunt og tröllin í fjöllunum [Tröll]
+  tr-tafl: Tröllskessan og taflið [Tröll]
+    Candidates tried: Strá
+  jolasv: Um jólasveina [Tröll]
+    Candidates tried: Þorláksmessu, Þorlá, Bandaley
+  nordur: Farðu norður og niður [Úr efra og neðra - Helgisögur]
+    Candidates tried: Passíusálmum, Passíusá
+  gullsik: Gullsikillinn [Úr efra og neðra - Helgisögur]
+  hvild: Hvíldu þig, hvíld er góð [Úr efra og neðra - Helgisögur]
+  k-kvon: Kölski kvongast [Úr efra og neðra - Helgisögur]
+    Candidates tried: Jesú
+  leidslan: Leiðslan og sjónirnar [Úr efra og neðra - Helgisögur]
+  maltsalt: Malaðu hvorki malt né salt [Úr efra og neðra - Helgisögur]
+  n-setn: Niðursetukerlingin [Úr efra og neðra - Helgisögur]
+    Candidates tried: Ennþá
+  pukinn: Púkinn á kirkjubitanum [Úr efra og neðra - Helgisögur]
+  rjupan: Rjúpan [Úr efra og neðra - Helgisögur]
+  rosamu: Rósamunda [Úr efra og neðra - Helgisögur]
+  salin: Sálin hans Jóns míns [Úr efra og neðra - Helgisögur]
+    Candidates tried: Jájá
+  sfsp: Seint fyllist sálin prestanna [Úr efra og neðra - Helgisögur]
+  skipamal: Skipamál [Úr efra og neðra - Helgisögur]
+    Candidates tried: Skipamá, Jesú
+  krokur: Snemma beygist krókurinn sem verða vill [Úr efra og neðra - Helgisögur]
+  syndpok: Syndapokarnir [Úr efra og neðra - Helgisögur]
+  hafgyg: Hafgýgur [Úr sjó og vötnum]
+    Candidates tried: Klausturpósti, Klausturpós
+  vinnum: Vinnumaðurinn og sæfólkið [Úr sjó og vötnum]
+  marbendl: Þá hló marbendill [Úr sjó og vötnum]
+  dalbuinn: Dalbúinn [Útilegumenn]
+  ologhelg: Ólafur og Helga [Útilegumenn]
+    Candidates tried: Ólaf
+  prests-d: Prestsdæturnar og útilegumennirnir [Útilegumenn]
+    Candidates tried: Suðurlandi, Sigríður
+  hallgr-g: Sagan af Hallgrími Guðmundssyni [Útilegumenn]
+    Candidates tried: Jóni, Hallgrímur
+  systk: Systkinin [Útilegumenn]
+  uppminir: Upp mínir sex í Jesú nafni [Útilegumenn]
+    Candidates tried: Jesú
+  bergbu: Bergbúinn [Viðburðasögur]
+  dalakut: Dalakúturinn [Viðburðasögur]
+  hornafj: Hornafjarðarfljót [Viðburðasögur]
+    Candidates tried: Heiðnabergsjökull
+  kolb-h: Kolbeinshellir [Viðburðasögur]
+  arni-l: Árni lögmaður Oddsson [Ýmislegt]
+  drykkja: Drykkjurúturinn í helvíti [Ýmislegt]
+  hlatur: Nú skyldi ég hlæja, væri ég ekki dauður [Ýmislegt]
+  tunglid: Tunglið og þjófurinn [Ýmislegt]
+    Candidates tried: Suðurlandi
+  uppsvik: "Upp koma svik um síðir" [Ýmislegt]

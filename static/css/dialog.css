@@ -127,6 +127,18 @@
     background-color: #138496;
 }
 
+.kd-btn-danger {
+    background-color: #dc3545;
+    color: white;
+    margin-top: 4px;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.kd-btn-danger:hover {
+    background-color: #b02a37;
+}
+
 /* Table inside dialog */
 .kd-dialog table {
     border-collapse: collapse;

@@ -38,6 +38,32 @@ def haversine(lat1, lon1, lat2, lon2):
     return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
 
+# --- Area computation helper ---
+
+def compute_area_for_gps(gps_str, areas):
+    """Given a GPS string 'lat,lon' and a list of area rows, return matching area captions."""
+    if not gps_str or ',' not in gps_str:
+        return ''
+    gps_str = gps_str.replace(' ', '')
+    try:
+        lat, lon = float(gps_str.split(',')[0]), float(gps_str.split(',')[1])
+    except (ValueError, IndexError):
+        return ''
+    matches = []
+    for area in areas:
+        area_gps = (area['gps'] or '').replace(' ', '')
+        if not area_gps or ',' not in area_gps:
+            continue
+        try:
+            alat, alon = float(area_gps.split(',')[0]), float(area_gps.split(',')[1])
+        except (ValueError, IndexError):
+            continue
+        radius = int(area['radius'] or 0)
+        if haversine(lat, lon, alat, alon) < radius:
+            matches.append(area['caption'])
+    return ', '.join(matches)
+
+
 # --- Static serving ---
 
 @app.route('/')
@@ -66,6 +92,9 @@ def get_items():
             (filt, filt)
         ).fetchall()
 
+    # Fetch all areas for computing area membership
+    areas = db.execute("SELECT * FROM areas").fetchall()
+
     items = []
     total_translate = 0
     total_done = 0
@@ -83,6 +112,7 @@ def get_items():
             'LinkEng': row['link_eng'],
             'Visibility': row['visibility'],
             'Ref': row['ref'],
+            'Area': compute_area_for_gps(row['gps'], areas),
         })
 
         name = row['name'] or ''
@@ -103,6 +133,18 @@ def get_items():
         'Count': len(items),
         'Error': ''
     })
+
+
+@app.route('/api/items/delete', methods=['POST'])
+def delete_item():
+    d = request.get_json(force=True)
+    item_id = d.get('id', '').strip()
+    if not item_id:
+        return jsonify({'error': 'No id provided'}), 400
+    db = get_db()
+    db.execute("DELETE FROM items WHERE id=?", (item_id,))
+    db.commit()
+    return jsonify({'success': True})
 
 
 @app.route('/api/items/save', methods=['POST'])
@@ -193,6 +235,45 @@ def save_area():
         )
     db.commit()
     return jsonify({'success': True})
+
+
+@app.route('/api/areas/for-item', methods=['GET'])
+def areas_for_item():
+    gps = request.args.get('gps', '')
+    db = get_db()
+    areas = db.execute("SELECT * FROM areas").fetchall()
+    result = compute_area_for_gps(gps, areas)
+    return jsonify({'areas': result})
+
+
+@app.route('/api/areas/<int:area_id>/items', methods=['GET'])
+def items_in_area(area_id):
+    db = get_db()
+    area = db.execute("SELECT * FROM areas WHERE id=?", (area_id,)).fetchone()
+    if not area:
+        return jsonify({'Items': []})
+    area_gps = (area['gps'] or '').replace(' ', '')
+    if not area_gps or ',' not in area_gps:
+        return jsonify({'Items': []})
+    try:
+        alat, alon = float(area_gps.split(',')[0]), float(area_gps.split(',')[1])
+    except (ValueError, IndexError):
+        return jsonify({'Items': []})
+    radius = int(area['radius'] or 0)
+
+    rows = db.execute("SELECT * FROM items ORDER BY name").fetchall()
+    items = []
+    for row in rows:
+        item_gps = (row['gps'] or '').replace(' ', '')
+        if not item_gps or ',' not in item_gps:
+            continue
+        try:
+            lat, lon = float(item_gps.split(',')[0]), float(item_gps.split(',')[1])
+        except (ValueError, IndexError):
+            continue
+        if haversine(lat, lon, alat, alon) < radius:
+            items.append({'ID': row['id'], 'Name': row['name'], 'Tag': row['tag']})
+    return jsonify({'Items': items})
 
 
 # --- API: Nearby ---

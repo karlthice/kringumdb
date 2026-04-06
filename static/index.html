@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kringum DB</title>
+    <link rel="stylesheet" href="/static/lib/leaflet.css">
     <link rel="stylesheet" href="/static/lib/select2.min.css">
     <link rel="stylesheet" href="/static/css/dialog.css">
     <link rel="stylesheet" href="/static/css/app.css">
@@ -14,6 +15,7 @@
         <div class="IceButton IceSingle" data-filter=", þjóðsaga">Þjóðsögur</div>
         <div class="IceButton IceArea">Svæði</div>
         <div class="IceButton IceNew">Ný skráning</div>
+        <div class="IceButton IceWorld">World</div>
         <div class="IceButton IceExport">Export</div>
         <div class="IceButton IceExportEng">Export ENG</div>
         <input class="IceSearchField" type="text" placeholder="Leita..." />
@@ -23,7 +25,14 @@
     <hr />
     <div class="IceList"></div>
 
+    <!-- Map overlay -->
+    <div id="map-overlay" style="display:none">
+        <div id="map-close">&times;</div>
+        <div id="map"></div>
+    </div>
+
     <script src="/static/lib/jquery.min.js"></script>
+    <script src="/static/lib/leaflet.js"></script>
     <script src="/static/lib/select2.min.js"></script>
     <script src="/static/js/api.js"></script>
     <script src="/static/js/dialog.js"></script>
