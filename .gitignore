@@ -1,2 +1,5 @@
 __pycache__/
 export/
+.env
+venv/
+Tools/NatScraper/.nat_en_posts.json
