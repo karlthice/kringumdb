@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "name": "Eldgos í Geldingadölum, 2021",
+      "name_eng": "Volcanic eruption in Geldingadalir, 2021",
+      "gps": "63.8889, -22.2704",
+      "tag": "Saga",
+      "fromdate": "2021-03-19",
+      "todate": "2021-09-18",
+      "story": "Eldgos hófst í Geldingadölum sunnan í Fagradalsfjalli að kvöldi 19. mars 2021 og stóð í rétt um sex mánuði, fram til 18. september 2021. Þetta var fyrsta eldgosið á Reykjanesskaga í tæp 800 ár og markaði upphaf nýs gosskeiðs á svæðinu. Gosið var rólegt hraungos af basalt-toleíít gerð og þróaðist úr stuttri sprungu í einn megingíg sem byggði upp um 334 metra háan gjall- og hrauntáraskál.\n\nGosið varð einn vinsælasti ferðamannastaður landsins; meira en 350.000 gestir gengu að gosstöðvunum yfir sumarið. Hraunið rann að mestu inn í Geldingadali og Meradali og þekur um 4,8 ferkílómetra. Efnagreining sýndi að kvikan kom beint úr möttli á meira en 17 km dýpi og er fyrsta basaltkvika á Íslandi sem talin er sýna efnasamsetningu möttulrótar með beinum hætti.",
+      "story_eng": "A volcanic eruption began in Geldingadalir on the southern flank of Fagradalsfjall on the evening of 19 March 2021 and lasted just over six months, ending on 18 September 2021. It was the first eruption on the Reykjanes Peninsula in nearly 800 years and marked the start of a new period of volcanic activity in the region. The eruption was a calm effusive basaltic event that evolved from a short fissure into a single main vent, building a 334-metre-high spatter and scoria cone.\n\nThe eruption became one of Iceland's most popular tourist attractions; more than 350,000 visitors hiked to the vents over the summer. Lava flowed mainly into the Geldingadalir and Meradalir valleys, covering about 4.8 square kilometres. Geochemical analysis showed the magma rose directly from the mantle at a depth of more than 17 km — the first time such primitive mantle-derived lava had been sampled at the surface in Iceland."
+    },
+    {
+      "name": "Eldgos í Meradölum, 2022",
+      "name_eng": "Volcanic eruption in Meradalir, 2022",
+      "gps": "63.9030, -22.2730",
+      "tag": "Saga",
+      "fromdate": "2022-08-03",
+      "todate": "2022-08-21",
+      "story": "Eldgos hófst aftur við Fagradalsfjall þann 3. ágúst 2022, í Meradölum rétt norðan við gosstöðvarnar frá árinu áður. Gosið stóð aðeins í átján daga og lauk 21. ágúst 2022. Upphaflega var sprungan um 300 metra löng og hraunrennsli mældist allt að 32 m³/s í byrjun, mun kröftugara en gosið 2021, en féll fljótt og fjaraði út.\n\nGosið framleiddi um tólf milljónir rúmmetra af hrauni sem rann nær eingöngu yfir hraunið frá 2021 og inn í Meradali. Vegna stutts gosstíma varð það ekki að jafn miklum ferðamannastað og hið fyrra, en staðfesti að um lengra gosskeið væri að ræða með endurteknum kvikuhlaupum upp úr sömu sprungukerfunum.",
+      "story_eng": "A second eruption at Fagradalsfjall began on 3 August 2022 in Meradalir, just north of the 2021 vent site. It lasted only eighteen days, ending on 21 August 2022. The opening fissure was about 300 metres long and initial lava flow reached around 32 m³/s — considerably more vigorous than the 2021 eruption — but output dropped rapidly and the eruption petered out.\n\nThe event produced roughly twelve million cubic metres of lava, which flowed almost entirely over the 2021 lava field and into Meradalir valley. Because of its brevity it never matched the 2021 eruption as a tourist destination, but it confirmed that this was a sustained eruptive episode driven by repeated dike intrusions from the same fissure system."
+    },
+    {
+      "name": "Eldgos við Litla-Hrút, 2023",
+      "name_eng": "Volcanic eruption at Litli-Hrútur, 2023",
+      "gps": "63.9161, -22.2122",
+      "tag": "Saga",
+      "fromdate": "2023-07-10",
+      "todate": "2023-08-05",
+      "story": "Þriðja eldgosið á Fagradalsfjallssvæðinu hófst að morgni 10. júlí 2023 á sprungu rétt norðaustan við fjallið Litla-Hrút og lauk 5. ágúst 2023. Sprungan var um 900 metra löng og gosið kröftugra en bæði fyrri gosin, með hraunrennsli sem náði allt að 50 m³/s fyrstu klukkutímana. Eftir fyrstu daga virkninnar einbeitti gosið sig á einn virkan gíg.\n\nHraunið rann til norðurs niður í Meradalaheiði og þekur um 1,5 ferkílómetra. Gosinu fylgdi mikil gas- og reykmengun og kveikti í mosa og lyngi á stóru svæði, sem leiddi til mestu mosa- og gróðurelda sem mælst hafa á Íslandi. Gosstöðvarnar voru lokaðar almenningi um tíma vegna eldhættu og loftgæða.",
+      "story_eng": "The third eruption in the Fagradalsfjall area began on the morning of 10 July 2023 from a fissure just north-east of Litli-Hrútur mountain and ended on 5 August 2023. The opening fissure was about 900 metres long, and the eruption was more vigorous than either predecessor, with lava flow reaching roughly 50 m³/s in the first hours. After the opening phase activity focused on a single active vent.\n\nLava flowed north into Meradalaheiði and covered about 1.5 square kilometres. The eruption produced heavy gas and smoke pollution and ignited moss and heath across a wide area, causing the largest moss and vegetation fires ever recorded in Iceland. The site was closed to the public for periods due to fire risk and poor air quality."
+    },
+    {
+      "name": "Eldgos á Sundhnúksgígaröðinni, 2023–",
+      "name_eng": "Sundhnúkur crater row eruptions, 2023–",
+      "gps": "63.8792, -22.3872",
+      "tag": "Saga",
+      "fromdate": "2023-12-18",
+      "todate": "",
+      "story": "Síðla árs 2023 færðist eldvirknin á Reykjanesi vestur að Sundhnúksgígaröðinni, sprungukerfi sem liggur frá Stóra-Skógfelli suður að Grindavík. Fyrsta gosið hófst 18. desember 2023 með um 4 km langri sprungu norðan við bæinn og var skammvinnt. Síðan hafa orðið endurtekin gos á sömu gígaröð með reglubundnum kvikuhlaupum úr kvikuhólfi undir Svartsengi: 14. janúar 2024 með hraunrennsli alveg að bænum, í febrúar, mars–maí, maí–júní, ágúst–september og nóvember–desember 2024, og enn eitt gosið í apríl 2025 — alls níu gos fram á haust 2025.\n\nEldsumbrotin neyddu til rýmingar Grindavíkur í nóvember 2023 og bærinn var óbyggilegur svo mánuðum skipti; hraun rann inn í íbúðabyggð í janúar 2024 og kveikti í húsum, og varnargarðar voru reistir til að beina hrauninu frá byggð og orkuverinu í Svartsengi. Þessi atburðarás er fyrsta langtíma eldgosaskeið á byggðu svæði á Íslandi frá Heimaeyjargosinu 1973 og hefur haft veruleg áhrif á innviði, ferðaþjónustu og samfélagið á Suðurnesjum.",
+      "story_eng": "In late 2023 volcanic activity on Reykjanes shifted west to the Sundhnúkur crater row, a fissure system running from Stóra-Skógfell south toward Grindavík. The first eruption opened on 18 December 2023 along a roughly 4 km fissure north of the town and was short-lived. Repeated eruptions followed along the same crater row, fed by recurring magma intrusions from a reservoir beneath Svartsengi: 14 January 2024 (lava reached the town), and again in February, March–May, May–June, August–September and November–December 2024, with a further event in April 2025 — nine eruptions in total by autumn 2025.\n\nThe unrest forced the evacuation of Grindavík in November 2023, leaving the town uninhabitable for months; lava entered residential areas in January 2024 and set houses on fire, and large defensive berms were built to divert flows away from the town and the Svartsengi power plant. This sequence is the first prolonged eruptive episode within an inhabited area in Iceland since the 1973 Heimaey eruption, with serious impact on infrastructure, tourism and the Suðurnes community."
+    }
+  ],
+  "ref_note": "Veðurstofa Íslands; Wikipedia (Fagradalsfjall, 2022 Meradalir eruption, Litli-Hrútur, 2023–2025 Sundhnúkur eruptions); icelandgeology.net"
+}
