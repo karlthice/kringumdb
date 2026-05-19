@@ -1,0 +1,327 @@
+{
+  "Hjarðarholt, Laxdæla": {
+    "name_en": "Hjarðarholt, Laxdaela saga",
+    "gps": "64.865086, -19.006505",
+    "story_eng_len": 826
+  },
+  "Höskuldsstaðir, Laxdæla": {
+    "name_en": "Höskuldsstaðir, Laxdaela saga",
+    "gps": "65.204951, -17.979296",
+    "story_eng_len": 764
+  },
+  "Laugar í Sælingsdal, Laxdæla": {
+    "name_en": "Laugar í Sælingsdal, Laxdaela saga",
+    "gps": "64.946053, -18.276804",
+    "story_eng_len": 743
+  },
+  "Hvammur í Dölum, Laxdæla": {
+    "name_en": "Hvammur í Dölum, Laxdaela saga",
+    "gps": "64.544654, -18.105028",
+    "story_eng_len": 737
+  },
+  "Svínadalur, Laxdæla": {
+    "name_en": "Svínadalur, Laxdaela saga",
+    "gps": "64.856969, -19.138552",
+    "story_eng_len": 758
+  },
+  "Helgafell, Laxdæla": {
+    "name_en": "Helgafell, Laxdaela saga",
+    "gps": "65.236271, -19.307712",
+    "story_eng_len": 770
+  },
+  "Saurbær, Laxdæla": {
+    "name_en": "Saurbær, Laxdaela saga",
+    "gps": "64.599512, -18.990563",
+    "story_eng_len": 765
+  },
+  "Sælingsdalstunga, Laxdæla": {
+    "name_en": "Sælingsdalstunga, Laxdaela saga",
+    "gps": "65.018751, -17.866948",
+    "story_eng_len": 692
+  },
+  "Þingvellir, Laxdæla": {
+    "name_en": "Þingvellir, Laxdaela saga",
+    "gps": "64.529941, -18.528141",
+    "story_eng_len": 852
+  },
+  "Hóll í Sælingsdal, Laxdæla": {
+    "name_en": "Hóll í Sælingsdal, Laxdaela saga",
+    "gps": "64.722051, -19.247828",
+    "story_eng_len": 676
+  },
+  "Tunga í Snæfellsnesi, Laxdæla": {
+    "name_en": "Tunga í Snæfellsnesi, Laxdaela saga",
+    "gps": "65.065298, -18.253058",
+    "story_eng_len": 788
+  },
+  "Orrahvoll, Laxdæla": {
+    "name_en": "Orrahvoll, Laxdaela saga",
+    "gps": "64.849758, -18.805005",
+    "story_eng_len": 723
+  },
+  "Skarfstaðir, Laxdæla": {
+    "name_en": "Skarfstaðir, Laxdaela saga",
+    "gps": "65.218898, -18.511382",
+    "story_eng_len": 715
+  },
+  "Goddaustaðir, Laxdæla": {
+    "name_en": "Goddaustaðir, Laxdaela saga",
+    "gps": "65.083164, -17.610967",
+    "story_eng_len": 685
+  },
+  "Lambi, Laxdæla": {
+    "name_en": "Lambi, Laxdaela saga",
+    "gps": "64.877636, -18.062827",
+    "story_eng_len": 676
+  },
+  "Hlíðarendi, Njála": {
+    "name_en": "Hlíðarendi, Njals saga",
+    "gps": "64.747802, -19.422678",
+    "story_eng_len": 634
+  },
+  "Bergþórshvoll, Njála": {
+    "name_en": "Bergþórshvoll, Njals saga",
+    "gps": "64.810313, -18.485543",
+    "story_eng_len": 729
+  },
+  "Víkingslækur, Njála": {
+    "name_en": "Víkingslækur, Njals saga",
+    "gps": "64.655486, -18.407041",
+    "story_eng_len": 625
+  },
+  "Þingvellir, Njála": {
+    "name_en": "Þingvellir, Njals saga",
+    "gps": "64.794570, -19.286395",
+    "story_eng_len": 668
+  },
+  "Kirkjubær, Njála": {
+    "name_en": "Kirkjubær, Njals saga",
+    "gps": "64.877973, -17.554243",
+    "story_eng_len": 660
+  },
+  "Svínafell, Njála": {
+    "name_en": "Svínafell, Njals saga",
+    "gps": "64.796148, -18.756287",
+    "story_eng_len": 587
+  },
+  "Knafahólar, Njála": {
+    "name_en": "Knafahólar, Njals saga",
+    "gps": "64.824405, -19.339784",
+    "story_eng_len": 551
+  },
+  "Markarfljót, Njála": {
+    "name_en": "Markarfljót, Njals saga",
+    "gps": "65.041052, -18.626653",
+    "story_eng_len": 619
+  },
+  "Seljalandsmúli, Njála": {
+    "name_en": "Seljalandsmúli, Njals saga",
+    "gps": "64.645157, -18.405229",
+    "story_eng_len": 604
+  },
+  "Vollur, Njála": {
+    "name_en": "Vollur, Njals saga",
+    "gps": "64.959030, -18.152438",
+    "story_eng_len": 584
+  },
+  "Forsæti, Njála": {
+    "name_en": "Forsæti, Njals saga",
+    "gps": "64.750067, -18.685332",
+    "story_eng_len": 514
+  },
+  "Múlakot, Njála": {
+    "name_en": "Múlakot, Njals saga",
+    "gps": "65.101361, -18.284443",
+    "story_eng_len": 595
+  },
+  "Vestmannaeyjar, Njála": {
+    "name_en": "Vestmannaeyjar, Njals saga",
+    "gps": "65.383043, -18.389931",
+    "story_eng_len": 539
+  },
+  "Þríhyrningur, Njála": {
+    "name_en": "Þríhyrningur, Njals saga",
+    "gps": "64.659332, -17.731628",
+    "story_eng_len": 591
+  },
+  "Holt, Njála": {
+    "name_en": "Holt, Njals saga",
+    "gps": "64.871997, -18.236341",
+    "story_eng_len": 590
+  },
+  "Borg á Mýrum, Egils saga": {
+    "name_en": "Borg á Mýrum, Egils saga",
+    "gps": "64.935145, -18.328237",
+    "story_eng_len": 539
+  },
+  "Brákarsund, Egils saga": {
+    "name_en": "Brákarsund, Egils saga",
+    "gps": "65.028889, -18.140305",
+    "story_eng_len": 509
+  },
+  "Mosfell, Egils saga": {
+    "name_en": "Mosfell, Egils saga",
+    "gps": "65.145840, -18.221638",
+    "story_eng_len": 502
+  },
+  "Gilsbakki, Egils saga": {
+    "name_en": "Gilsbakki, Egils saga",
+    "gps": "64.528154, -18.359271",
+    "story_eng_len": 474
+  },
+  "Alþingi á Þingvöllum, Egils saga": {
+    "name_en": "Alþingi á Þingvöllum, Egils saga",
+    "gps": "65.166732, -17.776799",
+    "story_eng_len": 538
+  },
+  "Knarrarnes, Egils saga": {
+    "name_en": "Knarrarnes, Egils saga",
+    "gps": "65.101689, -19.512820",
+    "story_eng_len": 486
+  },
+  "Hítardalur, Egils saga": {
+    "name_en": "Hítardalur, Egils saga",
+    "gps": "65.017535, -17.565522",
+    "story_eng_len": 483
+  },
+  "Einarsnes, Egils saga": {
+    "name_en": "Einarsnes, Egils saga",
+    "gps": "64.773529, -19.089717",
+    "story_eng_len": 533
+  },
+  "Skallagrímshaugur, Egils saga": {
+    "name_en": "Skallagrímshaugur, Egils saga",
+    "gps": "65.135467, -17.690615",
+    "story_eng_len": 502
+  },
+  "Akranes, Egils saga": {
+    "name_en": "Akranes, Egils saga",
+    "gps": "64.927425, -18.133572",
+    "story_eng_len": 477
+  },
+  "Hvítá, Egils saga": {
+    "name_en": "Hvítá, Egils saga",
+    "gps": "65.095016, -19.139876",
+    "story_eng_len": 580
+  },
+  "Gufá, Egils saga": {
+    "name_en": "Gufá, Egils saga",
+    "gps": "64.804648, -19.296088",
+    "story_eng_len": 507
+  },
+  "Eyjastafur, Egils saga": {
+    "name_en": "Eyjastafur, Egils saga",
+    "gps": "65.248735, -18.892514",
+    "story_eng_len": 504
+  },
+  "Longumýri, Egils saga": {
+    "name_en": "Longumýri, Egils saga",
+    "gps": "65.230126, -19.198630",
+    "story_eng_len": 534
+  },
+  "Haugur Kveldúlfs, Egils saga": {
+    "name_en": "Haugur Kveldúlfs, Egils saga",
+    "gps": "65.085363, -17.940752",
+    "story_eng_len": 440
+  },
+  "Skerjafjörður, Egils saga": {
+    "name_en": "Skerjafjörður, Egils saga",
+    "gps": "64.831114, -17.637217",
+    "story_eng_len": 430
+  },
+  "Hvanneyri, Egils saga": {
+    "name_en": "Hvanneyri, Egils saga",
+    "gps": "64.918496, -17.676158",
+    "story_eng_len": 463
+  },
+  "Lambastaðir, Egils saga": {
+    "name_en": "Lambastaðir, Egils saga",
+    "gps": "64.938754, -19.032608",
+    "story_eng_len": 410
+  },
+  "Þverá, Egils saga": {
+    "name_en": "Þverá, Egils saga",
+    "gps": "65.055421, -18.363036",
+    "story_eng_len": 406
+  },
+  "Grímsá, Egils saga": {
+    "name_en": "Grímsá, Egils saga",
+    "gps": "65.090648, -17.599092",
+    "story_eng_len": 479
+  },
+  "Aðalból, Hrafnkels saga": {
+    "name_en": "Aðalból, Hrafnkels saga",
+    "gps": "65.167892, -19.386128",
+    "story_eng_len": 701
+  },
+  "Hrafnkelsdalur, Hrafnkels saga": {
+    "name_en": "Hrafnkelsdalur, Hrafnkels saga",
+    "gps": "65.315187, -18.797613",
+    "story_eng_len": 733
+  },
+  "Þverá, Hrafnkels saga": {
+    "name_en": "Þverá, Hrafnkels saga",
+    "gps": "65.179044, -18.507532",
+    "story_eng_len": 715
+  },
+  "Þingvellir, Hrafnkels saga": {
+    "name_en": "Þingvellir, Hrafnkels saga",
+    "gps": "65.002352, -19.134868",
+    "story_eng_len": 681
+  },
+  "Hrafnkelstunga, Hrafnkels saga": {
+    "name_en": "Hrafnkelstunga, Hrafnkels saga",
+    "gps": "64.945895, -18.247290",
+    "story_eng_len": 709
+  },
+  "Fljótsdalsheiði, Hrafnkels saga": {
+    "name_en": "Fljótsdalsheiði, Hrafnkels saga",
+    "gps": "65.159351, -18.677002",
+    "story_eng_len": 636
+  },
+  "Eyvindará, Hrafnkels saga": {
+    "name_en": "Eyvindará, Hrafnkels saga",
+    "gps": "64.640682, -19.064464",
+    "story_eng_len": 641
+  },
+  "Freyfaxahamar, Hrafnkels saga": {
+    "name_en": "Freyfaxahamar, Hrafnkels saga",
+    "gps": "65.328411, -18.732449",
+    "story_eng_len": 676
+  },
+  "Hallfreðarstaðir, Hrafnkels saga": {
+    "name_en": "Hallfreðarstaðir, Hrafnkels saga",
+    "gps": "65.020203, -17.741010",
+    "story_eng_len": 631
+  },
+  "Grjótteigur, Hrafnkels saga": {
+    "name_en": "Grjótteigur, Hrafnkels saga",
+    "gps": "65.129364, -19.036029",
+    "story_eng_len": 596
+  },
+  "Lagarfljót, Hrafnkels saga": {
+    "name_en": "Lagarfljót, Hrafnkels saga",
+    "gps": "64.803969, -17.893413",
+    "story_eng_len": 604
+  },
+  "Vestfirðir, Hrafnkels saga": {
+    "name_en": "Vestfirðir, Hrafnkels saga",
+    "gps": "65.197988, -19.102750",
+    "story_eng_len": 591
+  },
+  "Sandfell, Hrafnkels saga": {
+    "name_en": "Sandfell, Hrafnkels saga",
+    "gps": "65.097664, -17.626144",
+    "story_eng_len": 629
+  },
+  "Gautavík, Hrafnkels saga": {
+    "name_en": "Gautavík, Hrafnkels saga",
+    "gps": "65.205295, -18.108372",
+    "story_eng_len": 584
+  },
+  "Þórdalsheiði, Hrafnkels saga": {
+    "name_en": "Þórdalsheiði, Hrafnkels saga",
+    "gps": "64.750573, -18.255739",
+    "story_eng_len": 621
+  }
+}

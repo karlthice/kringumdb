@@ -1,0 +1,3807 @@
+{
+  "3252": {
+    "name": "Kormákshaugur, þjóðsaga",
+    "story_is_len": 1399,
+    "story_en_len": 1536
+  },
+  "2734": {
+    "name": "Illþurrka, þjóðsaga",
+    "story_is_len": 1225,
+    "story_en_len": 1436
+  },
+  "3103": {
+    "name": "Prestur vekur upp draug, þjóðsaga",
+    "story_is_len": 1869,
+    "story_en_len": 1014
+  },
+  "3128": {
+    "name": "Kirkjusmiðurinn á Reyni, þjóðsaga",
+    "story_is_len": 1713,
+    "story_en_len": 1884
+  },
+  "3253": {
+    "name": "Gullketill í Gufufossi, þjóðsaga",
+    "story_is_len": 767,
+    "story_en_len": 799
+  },
+  "3260": {
+    "name": "Útburður á Flókadal, þjóðsaga",
+    "story_is_len": 974,
+    "story_en_len": 1129
+  },
+  "3261": {
+    "name": "Nikulás á Kvíavöllum, þjóðsaga",
+    "story_is_len": 1547,
+    "story_en_len": 627
+  },
+  "3262": {
+    "name": "Mussumaðurinn í Útskálakirkjugarði, þjóðsaga",
+    "story_is_len": 631,
+    "story_en_len": 651
+  },
+  "3263": {
+    "name": "Teitur á Klukkufelli, þjóðsaga",
+    "story_is_len": 459,
+    "story_en_len": 227
+  },
+  "3264": {
+    "name": "Greftrun Þórgunnu, þjóðsaga",
+    "story_is_len": 396,
+    "story_en_len": 482
+  },
+  "3265": {
+    "name": "Valdi á Hrafnfjarðarheiði, þjóðsaga",
+    "story_is_len": 430,
+    "story_en_len": 507
+  },
+  "3266": {
+    "name": "Dalsdraugurinn, þjóðsaga",
+    "story_is_len": 967,
+    "story_en_len": 747
+  },
+  "3267": {
+    "name": "Einar í Hlöðuvík, þjóðsaga",
+    "story_is_len": 611,
+    "story_en_len": 691
+  },
+  "3268": {
+    "name": "Skólakennarinn í Skálholti, þjóðsaga",
+    "story_is_len": 1406,
+    "story_en_len": 1567
+  },
+  "3270": {
+    "name": "Stelpan í Hólmakirkjugarði, þjóðsaga",
+    "story_is_len": 1840,
+    "story_en_len": 1648
+  },
+  "3271": {
+    "name": "Jón flak, þjóðsaga",
+    "story_is_len": 1601,
+    "story_en_len": 1691
+  },
+  "3272": {
+    "name": "Mannsrifið, þjóðsaga",
+    "story_is_len": 1722,
+    "story_en_len": 682
+  },
+  "3274": {
+    "name": "Leiðið í Skriðuklausturskirkjugarði, þjóðsaga",
+    "story_is_len": 406,
+    "story_en_len": 490
+  },
+  "3275": {
+    "name": "Ketill prestur í Húsavík, þjóðsaga",
+    "story_is_len": 1313,
+    "story_en_len": 1455
+  },
+  "3276": {
+    "name": "Ljáðu mér rifið mitt, þjóðsaga",
+    "story_is_len": 404,
+    "story_en_len": 432
+  },
+  "3277": {
+    "name": "Danski kapteinninn, þjóðsaga",
+    "story_is_len": 1686,
+    "story_en_len": 1665
+  },
+  "3278": {
+    "name": "Bóndinn frá Rauðsstöðum, þjóðsaga",
+    "story_is_len": 1396,
+    "story_en_len": 1525
+  },
+  "3279": {
+    "name": "Vel gjörðir þú, þjóðsaga",
+    "story_is_len": 614,
+    "story_en_len": 644
+  },
+  "3280": {
+    "name": "Mjólkurkannan, þjóðsaga",
+    "story_is_len": 1258,
+    "story_en_len": 680
+  },
+  "3281": {
+    "name": "Saga af Grími Skeljungsbana, þjóðsaga",
+    "story_is_len": 1063,
+    "story_en_len": 696
+  },
+  "3282": {
+    "name": "Flóðalappi, þjóðsaga",
+    "story_is_len": 1949,
+    "story_en_len": 712
+  },
+  "3283": {
+    "name": "Skoravíkur-Jón, þjóðsaga",
+    "story_is_len": 1848,
+    "story_en_len": 1924
+  },
+  "3284": {
+    "name": "Kerlingin í Skálholti, þjóðsaga",
+    "story_is_len": 409,
+    "story_en_len": 447
+  },
+  "3285": {
+    "name": "Draugurinn hjá Brenninípu, þjóðsaga",
+    "story_is_len": 699,
+    "story_en_len": 763
+  },
+  "3286": {
+    "name": "Reimleiki í Vatnshorni, þjóðsaga",
+    "story_is_len": 418,
+    "story_en_len": 466
+  },
+  "3287": {
+    "name": "Presturinn á Borgarhrauni, þjóðsaga",
+    "story_is_len": 1203,
+    "story_en_len": 1322
+  },
+  "3288": {
+    "name": "Hesteyrar-Krita, þjóðsaga",
+    "story_is_len": 427,
+    "story_en_len": 502
+  },
+  "3289": {
+    "name": "Átján draugar úr Blöndu, þjóðsaga",
+    "story_is_len": 1498,
+    "story_en_len": 680
+  },
+  "3290": {
+    "name": "Sjódraugur æpir hátt, þjóðsaga",
+    "story_is_len": 1666,
+    "story_en_len": 660
+  },
+  "3291": {
+    "name": "Eiða-Sezelía, þjóðsaga",
+    "story_is_len": 416,
+    "story_en_len": 450
+  },
+  "3292": {
+    "name": "Gudda afturganga, þjóðsaga",
+    "story_is_len": 401,
+    "story_en_len": 513
+  },
+  "3293": {
+    "name": "Förukerlingin á Stóranúpi, þjóðsaga",
+    "story_is_len": 1712,
+    "story_en_len": 649
+  },
+  "3294": {
+    "name": "Hjónadjöfullinn, þjóðsaga",
+    "story_is_len": 1781,
+    "story_en_len": 681
+  },
+  "3329": {
+    "name": "Bóndinn frá Rauðsstöðum, þjóðsaga",
+    "story_is_len": 441,
+    "story_en_len": 468
+  },
+  "3330": {
+    "name": "Ingjaldshólskirkja, þjóðsaga",
+    "story_is_len": 444,
+    "story_en_len": 505
+  },
+  "3331": {
+    "name": "Bæjargilsdraugurinn á Húsafelli, þjóðsaga",
+    "story_is_len": 810,
+    "story_en_len": 940
+  },
+  "3332": {
+    "name": "Logi í Gunnsteinsstaðahólma, þjóðsaga",
+    "story_is_len": 983,
+    "story_en_len": 1090
+  },
+  "3333": {
+    "name": "Þrándarþúfa, þjóðsaga",
+    "story_is_len": 528,
+    "story_en_len": 579
+  },
+  "3334": {
+    "name": "Vafurlogi hjá Guðlaugsstöðum, þjóðsaga",
+    "story_is_len": 1220,
+    "story_en_len": 1368
+  },
+  "3335": {
+    "name": "Brúsahaugur, þjóðsaga",
+    "story_is_len": 1411,
+    "story_en_len": 710
+  },
+  "3336": {
+    "name": "Þórishaugur, þjóðsaga",
+    "story_is_len": 923,
+    "story_en_len": 959
+  },
+  "3337": {
+    "name": "Vafurlogi við Kárastaði, þjóðsaga",
+    "story_is_len": 982,
+    "story_en_len": 1079
+  },
+  "3338": {
+    "name": "Helguhóll, þjóðsaga",
+    "story_is_len": 765,
+    "story_en_len": 740
+  },
+  "3339": {
+    "name": "Helgahaugur, þjóðsaga",
+    "story_is_len": 1394,
+    "story_en_len": 582
+  },
+  "3340": {
+    "name": "Máshaugur, þjóðsaga",
+    "story_is_len": 1412,
+    "story_en_len": 1514
+  },
+  "3341": {
+    "name": "Kirkjan í Geitlandi, þjóðsaga",
+    "story_is_len": 882,
+    "story_en_len": 916
+  },
+  "3342": {
+    "name": "Peningasteinn á Gálgaflöt, þjóðsaga",
+    "story_is_len": 536,
+    "story_en_len": 547
+  },
+  "3344": {
+    "name": "Fjársjóðurinn í Fagrahól, þjóðsaga",
+    "story_is_len": 1052,
+    "story_en_len": 1074
+  },
+  "3345": {
+    "name": "Kálfar, þjóðsaga",
+    "story_is_len": 735,
+    "story_en_len": 827
+  },
+  "3346": {
+    "name": "Haugurinn á Valleyri, þjóðsaga",
+    "story_is_len": 834,
+    "story_en_len": 985
+  },
+  "3347": {
+    "name": "Djákninn á Myrká, þjóðsaga",
+    "story_is_len": 395,
+    "story_en_len": 491
+  },
+  "3348": {
+    "name": "Hagadraugurinn, þjóðsaga",
+    "story_is_len": 2596,
+    "story_en_len": 715
+  },
+  "3349": {
+    "name": "Jón Gissursson, þjóðsaga",
+    "story_is_len": 447,
+    "story_en_len": 516
+  },
+  "3350": {
+    "name": "Draugurinn Hundi, þjóðsaga",
+    "story_is_len": 725,
+    "story_en_len": 827
+  },
+  "3351": {
+    "name": "Bakkadraugurinn, þjóðsaga",
+    "story_is_len": 447,
+    "story_en_len": 498
+  },
+  "3352": {
+    "name": "Þórður og Andrés, þjóðsaga",
+    "story_is_len": 407,
+    "story_en_len": 426
+  },
+  "3353": {
+    "name": "Feykishóladraugurinn, þjóðsaga",
+    "story_is_len": 970,
+    "story_en_len": 1054
+  },
+  "3354": {
+    "name": "Torfalækjar Jón, þjóðsaga",
+    "story_is_len": 408,
+    "story_en_len": 491
+  },
+  "3355": {
+    "name": "Héðinsfjarðarvofa, þjóðsaga",
+    "story_is_len": 443,
+    "story_en_len": 502
+  },
+  "3357": {
+    "name": "Beinagrindin í Hólakirkju, þjóðsaga",
+    "story_is_len": 441,
+    "story_en_len": 499
+  },
+  "3358": {
+    "name": "Ekkjan á Álftanesinu, þjóðsaga",
+    "story_is_len": 434,
+    "story_en_len": 598
+  },
+  "3359": {
+    "name": "Möðrudals-Manga, þjóðsaga",
+    "story_is_len": 407,
+    "story_en_len": 438
+  },
+  "3360": {
+    "name": "Húskarlinn á Hólum, þjóðsaga",
+    "story_is_len": 2886,
+    "story_en_len": 777
+  },
+  "3361": {
+    "name": "Beinagrindin á Hólum, þjóðsaga",
+    "story_is_len": 529,
+    "story_en_len": 637
+  },
+  "3362": {
+    "name": "Breiðherðungur, þjóðsaga",
+    "story_is_len": 413,
+    "story_en_len": 509
+  },
+  "3363": {
+    "name": "Sigurlaug og Herdís, þjóðsaga",
+    "story_is_len": 407,
+    "story_en_len": 518
+  },
+  "3364": {
+    "name": "Runkhúsa-Gunna, þjóðsaga",
+    "story_is_len": 425,
+    "story_en_len": 496
+  },
+  "3365": {
+    "name": "Dala-Rafn, þjóðsaga",
+    "story_is_len": 1539,
+    "story_en_len": 670
+  },
+  "3366": {
+    "name": "Griðungurinn á Klifá, þjóðsaga",
+    "story_is_len": 768,
+    "story_en_len": 754
+  },
+  "3367": {
+    "name": "Svartidauði stöðvaður, þjóðsaga",
+    "story_is_len": 1159,
+    "story_en_len": 1253
+  },
+  "3368": {
+    "name": "Draugur rak sig á hníf, þjóðsaga",
+    "story_is_len": 445,
+    "story_en_len": 515
+  },
+  "3369": {
+    "name": "Rauðiboli, þjóðsaga",
+    "story_is_len": 434,
+    "story_en_len": 497
+  },
+  "3370": {
+    "name": "Jón Sterki, þjóðsaga",
+    "story_is_len": 1216,
+    "story_en_len": 1318
+  },
+  "3372": {
+    "name": "Jáson draugur, þjóðsaga",
+    "story_is_len": 1348,
+    "story_en_len": 1362
+  },
+  "3373": {
+    "name": "Draugur setur vagl á auga, þjóðsaga",
+    "story_is_len": 1404,
+    "story_en_len": 1686
+  },
+  "3376": {
+    "name": "Fjandinn í hrossleggnum, þjóðsaga",
+    "story_is_len": 423,
+    "story_en_len": 439
+  },
+  "3377": {
+    "name": "Draugur beðinn fyrir bréf, þjóðsaga",
+    "story_is_len": 1130,
+    "story_en_len": 1238
+  },
+  "3378": {
+    "name": "Hallur á Sandhólum, þjóðsaga",
+    "story_is_len": 434,
+    "story_en_len": 585
+  },
+  "3379": {
+    "name": "Haugurinn á Hvítárvöllum, þjóðsaga",
+    "story_is_len": 526,
+    "story_en_len": 581
+  },
+  "3380": {
+    "name": "Draugur deyr, þjóðsaga",
+    "story_is_len": 1585,
+    "story_en_len": 1801
+  },
+  "3381": {
+    "name": "Tvískerjadraugurinn, þjóðsaga",
+    "story_is_len": 395,
+    "story_en_len": 473
+  },
+  "3382": {
+    "name": "Mannshnútan, þjóðsaga",
+    "story_is_len": 2353,
+    "story_en_len": 744
+  },
+  "3383": {
+    "name": "Uppvakningar berjast, þjóðsaga",
+    "story_is_len": 1077,
+    "story_en_len": 694
+  },
+  "3384": {
+    "name": "Sjö draugar, þjóðsaga",
+    "story_is_len": 2996,
+    "story_en_len": 673
+  },
+  "3385": {
+    "name": "Sendingin og séra Jón í Tröllatungu, þjóðsaga",
+    "story_is_len": 1732,
+    "story_en_len": 1723
+  },
+  "3387": {
+    "name": "Birnir í sendingum, þjóðsaga",
+    "story_is_len": 861,
+    "story_en_len": 710
+  },
+  "3388": {
+    "name": "Klaufi, þjóðsaga",
+    "story_is_len": 1288,
+    "story_en_len": 601
+  },
+  "3390": {
+    "name": "Djöflalág á Reykjum, þjóðsaga",
+    "story_is_len": 416,
+    "story_en_len": 513
+  },
+  "3391": {
+    "name": "Draugurinn Kinni, þjóðsaga",
+    "story_is_len": 1204,
+    "story_en_len": 631
+  },
+  "3393": {
+    "name": "Draugurinn Flugandi, þjóðsaga",
+    "story_is_len": 393,
+    "story_en_len": 420
+  },
+  "3394": {
+    "name": "Barðsgátt, þjóðsaga",
+    "story_is_len": 419,
+    "story_en_len": 478
+  },
+  "3395": {
+    "name": "Páll bóndi sterki, þjóðsaga",
+    "story_is_len": 411,
+    "story_en_len": 437
+  },
+  "3396": {
+    "name": "Sendingin á Seljanesi, þjóðsaga",
+    "story_is_len": 386,
+    "story_en_len": 340
+  },
+  "3397": {
+    "name": "Dauði séra Þórðar á Grenjaðarstað, þjóðsaga",
+    "story_is_len": 422,
+    "story_en_len": 547
+  },
+  "3398": {
+    "name": "Hallur á Krýnastöðum, þjóðsaga",
+    "story_is_len": 412,
+    "story_en_len": 497
+  },
+  "3399": {
+    "name": "Sendingin og Jón í Næfurholti, þjóðsaga",
+    "story_is_len": 408,
+    "story_en_len": 536
+  },
+  "3400": {
+    "name": "Séra Sigurður á Auðkúlu, þjóðsaga",
+    "story_is_len": 629,
+    "story_en_len": 724
+  },
+  "3401": {
+    "name": "Uppvakningurinn á Miklagarði, þjóðsaga",
+    "story_is_len": 2077,
+    "story_en_len": 746
+  },
+  "3403": {
+    "name": "Draugur veitir áverka, þjóðsaga",
+    "story_is_len": 422,
+    "story_en_len": 491
+  },
+  "3404": {
+    "name": "Sending Vigfúsar prests, þjóðsaga",
+    "story_is_len": 994,
+    "story_en_len": 1142
+  },
+  "3405": {
+    "name": "Geirmundarstaðadraugurinn, þjóðsaga",
+    "story_is_len": 413,
+    "story_en_len": 489
+  },
+  "3406": {
+    "name": "Rifsdraugurinn, þjóðsaga",
+    "story_is_len": 1186,
+    "story_en_len": 1286
+  },
+  "3413": {
+    "name": "Stefán í Arney, þjóðsaga",
+    "story_is_len": 1025,
+    "story_en_len": 1252
+  },
+  "3414": {
+    "name": "Þeir koma þá fjórir, þjóðsaga",
+    "story_is_len": 1195,
+    "story_en_len": 1239
+  },
+  "3415": {
+    "name": "Anna á Bessastöðum, þjóðsaga",
+    "story_is_len": 428,
+    "story_en_len": 470
+  },
+  "3416": {
+    "name": "Stofudraugurinn á Bakka, þjóðsaga",
+    "story_is_len": 784,
+    "story_en_len": 788
+  },
+  "3417": {
+    "name": "Kollsstaðabóndinn, þjóðsaga",
+    "story_is_len": 898,
+    "story_en_len": 1071
+  },
+  "3418": {
+    "name": "Reimleikarnir í Kverkártungu, þjóðsaga",
+    "story_is_len": 1623,
+    "story_en_len": 1534
+  },
+  "3419": {
+    "name": "Móhúsa-Skotta, þjóðsaga",
+    "story_is_len": 420,
+    "story_en_len": 502
+  },
+  "3420": {
+    "name": "Skinnpilsa, þjóðsaga",
+    "story_is_len": 1277,
+    "story_en_len": 1374
+  },
+  "3421": {
+    "name": "Mývatns-Skotta, þjóðsaga",
+    "story_is_len": 1614,
+    "story_en_len": 729
+  },
+  "3422": {
+    "name": "Ábæjar-Skotta, þjóðsaga",
+    "story_is_len": 1565,
+    "story_en_len": 628
+  },
+  "3423": {
+    "name": "Hítardals-Skotta, þjóðsaga",
+    "story_is_len": 412,
+    "story_en_len": 477
+  },
+  "3424": {
+    "name": "Sels-móri, þjóðsaga",
+    "story_is_len": 430,
+    "story_en_len": 524
+  },
+  "3425": {
+    "name": "Hleiðargarðs-Sigga, þjóðsaga",
+    "story_is_len": 409,
+    "story_en_len": 476
+  },
+  "3426": {
+    "name": "Skarðs-Skotta, þjóðsaga",
+    "story_is_len": 1086,
+    "story_en_len": 1235
+  },
+  "3427": {
+    "name": "Hörgshóls-Móri, þjóðsaga",
+    "story_is_len": 447,
+    "story_en_len": 487
+  },
+  "3428": {
+    "name": "Uppruni Mývatns-Skottu, þjóðsaga",
+    "story_is_len": 400,
+    "story_en_len": 455
+  },
+  "3429": {
+    "name": "Björg í Vallatúni, þjóðsaga",
+    "story_is_len": 1024,
+    "story_en_len": 687
+  },
+  "3430": {
+    "name": "Hleiðargarðs-Skotta, þjóðsaga",
+    "story_is_len": 411,
+    "story_en_len": 488
+  },
+  "3431": {
+    "name": "Sólheima-Móri, þjóðsaga",
+    "story_is_len": 407,
+    "story_en_len": 508
+  },
+  "10981": {
+    "name": "Ólafur á Aðalbóli, þjóðsaga",
+    "story_is_len": 2410,
+    "story_en_len": 584
+  },
+  "3432": {
+    "name": "Skupla, þjóðsaga",
+    "story_is_len": 2070,
+    "story_en_len": 2271
+  },
+  "3433": {
+    "name": "Pjakkur, þjóðsaga",
+    "story_is_len": 1275,
+    "story_en_len": 1610
+  },
+  "3434": {
+    "name": "Goggur, þjóðsaga",
+    "story_is_len": 1376,
+    "story_en_len": 1182
+  },
+  "3435": {
+    "name": "Litluborgar-Toppur, þjóðsaga",
+    "story_is_len": 1482,
+    "story_en_len": 1643
+  },
+  "3436": {
+    "name": "Nýjabæjar-Skotta, þjóðsaga",
+    "story_is_len": 2058,
+    "story_en_len": 1424
+  },
+  "3437": {
+    "name": "Fellsendadraugurinn, þjóðsaga",
+    "story_is_len": 2147,
+    "story_en_len": 2397
+  },
+  "3438": {
+    "name": "Eyjafjarðar-Skotta, þjóðsaga",
+    "story_is_len": 1717,
+    "story_en_len": 1918
+  },
+  "3439": {
+    "name": "Böðvarshóla-Skotta, þjóðsaga",
+    "story_is_len": 959,
+    "story_en_len": 1107
+  },
+  "3440": {
+    "name": "Draugurinn á Finnbogastöðum, þjóðsaga",
+    "story_is_len": 1895,
+    "story_en_len": 2063
+  },
+  "3441": {
+    "name": "Vogadraugurinn, þjóðsaga",
+    "story_is_len": 2356,
+    "story_en_len": 2421
+  },
+  "3442": {
+    "name": "Jón prestur á Auðkúlu, þjóðsaga",
+    "story_is_len": 930,
+    "story_en_len": 1093
+  },
+  "3443": {
+    "name": "Sæmundur á Útskálum, þjóðsaga",
+    "story_is_len": 1338,
+    "story_en_len": 1490
+  },
+  "3444": {
+    "name": "Heygarðsdraugurinn, þjóðsaga",
+    "story_is_len": 2139,
+    "story_en_len": 2288
+  },
+  "3446": {
+    "name": "Draugurinn í Melrakkadal, þjóðsaga",
+    "story_is_len": 2485,
+    "story_en_len": 2659
+  },
+  "3448": {
+    "name": "Vofan í Pétursey, þjóðsaga",
+    "story_is_len": 1061,
+    "story_en_len": 1112
+  },
+  "3449": {
+    "name": "Bjarnanesdraugurinn, þjóðsaga",
+    "story_is_len": 1155,
+    "story_en_len": 1266
+  },
+  "3450": {
+    "name": "Skála-Brandur, þjóðsaga",
+    "story_is_len": 1203,
+    "story_en_len": 1336
+  },
+  "3451": {
+    "name": "Eiðisboli, þjóðsaga",
+    "story_is_len": 1059,
+    "story_en_len": 1231
+  },
+  "3452": {
+    "name": "Háleiti Bjarni, þjóðsaga",
+    "story_is_len": 1968,
+    "story_en_len": 2090
+  },
+  "3453": {
+    "name": "Húsavíkur-Lalli, þjóðsaga",
+    "story_is_len": 1811,
+    "story_en_len": 2044
+  },
+  "3454": {
+    "name": "Draugur í prentsmiðju, þjóðsaga",
+    "story_is_len": 1469,
+    "story_en_len": 1784
+  },
+  "3455": {
+    "name": "Systurnar á Ljótsstöðum, þjóðsaga",
+    "story_is_len": 2421,
+    "story_en_len": 2580
+  },
+  "3456": {
+    "name": "Hallandsklettur, þjóðsaga",
+    "story_is_len": 764,
+    "story_en_len": 965
+  },
+  "3457": {
+    "name": "Vaglar, þjóðsaga",
+    "story_is_len": 1560,
+    "story_en_len": 1718
+  },
+  "3458": {
+    "name": "Prestkona huldufólksins, þjóðsaga",
+    "story_is_len": 1297,
+    "story_en_len": 1359
+  },
+  "3459": {
+    "name": "Álfar á Ásmundarnesi, þjóðsaga",
+    "story_is_len": 2417,
+    "story_en_len": 2529
+  },
+  "3460": {
+    "name": "Steinahellir, þjóðsaga",
+    "story_is_len": 1684,
+    "story_en_len": 1915
+  },
+  "3461": {
+    "name": "Oddbjörg í Fuglavík, þjóðsaga",
+    "story_is_len": 810,
+    "story_en_len": 885
+  },
+  "3463": {
+    "name": "Bláa ullin, þjóðsaga",
+    "story_is_len": 915,
+    "story_en_len": 968
+  },
+  "3464": {
+    "name": "Látraselið, þjóðsaga",
+    "story_is_len": 1442,
+    "story_en_len": 1681
+  },
+  "3465": {
+    "name": "Huldufé í Hvammi, þjóðsaga",
+    "story_is_len": 1252,
+    "story_en_len": 1335
+  },
+  "3467": {
+    "name": "Álfkonan hjá Stóru Hvalsá, þjóðsaga",
+    "story_is_len": 1017,
+    "story_en_len": 1134
+  },
+  "3468": {
+    "name": "Álfarnir hjá Víðivöllum, þjóðsaga",
+    "story_is_len": 945,
+    "story_en_len": 1091
+  },
+  "3469": {
+    "name": "Presturinn í Möðrudal, þjóðsaga",
+    "story_is_len": 2311,
+    "story_en_len": 2416
+  },
+  "3470": {
+    "name": "Græna lambið, þjóðsaga",
+    "story_is_len": 1290,
+    "story_en_len": 1459
+  },
+  "3472": {
+    "name": "Álfabátur á Svínavatni, þjóðsaga",
+    "story_is_len": 873,
+    "story_en_len": 994
+  },
+  "3473": {
+    "name": "Álfkonan hjá Bergsholtskoti, þjóðsaga",
+    "story_is_len": 559,
+    "story_en_len": 673
+  },
+  "3474": {
+    "name": "Huldukonan hjá Hríshóli, þjóðsaga",
+    "story_is_len": 535,
+    "story_en_len": 664
+  },
+  "3475": {
+    "name": "Álfarnir í Kaldbaksvík, þjóðsaga",
+    "story_is_len": 1923,
+    "story_en_len": 2056
+  },
+  "3476": {
+    "name": "Gersemarnar í Hvammi, þjóðsaga",
+    "story_is_len": 1097,
+    "story_en_len": 1240
+  },
+  "3477": {
+    "name": "Hulduskip, þjóðsaga",
+    "story_is_len": 871,
+    "story_en_len": 1034
+  },
+  "3478": {
+    "name": "Huldufólk í Hjörtsey, þjóðsaga",
+    "story_is_len": 1688,
+    "story_en_len": 1972
+  },
+  "3480": {
+    "name": "Sjómaðurinn á Götum, þjóðsaga",
+    "story_is_len": 1870,
+    "story_en_len": 2120
+  },
+  "3481": {
+    "name": "Sigríður í Bessatungu, þjóðsaga",
+    "story_is_len": 624,
+    "story_en_len": 1417
+  },
+  "3482": {
+    "name": "Ingibjörg og álfkonan, þjóðsaga",
+    "story_is_len": 1683,
+    "story_en_len": 1797
+  },
+  "3483": {
+    "name": "Borghildur álfkona, þjóðsaga",
+    "story_is_len": 2275,
+    "story_en_len": 2396
+  },
+  "3484": {
+    "name": "Álfarnir í Snartartungu, þjóðsaga",
+    "story_is_len": 1574,
+    "story_en_len": 1691
+  },
+  "3486": {
+    "name": "Barnsbrókin, þjóðsaga",
+    "story_is_len": 1039,
+    "story_en_len": 1216
+  },
+  "3487": {
+    "name": "Sæmundur í Bjarnadal, þjóðsaga",
+    "story_is_len": 1140,
+    "story_en_len": 1235
+  },
+  "3488": {
+    "name": "Guðríður og álfkonan, þjóðsaga",
+    "story_is_len": 1137,
+    "story_en_len": 1396
+  },
+  "3490": {
+    "name": "Ekkjan í Höfn, þjóðsaga",
+    "story_is_len": 1017,
+    "story_en_len": 1126
+  },
+  "3491": {
+    "name": "Álfkona reidd yfir á, þjóðsaga",
+    "story_is_len": 1863,
+    "story_en_len": 712
+  },
+  "3492": {
+    "name": "Álfarnir hjá Þjóðólfshaga, þjóðsaga",
+    "story_is_len": 1574,
+    "story_en_len": 1641
+  },
+  "3493": {
+    "name": "Sýslumannskonan á Burstarfelli, þjóðsaga",
+    "story_is_len": 2460,
+    "story_en_len": 2546
+  },
+  "3494": {
+    "name": "Fóðruð kýr fyrir huldufólk, þjóðsaga",
+    "story_is_len": 1400,
+    "story_en_len": 1517
+  },
+  "3495": {
+    "name": "Yfirsetukonan, þjóðsaga",
+    "story_is_len": 2106,
+    "story_en_len": 2266
+  },
+  "3496": {
+    "name": "Fjalgerður, þjóðsaga",
+    "story_is_len": 1630,
+    "story_en_len": 1730
+  },
+  "3497": {
+    "name": "Konan á Skúmsstöðum, þjóðsaga",
+    "story_is_len": 1999,
+    "story_en_len": 2162
+  },
+  "3498": {
+    "name": "Álfaskip hjá Arnarbæli, þjóðsaga",
+    "story_is_len": 724,
+    "story_en_len": 783
+  },
+  "3499": {
+    "name": "Guðmundur á Aðalbóli, þjóðsaga",
+    "story_is_len": 1216,
+    "story_en_len": 1311
+  },
+  "3500": {
+    "name": "Álfkonan í Ásgarðsstapa, þjóðsaga",
+    "story_is_len": 2542,
+    "story_en_len": 2772
+  },
+  "3501": {
+    "name": "Mælifells-Skjóni, þjóðsaga",
+    "story_is_len": 1555,
+    "story_en_len": 1611
+  },
+  "3502": {
+    "name": "Skafti læknir, þjóðsaga",
+    "story_is_len": 1978,
+    "story_en_len": 2303
+  },
+  "3503": {
+    "name": "Ólöf í Hvammi, þjóðsaga",
+    "story_is_len": 998,
+    "story_en_len": 1160
+  },
+  "3504": {
+    "name": "Huldufólk í Vökuhól, þjóðsaga",
+    "story_is_len": 1644,
+    "story_en_len": 1851
+  },
+  "3505": {
+    "name": "Álfkona læknar mann, þjóðsaga",
+    "story_is_len": 817,
+    "story_en_len": 847
+  },
+  "3506": {
+    "name": "Álfkona læknar barn, þjóðsaga",
+    "story_is_len": 1641,
+    "story_en_len": 1848
+  },
+  "3507": {
+    "name": "Huldufólkið í Álfaborginni, þjóðsaga",
+    "story_is_len": 1995,
+    "story_en_len": 2240
+  },
+  "3508": {
+    "name": "Brandur á Þúfu, þjóðsaga",
+    "story_is_len": 1014,
+    "story_en_len": 1174
+  },
+  "3509": {
+    "name": "Álfkonan hjá Bakkagerði, þjóðsaga",
+    "story_is_len": 1157,
+    "story_en_len": 1253
+  },
+  "3510": {
+    "name": "Kristín á Hofi, þjóðsaga",
+    "story_is_len": 1818,
+    "story_en_len": 1966
+  },
+  "3511": {
+    "name": "Álfar í Litla-Langadal, þjóðsaga",
+    "story_is_len": 548,
+    "story_en_len": 697
+  },
+  "3512": {
+    "name": "Huldufólk í Hengifossárgili, þjóðsaga",
+    "story_is_len": 868,
+    "story_en_len": 915
+  },
+  "3513": {
+    "name": "Huldufólk í kirkjuferð, þjóðsaga",
+    "story_is_len": 1128,
+    "story_en_len": 1313
+  },
+  "3514": {
+    "name": "Rafnkell á Núpakoti, þjóðsaga",
+    "story_is_len": 2110,
+    "story_en_len": 2364
+  },
+  "3515": {
+    "name": "Mállausubakkar, þjóðsaga",
+    "story_is_len": 1301,
+    "story_en_len": 1398
+  },
+  "3516": {
+    "name": "Sálmasöngur huldufólks, þjóðsaga",
+    "story_is_len": 927,
+    "story_en_len": 1028
+  },
+  "3517": {
+    "name": "Björn skipasmiður í Málmey, þjóðsaga",
+    "story_is_len": 1277,
+    "story_en_len": 1506
+  },
+  "3518": {
+    "name": "Huldumaðurinn, þjóðsaga",
+    "story_is_len": 1599,
+    "story_en_len": 1747
+  },
+  "3519": {
+    "name": "Gróa á Hrófá, þjóðsaga",
+    "story_is_len": 1762,
+    "story_en_len": 1882
+  },
+  "3520": {
+    "name": "Álfkonan hjá Vatnsenda, þjóðsaga",
+    "story_is_len": 435,
+    "story_en_len": 468
+  },
+  "3521": {
+    "name": "Ólafur á Vindhæli, þjóðsaga",
+    "story_is_len": 877,
+    "story_en_len": 916
+  },
+  "3522": {
+    "name": "Huldukonan í Hafnanúp, þjóðsaga",
+    "story_is_len": 1188,
+    "story_en_len": 1392
+  },
+  "3523": {
+    "name": "Jón á Sandfelli, þjóðsaga",
+    "story_is_len": 2615,
+    "story_en_len": 2696
+  },
+  "3524": {
+    "name": "Jón á Svínahóli, þjóðsaga",
+    "story_is_len": 1717,
+    "story_en_len": 1753
+  },
+  "3525": {
+    "name": "Álfkonan á Fossum, þjóðsaga",
+    "story_is_len": 425,
+    "story_en_len": 475
+  },
+  "3527": {
+    "name": "Álfar feykja heyi, þjóðsaga",
+    "story_is_len": 410,
+    "story_en_len": 459
+  },
+  "3528": {
+    "name": "Karítas í Búðardal, þjóðsaga",
+    "story_is_len": 866,
+    "story_en_len": 915
+  },
+  "3529": {
+    "name": "Sigmundarhraun, þjóðsaga",
+    "story_is_len": 853,
+    "story_en_len": 931
+  },
+  "3532": {
+    "name": "Álfar hjá Ásgarði, þjóðsaga",
+    "story_is_len": 540,
+    "story_en_len": 617
+  },
+  "3533": {
+    "name": "Bæjarbruni á Staðarfelli, þjóðsaga",
+    "story_is_len": 651,
+    "story_en_len": 694
+  },
+  "3535": {
+    "name": "Skarðhóll hjá Látraseli, þjóðsaga",
+    "story_is_len": 917,
+    "story_en_len": 963
+  },
+  "3538": {
+    "name": "Álfkonan í Skollhól, þjóðsaga",
+    "story_is_len": 1001,
+    "story_en_len": 1082
+  },
+  "3541": {
+    "name": "Piltur á glugga, þjóðsaga",
+    "story_is_len": 424,
+    "story_en_len": 449
+  },
+  "3542": {
+    "name": "Álfkonan í Múla, þjóðsaga",
+    "story_is_len": 430,
+    "story_en_len": 448
+  },
+  "3543": {
+    "name": "Graðungurinn í Rúgeyjum, þjóðsaga",
+    "story_is_len": 416,
+    "story_en_len": 438
+  },
+  "3544": {
+    "name": "Hjúin á Aðalbóli, þjóðsaga",
+    "story_is_len": 414,
+    "story_en_len": 480
+  },
+  "3545": {
+    "name": "Djúpatjörn, þjóðsaga",
+    "story_is_len": 725,
+    "story_en_len": 783
+  },
+  "3546": {
+    "name": "Konan á Breiðavaði, þjóðsaga",
+    "story_is_len": 781,
+    "story_en_len": 849
+  },
+  "3547": {
+    "name": "Álfkonan hjá Kollugerði, þjóðsaga",
+    "story_is_len": 1103,
+    "story_en_len": 1154
+  },
+  "3548": {
+    "name": "Þuríðartorfa í Pétursey, þjóðsaga",
+    "story_is_len": 886,
+    "story_en_len": 1024
+  },
+  "3549": {
+    "name": "Brækurnar í Skálholtskoti, þjóðsaga",
+    "story_is_len": 754,
+    "story_en_len": 832
+  },
+  "3550": {
+    "name": "Áflkonan í Stekkjarbergum, þjóðsaga",
+    "story_is_len": 1849,
+    "story_en_len": 2054
+  },
+  "3551": {
+    "name": "Vinnukonan á Sauðanesi, þjóðsaga",
+    "story_is_len": 2662,
+    "story_en_len": 2884
+  },
+  "3552": {
+    "name": "Fjósamaðurinn í Forsæludal, þjóðsaga",
+    "story_is_len": 1107,
+    "story_en_len": 1091
+  },
+  "3553": {
+    "name": "Ég er ánægð, ég hef mitt, þjóðsaga",
+    "story_is_len": 1735,
+    "story_en_len": 1880
+  },
+  "3554": {
+    "name": "Jarðholan hjá Skáldalæk, þjóðsaga",
+    "story_is_len": 1350,
+    "story_en_len": 1478
+  },
+  "3555": {
+    "name": "Álfakletturinn, þjóðsaga",
+    "story_is_len": 1263,
+    "story_en_len": 1392
+  },
+  "3556": {
+    "name": "Álfkonan í Bríkarklöpp, þjóðsaga",
+    "story_is_len": 421,
+    "story_en_len": 497
+  },
+  "3557": {
+    "name": "*Hvarfshóll, þjóðsaga",
+    "story_is_len": 734,
+    "story_en_len": 812
+  },
+  "3558": {
+    "name": "Huldufólk, þjóðsaga",
+    "story_is_len": 1111,
+    "story_en_len": 1211
+  },
+  "3559": {
+    "name": "Af drengnum í Dyrhólaey, þjóðsaga",
+    "story_is_len": 1254,
+    "story_en_len": 1382
+  },
+  "3561": {
+    "name": "Stúlkan sem ljósið kveikti, þjóðsaga",
+    "story_is_len": 1222,
+    "story_en_len": 1407
+  },
+  "3562": {
+    "name": "Barnsskírnin, þjóðsaga",
+    "story_is_len": 1437,
+    "story_en_len": 1561
+  },
+  "3563": {
+    "name": "Umskiptingurinn í Sogni, þjóðsaga",
+    "story_is_len": 1837,
+    "story_en_len": 2022
+  },
+  "3564": {
+    "name": "Barn huldufólks, þjóðsaga",
+    "story_is_len": 1447,
+    "story_en_len": 1536
+  },
+  "3565": {
+    "name": "Guðný á Végeirsstöðum, þjóðsaga",
+    "story_is_len": 1943,
+    "story_en_len": 2223
+  },
+  "3566": {
+    "name": "Prestsdóttirin, þjóðsaga",
+    "story_is_len": 1156,
+    "story_en_len": 1364
+  },
+  "3567": {
+    "name": "Guðlaugur á Hurðarbaki, þjóðsaga",
+    "story_is_len": 935,
+    "story_en_len": 1012
+  },
+  "3568": {
+    "name": "Mælihóll, þjóðsaga",
+    "story_is_len": 463,
+    "story_en_len": 575
+  },
+  "3570": {
+    "name": "Barnið villta undir Eyjafjöllum, þjóðsaga",
+    "story_is_len": 1278,
+    "story_en_len": 1338
+  },
+  "3571": {
+    "name": "Davíð Bjarnason og álfkonan, þjóðsaga",
+    "story_is_len": 1951,
+    "story_en_len": 2194
+  },
+  "3572": {
+    "name": "Bjarni Thorarensen, þjóðsaga",
+    "story_is_len": 505,
+    "story_en_len": 565
+  },
+  "3573": {
+    "name": "Prestssonurinn á Knappsstöðum, þjóðsaga",
+    "story_is_len": 332,
+    "story_en_len": 358
+  },
+  "3574": {
+    "name": "Huldumaður í Sunnudal, þjóðsaga",
+    "story_is_len": 2245,
+    "story_en_len": 2450
+  },
+  "3579": {
+    "name": "Lauga litla á Hafnarhólmi, þjóðsaga",
+    "story_is_len": 1462,
+    "story_en_len": 1659
+  },
+  "3580": {
+    "name": "Meystelpan á Kirkjubóli, þjóðsaga",
+    "story_is_len": 1047,
+    "story_en_len": 1156
+  },
+  "3581": {
+    "name": "Jörundur á Finnbogastöðum, þjóðsaga",
+    "story_is_len": 1653,
+    "story_en_len": 1874
+  },
+  "3582": {
+    "name": "Sæmundur á Staðastað, þjóðsaga",
+    "story_is_len": 331,
+    "story_en_len": 397
+  },
+  "3583": {
+    "name": "Barnsvaggan á Minniþverá, þjóðsaga",
+    "story_is_len": 1228,
+    "story_en_len": 1397
+  },
+  "3584": {
+    "name": "Barnið og álfkonan, þjóðsaga",
+    "story_is_len": 1935,
+    "story_en_len": 2212
+  },
+  "3586": {
+    "name": "Sigurður litli í Múlakoti, þjóðsaga",
+    "story_is_len": 1123,
+    "story_en_len": 1408
+  },
+  "3587": {
+    "name": "Erlendur á Þverá, þjóðsaga",
+    "story_is_len": 1271,
+    "story_en_len": 1363
+  },
+  "3588": {
+    "name": "Árni Eyjafjarðarskáld, þjóðsaga",
+    "story_is_len": 1984,
+    "story_en_len": 2117
+  },
+  "3589": {
+    "name": "Stúlkan á Svínaskála, þjóðsaga",
+    "story_is_len": 1496,
+    "story_en_len": 1706
+  },
+  "3590": {
+    "name": "Huldufólkið í Hólaklöppum, þjóðsaga",
+    "story_is_len": 2354,
+    "story_en_len": 2659
+  },
+  "3591": {
+    "name": "Séra Jóhann á Svalbarði, þjóðsaga",
+    "story_is_len": 1731,
+    "story_en_len": 1853
+  },
+  "3592": {
+    "name": "Smalinn í Fljótsdal, þjóðsaga",
+    "story_is_len": 2544,
+    "story_en_len": 2723
+  },
+  "3593": {
+    "name": "Margrét í Ási, þjóðsaga",
+    "story_is_len": 1131,
+    "story_en_len": 1249
+  },
+  "3594": {
+    "name": "Huldufólk í Tónum, þjóðsaga",
+    "story_is_len": 796,
+    "story_en_len": 905
+  },
+  "3595": {
+    "name": "Sigurlaug litla, þjóðsaga",
+    "story_is_len": 840,
+    "story_en_len": 1034
+  },
+  "3596": {
+    "name": "Kóngshöll á Tungudal, þjóðsaga",
+    "story_is_len": 1115,
+    "story_en_len": 1346
+  },
+  "3597": {
+    "name": "Á litlum stað lúrir það, þjóðsaga",
+    "story_is_len": 600,
+    "story_en_len": 715
+  },
+  "3598": {
+    "name": "Sigríður á Reykjum, þjóðsaga",
+    "story_is_len": 836,
+    "story_en_len": 981
+  },
+  "3599": {
+    "name": "Eyjólfur prestur og álfkonan, þjóðsaga",
+    "story_is_len": 2186,
+    "story_en_len": 2483
+  },
+  "3601": {
+    "name": "Guðmundur á Keldum, þjóðsaga",
+    "story_is_len": 2846,
+    "story_en_len": 3012
+  },
+  "3602": {
+    "name": "Álfkonurnar í Ekru, þjóðsaga",
+    "story_is_len": 1824,
+    "story_en_len": 2045
+  },
+  "3603": {
+    "name": "Ég man þér þóttu góð hjörtun forðum, þjóðsaga",
+    "story_is_len": 1577,
+    "story_en_len": 1795
+  },
+  "3604": {
+    "name": "Valbrá huldustúlka, þjóðsaga",
+    "story_is_len": 2391,
+    "story_en_len": 2496
+  },
+  "3605": {
+    "name": "Mókollur, þjóðsaga",
+    "story_is_len": 2435,
+    "story_en_len": 2654
+  },
+  "3606": {
+    "name": "Huldumaðurinn í Mælishól, þjóðsaga",
+    "story_is_len": 2995,
+    "story_en_len": 3398
+  },
+  "3607": {
+    "name": "Torfi í Hvömmum, þjóðsaga",
+    "story_is_len": 1104,
+    "story_en_len": 1330
+  },
+  "3608": {
+    "name": "Konuhvarf í Hnefilsdal, þjóðsaga",
+    "story_is_len": 1947,
+    "story_en_len": 2101
+  },
+  "3609": {
+    "name": "Íma og Jón á Berunesi, þjóðsaga",
+    "story_is_len": 2150,
+    "story_en_len": 2449
+  },
+  "3610": {
+    "name": "Álfurinn í stóra steininum, þjóðsaga",
+    "story_is_len": 2402,
+    "story_en_len": 2658
+  },
+  "3611": {
+    "name": "Huldumaðurinn úr Miðstapa, þjóðsaga",
+    "story_is_len": 2129,
+    "story_en_len": 2154
+  },
+  "3612": {
+    "name": "Kona elur barn í álfhól, þjóðsaga",
+    "story_is_len": 919,
+    "story_en_len": 1083
+  },
+  "3613": {
+    "name": "Jón Árnason frá Hömrum, þjóðsaga",
+    "story_is_len": 2364,
+    "story_en_len": 2706
+  },
+  "3614": {
+    "name": "Melabergs-Helgi, þjóðsaga",
+    "story_is_len": 3224,
+    "story_en_len": 3572
+  },
+  "3615": {
+    "name": "Frá Eyjólfi og álfkonu, þjóðsaga",
+    "story_is_len": 2193,
+    "story_en_len": 2445
+  },
+  "3616": {
+    "name": "Síra Einar í Heydölum, þjóðsaga",
+    "story_is_len": 1977,
+    "story_en_len": 2261
+  },
+  "3617": {
+    "name": "Múlakotsbræður, þjóðsaga",
+    "story_is_len": 2248,
+    "story_en_len": 2587
+  },
+  "3618": {
+    "name": "Huldukonan í Seley, þjóðsaga",
+    "story_is_len": 3163,
+    "story_en_len": 3368
+  },
+  "3619": {
+    "name": "Álfahökullinn, þjóðsaga",
+    "story_is_len": 1809,
+    "story_en_len": 2021
+  },
+  "3620": {
+    "name": "Ferming hjá huldufólki, þjóðsaga",
+    "story_is_len": 2718,
+    "story_en_len": 2928
+  },
+  "3621": {
+    "name": "Stúlkan í Hvannstóði, þjóðsaga",
+    "story_is_len": 1693,
+    "story_en_len": 1885
+  },
+  "3622": {
+    "name": "Snotra álfkona, þjóðsaga",
+    "story_is_len": 2908,
+    "story_en_len": 3170
+  },
+  "3623": {
+    "name": "Jólanótt á Reyðarvatni, þjóðsaga",
+    "story_is_len": 1386,
+    "story_en_len": 1494
+  },
+  "3624": {
+    "name": "Tekannan, þjóðsaga",
+    "story_is_len": 2667,
+    "story_en_len": 2983
+  },
+  "3625": {
+    "name": "Húsfreyjan á Yztugrund, þjóðsaga",
+    "story_is_len": 2242,
+    "story_en_len": 2562
+  },
+  "3626": {
+    "name": "Bóthildur drottning, þjóðsaga",
+    "story_is_len": 3436,
+    "story_en_len": 3715
+  },
+  "3627": {
+    "name": "Huldufólkið í Nesjum, þjóðsaga",
+    "story_is_len": 2988,
+    "story_en_len": 3314
+  },
+  "3628": {
+    "name": "Álfasíki, þjóðsaga",
+    "story_is_len": 2938,
+    "story_en_len": 3358
+  },
+  "3629": {
+    "name": "Álfarnir hjá Staðarhóli, þjóðsaga",
+    "story_is_len": 1050,
+    "story_en_len": 1187
+  },
+  "3630": {
+    "name": "Jólanótt í Kasthvammi, þjóðsaga",
+    "story_is_len": 1622,
+    "story_en_len": 1850
+  },
+  "3631": {
+    "name": "Álfarnir í Drangey, þjóðsaga",
+    "story_is_len": 2648,
+    "story_en_len": 2839
+  },
+  "3653": {
+    "name": "Flutningur álfa, þjóðsaga",
+    "story_is_len": 2102,
+    "story_en_len": 2407
+  },
+  "3654": {
+    "name": "Flutningurinn, þjóðsaga",
+    "story_is_len": 1837,
+    "story_en_len": 2099
+  },
+  "3655": {
+    "name": "Þóruhólmi, þjóðsaga",
+    "story_is_len": 1692,
+    "story_en_len": 1918
+  },
+  "3656": {
+    "name": "Kýrnar tólf í Höfða, þjóðsaga",
+    "story_is_len": 2022,
+    "story_en_len": 2296
+  },
+  "3657": {
+    "name": "Frá marbendli, þjóðsaga",
+    "story_is_len": 2884,
+    "story_en_len": 3218
+  },
+  "3658": {
+    "name": "Sækýr úr Lagarfljót, þjóðsaga",
+    "story_is_len": 600,
+    "story_en_len": 705
+  },
+  "3659": {
+    "name": "Sækýr í Breiðuvík, þjóðsaga",
+    "story_is_len": 1220,
+    "story_en_len": 1384
+  },
+  "3660": {
+    "name": "Gráa kýrin í Öxney, þjóðsaga",
+    "story_is_len": 1073,
+    "story_en_len": 1297
+  },
+  "3661": {
+    "name": "Sækýr í Haukadalsvatni, þjóðsaga",
+    "story_is_len": 859,
+    "story_en_len": 1040
+  },
+  "3662": {
+    "name": "Kirkjugarðurinn á Barði, þjóðsaga",
+    "story_is_len": 1784,
+    "story_en_len": 1928
+  },
+  "3664": {
+    "name": "Barnapollur, þjóðsaga",
+    "story_is_len": 781,
+    "story_en_len": 868
+  },
+  "3665": {
+    "name": "Nykurtjörn, þjóðsaga",
+    "story_is_len": 244,
+    "story_en_len": 274
+  },
+  "3666": {
+    "name": "Nykur á Skeiðsdal, þjóðsaga",
+    "story_is_len": 711,
+    "story_en_len": 738
+  },
+  "3667": {
+    "name": "Að temja nykur, þjóðsaga",
+    "story_is_len": 760,
+    "story_en_len": 870
+  },
+  "3668": {
+    "name": "Nóni, þjóðsaga",
+    "story_is_len": 614,
+    "story_en_len": 731
+  },
+  "3669": {
+    "name": "Smalastúlkan frá Þingeyrum, þjóðsaga",
+    "story_is_len": 827,
+    "story_en_len": 906
+  },
+  "3670": {
+    "name": "Nykurinn í Svínavatni, þjóðsaga",
+    "story_is_len": 813,
+    "story_en_len": 940
+  },
+  "3671": {
+    "name": "Nykur í vötnum, þjóðsaga",
+    "story_is_len": 894,
+    "story_en_len": 1173
+  },
+  "3672": {
+    "name": "Nykur í Reykjavíkurtjörn, þjóðsaga",
+    "story_is_len": 613,
+    "story_en_len": 746
+  },
+  "3673": {
+    "name": "Jakob á Jörfa, þjóðsaga",
+    "story_is_len": 1515,
+    "story_en_len": 1735
+  },
+  "3674": {
+    "name": "Nykurpyttur, þjóðsaga",
+    "story_is_len": 403,
+    "story_en_len": 492
+  },
+  "3675": {
+    "name": "Urðarboli, þjóðsaga",
+    "story_is_len": 2353,
+    "story_en_len": 2531
+  },
+  "3676": {
+    "name": "Skrímslið í Brúnavík, þjóðsaga",
+    "story_is_len": 1162,
+    "story_en_len": 1285
+  },
+  "3677": {
+    "name": "Skrímslið í Vesturhópsvatni, þjóðsaga",
+    "story_is_len": 976,
+    "story_en_len": 1160
+  },
+  "3678": {
+    "name": "Gilitrutt, þjóðsaga",
+    "story_is_len": 3016,
+    "story_en_len": 3390
+  },
+  "3679": {
+    "name": "Skessan á Baulárvöllum, þjóðsaga",
+    "story_is_len": 1363,
+    "story_en_len": 1607
+  },
+  "3680": {
+    "name": "Smalinn í Grímstungum, þjóðsaga",
+    "story_is_len": 1601,
+    "story_en_len": 1726
+  },
+  "3681": {
+    "name": "Katla, þjóðsaga",
+    "story_is_len": 1589,
+    "story_en_len": 1856
+  },
+  "3682": {
+    "name": "Tröllin í Þórisási, þjóðsaga",
+    "story_is_len": 2328,
+    "story_en_len": 2637
+  },
+  "3683": {
+    "name": "Kleppa, þjóðsaga",
+    "story_is_len": 2374,
+    "story_en_len": 2504
+  },
+  "3684": {
+    "name": "Ketilvallakirkja, þjóðsaga",
+    "story_is_len": 1021,
+    "story_en_len": 1242
+  },
+  "3685": {
+    "name": "Hornbjarg vígt, þjóðsaga",
+    "story_is_len": 866,
+    "story_en_len": 1033
+  },
+  "3686": {
+    "name": "Flagðkonan í Selárdal, þjóðsaga",
+    "story_is_len": 1439,
+    "story_en_len": 1695
+  },
+  "3687": {
+    "name": "Tröllin í Skarðsheiði, þjóðsaga",
+    "story_is_len": 1345,
+    "story_en_len": 1584
+  },
+  "3688": {
+    "name": "Mjóafjarðarskessan, þjóðsaga",
+    "story_is_len": 2004,
+    "story_en_len": 2174
+  },
+  "3689": {
+    "name": "Skálmarbjarg á Látraströnd, þjóðsaga",
+    "story_is_len": 1037,
+    "story_en_len": 1326
+  },
+  "3691": {
+    "name": "Skessan á Hvannadal, þjóðsaga",
+    "story_is_len": 937,
+    "story_en_len": 1090
+  },
+  "3692": {
+    "name": "Óvættur í Búðakletti, þjóðsaga",
+    "story_is_len": 196,
+    "story_en_len": 1850
+  },
+  "3693": {
+    "name": "Tröllin í Bláfjalli, þjóðsaga",
+    "story_is_len": 2048,
+    "story_en_len": 2238
+  },
+  "3694": {
+    "name": "Skessusteinn, þjóðsaga",
+    "story_is_len": 2235,
+    "story_en_len": 2441
+  },
+  "4611": {
+    "name": "Hunkubakkar, þjóðsaga",
+    "story_is_len": 439,
+    "story_en_len": 534
+  },
+  "4653": {
+    "name": "Hvarfshóll, þjóðsaga",
+    "story_is_len": 741,
+    "story_en_len": 846
+  },
+  "5961": {
+    "name": "Tröllin í Potti, þjóðsaga",
+    "story_is_len": 916,
+    "story_en_len": 1092
+  },
+  "5962": {
+    "name": "Gellivör, þjóðsaga",
+    "story_is_len": 2995,
+    "story_en_len": 3287
+  },
+  "5963": {
+    "name": "Gvöndarsteinn og Gvöndarkirkja, þjóðsaga",
+    "story_is_len": 880,
+    "story_en_len": 954
+  },
+  "5964": {
+    "name": "Flagðkonur við Þjórsá, þjóðsaga",
+    "story_is_len": 1998,
+    "story_en_len": 2375
+  },
+  "5965": {
+    "name": "Gissur á Botnum, þjóðsaga",
+    "story_is_len": 2197,
+    "story_en_len": 2456
+  },
+  "5966": {
+    "name": "Guðmundur á Eyvindarmúla, þjóðsaga",
+    "story_is_len": 2564,
+    "story_en_len": 2776
+  },
+  "5967": {
+    "name": "Kola á Kolugili, þjóðsaga",
+    "story_is_len": 1166,
+    "story_en_len": 1468
+  },
+  "5968": {
+    "name": "Um Kögur-Grím, þjóðsaga",
+    "story_is_len": 1636,
+    "story_en_len": 1926
+  },
+  "5970": {
+    "name": "Eyjan undan Héraðsflóa, þjóðsaga",
+    "story_is_len": 756,
+    "story_en_len": 896
+  },
+  "5995": {
+    "name": "Skessan í Náttfaravík, þjóðsaga",
+    "story_is_len": 2300,
+    "story_en_len": 2539
+  },
+  "5997": {
+    "name": "Grásteinn, þjóðsaga",
+    "story_is_len": 503,
+    "story_en_len": 1066
+  },
+  "5998": {
+    "name": "Um reimleika í Njarðvík, þjóðsaga",
+    "story_is_len": 2331,
+    "story_en_len": 2738
+  },
+  "5999": {
+    "name": "Ingjaldur á Kálfaströnd, þjóðsaga",
+    "story_is_len": 1922,
+    "story_en_len": 2126
+  },
+  "6000": {
+    "name": "Skessan í Spararfjalli, þjóðsaga",
+    "story_is_len": 1010,
+    "story_en_len": 1160
+  },
+  "6001": {
+    "name": "Höggin og járnlokan í Hafrafellstungu, þjóðsaga",
+    "story_is_len": 1143,
+    "story_en_len": 1296
+  },
+  "6002": {
+    "name": "Mélbreið, þjóðsaga",
+    "story_is_len": 703,
+    "story_en_len": 823
+  },
+  "6003": {
+    "name": "Flutningsfell í Þistilfirði, þjóðsaga",
+    "story_is_len": 2313,
+    "story_en_len": 2532
+  },
+  "6004": {
+    "name": "Veiðimanna þáttur, þjóðsaga",
+    "story_is_len": 2237,
+    "story_en_len": 2378
+  },
+  "6005": {
+    "name": "Þorleifur beiskaldi, þjóðsaga",
+    "story_is_len": 1731,
+    "story_en_len": 1892
+  },
+  "6006": {
+    "name": "Sóttarhellir, þjóðsaga",
+    "story_is_len": 502,
+    "story_en_len": 626
+  },
+  "6007": {
+    "name": "Bóndinn á Gnúpum, þjóðsaga",
+    "story_is_len": 1239,
+    "story_en_len": 1474
+  },
+  "6008": {
+    "name": "Þorsteinn tól, þjóðsaga",
+    "story_is_len": 1415,
+    "story_en_len": 1621
+  },
+  "6009": {
+    "name": "Óvættur við Fossárfoss, þjóðsaga",
+    "story_is_len": 568,
+    "story_en_len": 735
+  },
+  "6010": {
+    "name": "Kerlingin í fossinum, þjóðsaga",
+    "story_is_len": 652,
+    "story_en_len": 771
+  },
+  "6011": {
+    "name": "Kráka tröllskessa, þjóðsaga",
+    "story_is_len": 546,
+    "story_en_len": 650
+  },
+  "6012": {
+    "name": "Tröllið í Skrúðnum, þjóðsaga",
+    "story_is_len": 1732,
+    "story_en_len": 1981
+  },
+  "6049": {
+    "name": "Sagan af Móðari í Móðarsfelli, þjóðsaga",
+    "story_is_len": 2763,
+    "story_en_len": 2909
+  },
+  "6050": {
+    "name": "Einar í Skaftafelli, þjóðsaga",
+    "story_is_len": 2598,
+    "story_en_len": 3021
+  },
+  "6051": {
+    "name": "Fossvallabóndinn, þjóðsaga",
+    "story_is_len": 2600,
+    "story_en_len": 2831
+  },
+  "6052": {
+    "name": "Truntum runtum og tröllin mín í klettunum, þjóðsaga",
+    "story_is_len": 2088,
+    "story_en_len": 2377
+  },
+  "6053": {
+    "name": "Jarlsdóttir í tröllahöndum, þjóðsaga",
+    "story_is_len": 2342,
+    "story_en_len": 2612
+  },
+  "6054": {
+    "name": "Bergþór Bláfellingur, þjóðsaga",
+    "story_is_len": 2388,
+    "story_en_len": 2575
+  },
+  "6055": {
+    "name": "Átján skólabræður, þjóðsaga",
+    "story_is_len": 2031,
+    "story_en_len": 2257
+  },
+  "6056": {
+    "name": "Skessan í Húsagili, þjóðsaga",
+    "story_is_len": 1583,
+    "story_en_len": 1728
+  },
+  "6057": {
+    "name": "Tröllið í Fáskrúð, þjóðsaga",
+    "story_is_len": 1774,
+    "story_en_len": 1914
+  },
+  "6058": {
+    "name": "Skessan á Arnarvatnsheiði, þjóðsaga",
+    "story_is_len": 2610,
+    "story_en_len": 2820
+  },
+  "6059": {
+    "name": "Nátttröllin hjá Hlíðarenda, þjóðsaga",
+    "story_is_len": 171,
+    "story_en_len": 211
+  },
+  "6060": {
+    "name": "Jörundur og Ásmundur, þjóðsaga",
+    "story_is_len": 849,
+    "story_en_len": 997
+  },
+  "6061": {
+    "name": "Djúpir eru Íslands álar, þjóðsaga",
+    "story_is_len": 826,
+    "story_en_len": 933
+  },
+  "6063": {
+    "name": "Likný í Þjórsárdal, þjóðsaga",
+    "story_is_len": 344,
+    "story_en_len": 378
+  },
+  "6065": {
+    "name": "Ármannshaugur, þjóðsaga",
+    "story_is_len": 156,
+    "story_en_len": 172
+  },
+  "6066": {
+    "name": "Skessulág, þjóðsaga",
+    "story_is_len": 514,
+    "story_en_len": 695
+  },
+  "6067": {
+    "name": "Tröllkonan í Helgafellssveit, þjóðsaga",
+    "story_is_len": 1500,
+    "story_en_len": 1723
+  },
+  "6068": {
+    "name": "Tröllin á Vestfjörðum, þjóðsaga",
+    "story_is_len": 2160,
+    "story_en_len": 2521
+  },
+  "6069": {
+    "name": "Upptök Drangeyjar, þjóðsaga",
+    "story_is_len": 936,
+    "story_en_len": 1145
+  },
+  "6070": {
+    "name": "Karl og Kerling, þjóðsaga",
+    "story_is_len": 969,
+    "story_en_len": 1234
+  },
+  "6071": {
+    "name": "Tröllkarl með hvalbagga, þjóðsaga",
+    "story_is_len": 1073,
+    "story_en_len": 1167
+  },
+  "6072": {
+    "name": "Grjótgarðsháls, þjóðsaga",
+    "story_is_len": 895,
+    "story_en_len": 1101
+  },
+  "6073": {
+    "name": "Nátttröllið í Skessuhala, þjóðsaga",
+    "story_is_len": 1829,
+    "story_en_len": 2115
+  },
+  "6076": {
+    "name": "Illþurrka, þjóðsaga",
+    "story_is_len": 370,
+    "story_en_len": 440
+  },
+  "6077": {
+    "name": "Kerlingin í Vatnsdalsfjalli, þjóðsaga",
+    "story_is_len": 1490,
+    "story_en_len": 1774
+  },
+  "6078": {
+    "name": "Karl og Kerling í Hítardal, þjóðsaga",
+    "story_is_len": 808,
+    "story_en_len": 929
+  },
+  "6079": {
+    "name": "Sifa nátttröll, þjóðsaga",
+    "story_is_len": 965,
+    "story_en_len": 1120
+  },
+  "6080": {
+    "name": "Dregur í Dingólfshnjúk, þjóðsaga",
+    "story_is_len": 235,
+    "story_en_len": 283
+  },
+  "6081": {
+    "name": "Þuríður sundafyllir, þjóðsaga",
+    "story_is_len": 2516,
+    "story_en_len": 2734
+  },
+  "6082": {
+    "name": "Steinninn í hestaréttinni, þjóðsaga",
+    "story_is_len": 654,
+    "story_en_len": 796
+  },
+  "6083": {
+    "name": "Kirkja flutt frá Bæ að Árnesi, þjóðsaga",
+    "story_is_len": 585,
+    "story_en_len": 688
+  },
+  "6084": {
+    "name": "Reyðarártindur, þjóðsaga",
+    "story_is_len": 651,
+    "story_en_len": 780
+  },
+  "6085": {
+    "name": "Kirkja í Eyrarodda, þjóðsaga",
+    "story_is_len": 1559,
+    "story_en_len": 1754
+  },
+  "6086": {
+    "name": "Dvergasteinn, þjóðsaga",
+    "story_is_len": 877,
+    "story_en_len": 1101
+  },
+  "6087": {
+    "name": "Líkaböng, þjóðsaga",
+    "story_is_len": 805,
+    "story_en_len": 957
+  },
+  "6089": {
+    "name": "Abbadísin, þjóðsaga",
+    "story_is_len": 1138,
+    "story_en_len": 1352
+  },
+  "6090": {
+    "name": "Kapelluhraun, þjóðsaga",
+    "story_is_len": 568,
+    "story_en_len": 649
+  },
+  "6091": {
+    "name": "Helgafellsklaustur, þjóðsaga",
+    "story_is_len": 1215,
+    "story_en_len": 1395
+  },
+  "6092": {
+    "name": "Hrafna-Flóki, þjóðsaga",
+    "story_is_len": 518,
+    "story_en_len": 590
+  },
+  "6093": {
+    "name": "Þröm, þjóðsaga",
+    "story_is_len": 718,
+    "story_en_len": 886
+  },
+  "6094": {
+    "name": "Haugur Ingólfs Arnarssonar, þjóðsaga",
+    "story_is_len": 1310,
+    "story_en_len": 1386
+  },
+  "6095": {
+    "name": "Sviðholt, þjóðsaga",
+    "story_is_len": 227,
+    "story_en_len": 286
+  },
+  "6096": {
+    "name": "Þrasaborgir, þjóðsaga",
+    "story_is_len": 574,
+    "story_en_len": 677
+  },
+  "6097": {
+    "name": "Öxará, þjóðsaga",
+    "story_is_len": 1477,
+    "story_en_len": 1777
+  },
+  "6098": {
+    "name": "Api á Apavatni, þjóðsaga",
+    "story_is_len": 776,
+    "story_en_len": 952
+  },
+  "6099": {
+    "name": "Geitavík, þjóðsaga",
+    "story_is_len": 286,
+    "story_en_len": 321
+  },
+  "6100": {
+    "name": "Völvuleiði á Hólmahálsi, þjóðsaga",
+    "story_is_len": 972,
+    "story_en_len": 1147
+  },
+  "6101": {
+    "name": "Herjólfur og Vilborg, þjóðsaga",
+    "story_is_len": 1813,
+    "story_en_len": 2083
+  },
+  "6103": {
+    "name": "Um Rút í Rútshelli, þjóðsaga",
+    "story_is_len": 1299,
+    "story_en_len": 1505
+  },
+  "6104": {
+    "name": "Goðatindur, þjóðsaga",
+    "story_is_len": 419,
+    "story_en_len": 481
+  },
+  "6105": {
+    "name": "Bera í Berufirði, þjóðsaga",
+    "story_is_len": 948,
+    "story_en_len": 1291
+  },
+  "6106": {
+    "name": "Herjólfur og Gunnhildur, þjóðsaga",
+    "story_is_len": 1316,
+    "story_en_len": 1451
+  },
+  "6107": {
+    "name": "Hofið á Móbergi, þjóðsaga",
+    "story_is_len": 176,
+    "story_en_len": 232
+  },
+  "6108": {
+    "name": "Gautur og Þorgautur, þjóðsaga",
+    "story_is_len": 1484,
+    "story_en_len": 1753
+  },
+  "6109": {
+    "name": "Skrokkhóll, þjóðsaga",
+    "story_is_len": 309,
+    "story_en_len": 384
+  },
+  "6110": {
+    "name": "Áin sem hvarf, þjóðsaga",
+    "story_is_len": 1370,
+    "story_en_len": 1546
+  },
+  "6111": {
+    "name": "Óbrennishólmi, þjóðsaga",
+    "story_is_len": 723,
+    "story_en_len": 946
+  },
+  "6113": {
+    "name": "Umsátur um Borgarvirki, þjóðsaga",
+    "story_is_len": 1555,
+    "story_en_len": 1715
+  },
+  "6114": {
+    "name": "Bardagi í Torfufellsdal, þjóðsaga",
+    "story_is_len": 2319,
+    "story_en_len": 2681
+  },
+  "6115": {
+    "name": "Þorsteinn á Brú, þjóðsaga",
+    "story_is_len": 1894,
+    "story_en_len": 2059
+  },
+  "6116": {
+    "name": "Svartidauði, þjóðsaga",
+    "story_is_len": 673,
+    "story_en_len": 720
+  },
+  "6118": {
+    "name": "Hlíðar-Vigga, þjóðsaga",
+    "story_is_len": 1442,
+    "story_en_len": 1708
+  },
+  "6119": {
+    "name": "Margt kann Gunna vel að vinna, þjóðsaga",
+    "story_is_len": 1000,
+    "story_en_len": 1081
+  },
+  "6120": {
+    "name": "Hornafjarðarfljót, þjóðsaga",
+    "story_is_len": 1253,
+    "story_en_len": 1501
+  },
+  "6122": {
+    "name": "Ögmundarhraun, þjóðsaga",
+    "story_is_len": 1074,
+    "story_en_len": 1324
+  },
+  "6123": {
+    "name": "Þórdísarstaðir, þjóðsaga",
+    "story_is_len": 1636,
+    "story_en_len": 1817
+  },
+  "6125": {
+    "name": "Kristín á Sörlastöðum, þjóðsaga",
+    "story_is_len": 670,
+    "story_en_len": 803
+  },
+  "6126": {
+    "name": "Jón gamli, þjóðsaga",
+    "story_is_len": 1144,
+    "story_en_len": 1290
+  },
+  "6127": {
+    "name": "Barnadauði í móðuharðindum, þjóðsaga",
+    "story_is_len": 358,
+    "story_en_len": 422
+  },
+  "6129": {
+    "name": "Gaukshöfði, þjóðsaga",
+    "story_is_len": 704,
+    "story_en_len": 948
+  },
+  "6130": {
+    "name": "Fúsaból, þjóðsaga",
+    "story_is_len": 2153,
+    "story_en_len": 2344
+  },
+  "6131": {
+    "name": "Sölvahellir, þjóðsaga",
+    "story_is_len": 474,
+    "story_en_len": 571
+  },
+  "6132": {
+    "name": "Smalarnir í hrauninu, þjóðsaga",
+    "story_is_len": 1339,
+    "story_en_len": 1504
+  },
+  "6134": {
+    "name": "Grundar-Helga og sonur hennar, þjóðsaga",
+    "story_is_len": 2025,
+    "story_en_len": 2194
+  },
+  "6135": {
+    "name": "Hamra-Setta, þjóðsaga",
+    "story_is_len": 2039,
+    "story_en_len": 2363
+  },
+  "6136": {
+    "name": "Kaprasíus Jónsson, þjóðsaga",
+    "story_is_len": 949,
+    "story_en_len": 1221
+  },
+  "6137": {
+    "name": "Grímur á Dröngum, þjóðsaga",
+    "story_is_len": 728,
+    "story_en_len": 919
+  },
+  "6138": {
+    "name": "Fornufjós, þjóðsaga",
+    "story_is_len": 1017,
+    "story_en_len": 1278
+  },
+  "6139": {
+    "name": "Skúlaskeið, þjóðsaga",
+    "story_is_len": 841,
+    "story_en_len": 953
+  },
+  "6141": {
+    "name": "Lygasögur Guðmundar, þjóðsaga",
+    "story_is_len": 938,
+    "story_en_len": 1135
+  },
+  "6142": {
+    "name": "Piltabúðir, þjóðsaga",
+    "story_is_len": 941,
+    "story_en_len": 1079
+  },
+  "6143": {
+    "name": "Gestaraun, þjóðsaga",
+    "story_is_len": 1085,
+    "story_en_len": 1196
+  },
+  "6144": {
+    "name": "Hrólfur sterki sækir son sinn, þjóðsaga",
+    "story_is_len": 1055,
+    "story_en_len": 1168
+  },
+  "6146": {
+    "name": "Gunnar Eyfirðingapóstur, þjóðsaga",
+    "story_is_len": 1912,
+    "story_en_len": 2016
+  },
+  "6147": {
+    "name": "Kolfreyja og Vöttur, þjóðsaga",
+    "story_is_len": 1567,
+    "story_en_len": 1791
+  },
+  "6148": {
+    "name": "Gottsveinn veður yfir Þjórsá, þjóðsaga",
+    "story_is_len": 605,
+    "story_en_len": 651
+  },
+  "6149": {
+    "name": "Junkaragerðisbræður, þjóðsaga",
+    "story_is_len": 697,
+    "story_en_len": 833
+  },
+  "6152": {
+    "name": "Snjólfur sterki, þjóðsaga",
+    "story_is_len": 998,
+    "story_en_len": 1207
+  },
+  "6153": {
+    "name": "Ingveldur í Hrappsey, þjóðsaga",
+    "story_is_len": 293,
+    "story_en_len": 329
+  },
+  "6154": {
+    "name": "Solveig Árnadóttir í Skógum, þjóðsaga",
+    "story_is_len": 1109,
+    "story_en_len": 1209
+  },
+  "6155": {
+    "name": "Magnús sálarháski er hýddur, þjóðsaga",
+    "story_is_len": 1328,
+    "story_en_len": 1553
+  },
+  "6156": {
+    "name": "Greipur böðull, þjóðsaga",
+    "story_is_len": 990,
+    "story_en_len": 1057
+  },
+  "6157": {
+    "name": "Við embættismannakonurnar, þjóðsaga",
+    "story_is_len": 622,
+    "story_en_len": 708
+  },
+  "6158": {
+    "name": "Bjarni vellygni og kaffibollinn, þjóðsaga",
+    "story_is_len": 1467,
+    "story_en_len": 1655
+  },
+  "6159": {
+    "name": "Oddkell, þjóðsaga",
+    "story_is_len": 722,
+    "story_en_len": 872
+  },
+  "6160": {
+    "name": "Þórir og Skúmur, þjóðsaga",
+    "story_is_len": 622,
+    "story_en_len": 742
+  },
+  "6161": {
+    "name": "Illugi á Aðalbóli, þjóðsaga",
+    "story_is_len": 2315,
+    "story_en_len": 2538
+  },
+  "6162": {
+    "name": "Stúlkan frá Galtalæk, þjóðsaga",
+    "story_is_len": 2325,
+    "story_en_len": 2440
+  },
+  "6238": {
+    "name": "Tröllkonan sofandi, þjóðsaga",
+    "story_is_len": 426,
+    "story_en_len": 439
+  },
+  "6297": {
+    "name": "Álfar, þjóðsaga",
+    "story_is_len": 1504,
+    "story_en_len": 1759
+  },
+  "7297": {
+    "name": "Þórður á Þrastastöðum, þjóðsaga",
+    "story_is_len": 2764,
+    "story_en_len": 3061
+  },
+  "7303": {
+    "name": "Draumur Sigfúsar bónda, þjóðsaga",
+    "story_is_len": 983,
+    "story_en_len": 1094
+  },
+  "7446": {
+    "name": "Draugatjörn, þjóðsaga",
+    "story_is_len": 1485,
+    "story_en_len": 1503
+  },
+  "7909": {
+    "name": "Ljósmóðirin á Sellátrum, þjóðsaga",
+    "story_is_len": 1538,
+    "story_en_len": 1614
+  },
+  "9985": {
+    "name": "Rauðhöfði, þjóðsaga",
+    "story_is_len": 921,
+    "story_en_len": 1035
+  },
+  "10000": {
+    "name": "Jósep í Jósepsdal, þjóðsaga",
+    "story_is_len": 924,
+    "story_en_len": 1122
+  },
+  "10032": {
+    "name": "Stúlkurnar í fossinum, þjóðsaga",
+    "story_is_len": 1056,
+    "story_en_len": 1106
+  },
+  "10033": {
+    "name": "Ást við Hvítá, þjóðsaga",
+    "story_is_len": 440,
+    "story_en_len": 501
+  },
+  "10035": {
+    "name": "Blótbjörk, þjóðsaga",
+    "story_is_len": 551,
+    "story_en_len": 593
+  },
+  "10080": {
+    "name": "Draugakojan, þjóðsaga",
+    "story_is_len": 666,
+    "story_en_len": 798
+  },
+  "10092": {
+    "name": "Gestur á Hamarsholti, þjóðsaga",
+    "story_is_len": 757,
+    "story_en_len": 809
+  },
+  "10093": {
+    "name": "Útilegumaður gistir í helli, þjóðsaga",
+    "story_is_len": 225,
+    "story_en_len": 246
+  },
+  "10095": {
+    "name": "Tröllkona bjargar manni, þjóðsaga",
+    "story_is_len": 1339,
+    "story_en_len": 1500
+  },
+  "10763": {
+    "name": "Að hverjum andskotanum ertu að leita?, þjóðsaga",
+    "story_is_len": 1248,
+    "story_en_len": 1445
+  },
+  "10764": {
+    "name": "Álfafólkið í Loðmundarfirði, þjóðsaga",
+    "story_is_len": 2858,
+    "story_en_len": 3210
+  },
+  "10765": {
+    "name": "Álfakóngurinn í Seley, þjóðsaga",
+    "story_is_len": 4455,
+    "story_en_len": 4737
+  },
+  "10766": {
+    "name": "Álfkonan í Geirfuglaskeri, þjóðsaga",
+    "story_is_len": 2928,
+    "story_en_len": 3163
+  },
+  "10767": {
+    "name": "Álfkonan í Stekkjarbergum, þjóðsaga",
+    "story_is_len": 1862,
+    "story_en_len": 2094
+  },
+  "10768": {
+    "name": "Álfkonurnar í Kálborg, þjóðsaga",
+    "story_is_len": 3142,
+    "story_en_len": 3522
+  },
+  "10769": {
+    "name": "Álfur og Alvör, þjóðsaga",
+    "story_is_len": 1110,
+    "story_en_len": 1254
+  },
+  "10770": {
+    "name": "Árni á Melabergi, þjóðsaga",
+    "story_is_len": 2665,
+    "story_en_len": 2935
+  },
+  "10771": {
+    "name": "Barngóðar álfkonur, þjóðsaga",
+    "story_is_len": 2389,
+    "story_en_len": 2623
+  },
+  "10772": {
+    "name": "Barnshvarfið á Neðri-Glerá, þjóðsaga",
+    "story_is_len": 2116,
+    "story_en_len": 2425
+  },
+  "10773": {
+    "name": "Biskupsdóttirin frá Hólum, þjóðsaga",
+    "story_is_len": 3401,
+    "story_en_len": 3641
+  },
+  "10774": {
+    "name": "Björn Ólafsson í Málmey, þjóðsaga",
+    "story_is_len": 1297,
+    "story_en_len": 1614
+  },
+  "10775": {
+    "name": "Bláa glasið, þjóðsaga",
+    "story_is_len": 2279,
+    "story_en_len": 2726
+  },
+  "10776": {
+    "name": "Endurgoldin mjólk, þjóðsaga",
+    "story_is_len": 1255,
+    "story_en_len": 1467
+  },
+  "10777": {
+    "name": "Eyjólfur vinnumaður og álfkonanan, þjóðsaga",
+    "story_is_len": 2385,
+    "story_en_len": 2628
+  },
+  "10778": {
+    "name": "Faðir minn átti fagurt land, þjóðsaga",
+    "story_is_len": 1304,
+    "story_en_len": 1487
+  },
+  "10779": {
+    "name": "Geirlaugarsaga, þjóðsaga",
+    "story_is_len": 4674,
+    "story_en_len": 5194
+  },
+  "10780": {
+    "name": "Halldór litli Erlendsson, þjóðsaga",
+    "story_is_len": 1532,
+    "story_en_len": 1784
+  },
+  "10781": {
+    "name": "Hallgrímur á Böðvarsbakka, þjóðsaga",
+    "story_is_len": 3506,
+    "story_en_len": 3680
+  },
+  "10782": {
+    "name": "Helga prestsdóttir, þjóðsaga",
+    "story_is_len": 3518,
+    "story_en_len": 3652
+  },
+  "10783": {
+    "name": "Henglafjallaferðin, þjóðsaga",
+    "story_is_len": 3306,
+    "story_en_len": 3599
+  },
+  "10784": {
+    "name": "Huldudrengur rekur kýr, þjóðsaga",
+    "story_is_len": 1617,
+    "story_en_len": 1856
+  },
+  "10785": {
+    "name": "Huldufríður, Sigríður og Helga, þjóðsaga",
+    "story_is_len": 2945,
+    "story_en_len": 3313
+  },
+  "10786": {
+    "name": "Huldukaupstaður hjá Halllandskletti, þjóðsaga",
+    "story_is_len": 1851,
+    "story_en_len": 2177
+  },
+  "10787": {
+    "name": "Huldustúlka kallar á ferju, þjóðsaga",
+    "story_is_len": 1659,
+    "story_en_len": 1912
+  },
+  "10788": {
+    "name": "Hvalurinn í Hvalvatni, þjóðsaga",
+    "story_is_len": 1867,
+    "story_en_len": 2185
+  },
+  "10789": {
+    "name": "Jómfrú Guðrún, þjóðsaga",
+    "story_is_len": 3248,
+    "story_en_len": 3422
+  },
+  "10790": {
+    "name": "Kaupamaðurinn, þjóðsaga",
+    "story_is_len": 3580,
+    "story_en_len": 3752
+  },
+  "10791": {
+    "name": "Kúasmalinn, þjóðsaga",
+    "story_is_len": 2161,
+    "story_en_len": 2380
+  },
+  "10792": {
+    "name": "Kötludraumur, þjóðsaga",
+    "story_is_len": 3373,
+    "story_en_len": 3594
+  },
+  "10793": {
+    "name": "Möðrudalspresturinn, þjóðsaga",
+    "story_is_len": 2141,
+    "story_en_len": 2453
+  },
+  "10794": {
+    "name": "Ólöf selmatselja, þjóðsaga",
+    "story_is_len": 3209,
+    "story_en_len": 3521
+  },
+  "10795": {
+    "name": "Partur af sögu silunga-Björns, þjóðsaga",
+    "story_is_len": 3394,
+    "story_en_len": 3704
+  },
+  "10796": {
+    "name": "Prestssonurinn frá Reykholti, þjóðsaga",
+    "story_is_len": 2930,
+    "story_en_len": 3270
+  },
+  "10797": {
+    "name": "Sagnir Eiríks frá Brúnum, þjóðsaga",
+    "story_is_len": 3498,
+    "story_en_len": 3962
+  },
+  "10798": {
+    "name": "Sagnir frá Pétursey, þjóðsaga",
+    "story_is_len": 2460,
+    "story_en_len": 2725
+  },
+  "10799": {
+    "name": "Selið, þjóðsaga",
+    "story_is_len": 3075,
+    "story_en_len": 3327
+  },
+  "10800": {
+    "name": "Sólveig á Sauðanesi og álfafólkið, þjóðsaga",
+    "story_is_len": 1457,
+    "story_en_len": 1549
+  },
+  "10801": {
+    "name": "Steinarnir á Álftanesi, þjóðsaga",
+    "story_is_len": 1933,
+    "story_en_len": 2004
+  },
+  "10802": {
+    "name": "Stúlkan frá Reyhólum, þjóðsaga",
+    "story_is_len": 1446,
+    "story_en_len": 1607
+  },
+  "10803": {
+    "name": "Sveinninn sem undi ekki með álfum, þjóðsaga",
+    "story_is_len": 927,
+    "story_en_len": 1116
+  },
+  "10804": {
+    "name": "Tungustapi, þjóðsaga",
+    "story_is_len": 3603,
+    "story_en_len": 3938
+  },
+  "10805": {
+    "name": "Una og Bjartmar, þjóðsaga",
+    "story_is_len": 2787,
+    "story_en_len": 3051
+  },
+  "10806": {
+    "name": "Úlfhildur álfkona, þjóðsaga",
+    "story_is_len": 3728,
+    "story_en_len": 3919
+  },
+  "10807": {
+    "name": "Vakandi manns draumur, þjóðsaga",
+    "story_is_len": 8216,
+    "story_en_len": 8736
+  },
+  "10808": {
+    "name": "Vermennirnir og álfabiskupinn, þjóðsaga",
+    "story_is_len": 3497,
+    "story_en_len": 3801
+  },
+  "10809": {
+    "name": "Þórunn og Þórður, þjóðsaga",
+    "story_is_len": 4015,
+    "story_en_len": 4472
+  },
+  "10810": {
+    "name": "Þæfusteinn á Snæfellsnesi, þjóðsaga",
+    "story_is_len": 1505,
+    "story_en_len": 1753
+  },
+  "10811": {
+    "name": "Ær fá við álfahrútum, þjóðsaga",
+    "story_is_len": 1057,
+    "story_en_len": 1246
+  },
+  "10812": {
+    "name": "Ærnar frá Staðarhóli, þjóðsaga",
+    "story_is_len": 1710,
+    "story_en_len": 1950
+  },
+  "10813": {
+    "name": "Ævilok Gunnlaugs Árnasonar, þjóðsaga",
+    "story_is_len": 2854,
+    "story_en_len": 3167
+  },
+  "10814": {
+    "name": "Átján sendingar í senn, þjóðsaga",
+    "story_is_len": 1579,
+    "story_en_len": 1663
+  },
+  "10815": {
+    "name": "Benedikt Bech drukknar, þjóðsaga",
+    "story_is_len": 1676,
+    "story_en_len": 1783
+  },
+  "10816": {
+    "name": "Bergþór og flugan, þjóðsaga",
+    "story_is_len": 1606,
+    "story_en_len": 1791
+  },
+  "10817": {
+    "name": "Betti, þjóðsaga",
+    "story_is_len": 2605,
+    "story_en_len": 2717
+  },
+  "10818": {
+    "name": "Bóndi vekur upp draug, þjóðsaga",
+    "story_is_len": 1493,
+    "story_en_len": 1796
+  },
+  "10819": {
+    "name": "Brúðkaupsgesturinn, þjóðsaga",
+    "story_is_len": 3200,
+    "story_en_len": 3356
+  },
+  "10820": {
+    "name": "Draugar beðnir hjálpar, þjóðsaga",
+    "story_is_len": 2631,
+    "story_en_len": 2831
+  },
+  "10821": {
+    "name": "Draugaskipið, þjóðsaga",
+    "story_is_len": 2260,
+    "story_en_len": 2428
+  },
+  "10822": {
+    "name": "Draugurinn í prentsmiðjuhúsinu, þjóðsaga",
+    "story_is_len": 1352,
+    "story_en_len": 1632
+  },
+  "10823": {
+    "name": "Draugur sakramentaður, þjóðsaga",
+    "story_is_len": 2531,
+    "story_en_len": 2742
+  },
+  "10824": {
+    "name": "Draugur svikinn, þjóðsaga",
+    "story_is_len": 2302,
+    "story_en_len": 2538
+  },
+  "10825": {
+    "name": "Eiða-Setta, þjóðsaga",
+    "story_is_len": 2447,
+    "story_en_len": 2631
+  },
+  "10826": {
+    "name": "Eiða-Sezelia, þjóðsaga",
+    "story_is_len": 2349,
+    "story_en_len": 2648
+  },
+  "10827": {
+    "name": "Eiríkur góði á Ljótsstöðum, þjóðsaga",
+    "story_is_len": 2686,
+    "story_en_len": 2969
+  },
+  "10828": {
+    "name": "Feykishóla-draugurinn, þjóðsaga",
+    "story_is_len": 3435,
+    "story_en_len": 3716
+  },
+  "10829": {
+    "name": "Frá Ábæjar-Skottu, þjóðsaga",
+    "story_is_len": 2194,
+    "story_en_len": 2507
+  },
+  "10830": {
+    "name": "Frá Húsavíkur-Lalla, þjóðsaga",
+    "story_is_len": 2257,
+    "story_en_len": 2601
+  },
+  "10831": {
+    "name": "Frá Þorgeirsbola, þjóðsaga",
+    "story_is_len": 2099,
+    "story_en_len": 2368
+  },
+  "10832": {
+    "name": "Fylgja Stefáns í Arney, þjóðsaga",
+    "story_is_len": 2662,
+    "story_en_len": 2853
+  },
+  "10833": {
+    "name": "Galdramennirnir í Vestmannaeyjum, þjóðsaga",
+    "story_is_len": 3528,
+    "story_en_len": 3841
+  },
+  "10834": {
+    "name": "Gárún, Gárún, grátt er mér um hnakka, þjóðsaga",
+    "story_is_len": 2421,
+    "story_en_len": 2701
+  },
+  "10835": {
+    "name": "Hleiðrargarðs-Skotta, þjóðsaga",
+    "story_is_len": 2989,
+    "story_en_len": 3201
+  },
+  "10836": {
+    "name": "Hverf er haustgríma, þjóðsaga",
+    "story_is_len": 2750,
+    "story_en_len": 2997
+  },
+  "10837": {
+    "name": "Höfðabrekku-Jóka, þjóðsaga",
+    "story_is_len": 2926,
+    "story_en_len": 3254
+  },
+  "10838": {
+    "name": "Hörghóls-Móri, þjóðsaga",
+    "story_is_len": 3015,
+    "story_en_len": 3388
+  },
+  "10839": {
+    "name": "Írafells - Móri, þjóðsaga",
+    "story_is_len": 3066,
+    "story_en_len": 3278
+  },
+  "10840": {
+    "name": "Jón á Látrum, þjóðsaga",
+    "story_is_len": 1962,
+    "story_en_len": 2140
+  },
+  "10841": {
+    "name": "Jón Ásmundsson í Njarðvík, þjóðsaga",
+    "story_is_len": 3336,
+    "story_en_len": 3512
+  },
+  "10842": {
+    "name": "Jón dúkur og vofurnar, þjóðsaga",
+    "story_is_len": 2368,
+    "story_en_len": 2649
+  },
+  "10843": {
+    "name": "Kerlingin sem át draflann dauð, þjóðsaga",
+    "story_is_len": 1767,
+    "story_en_len": 2045
+  },
+  "10844": {
+    "name": "Kynjasjónir, þjóðsaga",
+    "story_is_len": 2943,
+    "story_en_len": 3156
+  },
+  "10845": {
+    "name": "Lepsa, þjóðsaga",
+    "story_is_len": 4042,
+    "story_en_len": 4285
+  },
+  "10846": {
+    "name": "Litluborgartoppa, þjóðsaga",
+    "story_is_len": 1437,
+    "story_en_len": 1545
+  },
+  "10847": {
+    "name": "Maðurinn sem skar hausinn af kerlingunni, þjóðsaga",
+    "story_is_len": 1601,
+    "story_en_len": 1702
+  },
+  "10848": {
+    "name": "Miklabæjar-Solveig, þjóðsaga",
+    "story_is_len": 3269,
+    "story_en_len": 3419
+  },
+  "10849": {
+    "name": "Ólöf á Stokkseyri, þjóðsaga",
+    "story_is_len": 2380,
+    "story_en_len": 2710
+  },
+  "10850": {
+    "name": "Páll Vídalín verst draugum, þjóðsaga",
+    "story_is_len": 2232,
+    "story_en_len": 2572
+  },
+  "10851": {
+    "name": "Reimleikar á Núpi, þjóðsaga",
+    "story_is_len": 3672,
+    "story_en_len": 3944
+  },
+  "10852": {
+    "name": "Reynistaðabræður, þjóðsaga",
+    "story_is_len": 2898,
+    "story_en_len": 3167
+  },
+  "10853": {
+    "name": "Sagan af Jóni óhrædda, þjóðsaga",
+    "story_is_len": 4944,
+    "story_en_len": 5361
+  },
+  "10854": {
+    "name": "Sagan af Parthúsa - Jóni, þjóðsaga",
+    "story_is_len": 3140,
+    "story_en_len": 3171
+  },
+  "10855": {
+    "name": "Sending, þjóðsaga",
+    "story_is_len": 1289,
+    "story_en_len": 1551
+  },
+  "10856": {
+    "name": "Seningin og Páll á Kleif, þjóðsaga",
+    "story_is_len": 3165,
+    "story_en_len": 3398
+  },
+  "10857": {
+    "name": "Silfrastaða-Grímur, þjóðsaga",
+    "story_is_len": 4231,
+    "story_en_len": 4503
+  },
+  "10858": {
+    "name": "Silfrúnarstaðaskeljungur, þjóðsaga",
+    "story_is_len": 3168,
+    "story_en_len": 3507
+  },
+  "10859": {
+    "name": "Draugur skotinn, þjóðsaga",
+    "story_is_len": 2508,
+    "story_en_len": 2768
+  },
+  "10860": {
+    "name": "Snæfjalladraugurinn, þjóðsaga",
+    "story_is_len": 1666,
+    "story_en_len": 1952
+  },
+  "10861": {
+    "name": "Stokkseyrarreimleikinn, þjóðsaga",
+    "story_is_len": 2721,
+    "story_en_len": 2913
+  },
+  "10862": {
+    "name": "Svipur Eljárns Hallsteinssonar, þjóðsaga",
+    "story_is_len": 3197,
+    "story_en_len": 3400
+  },
+  "10863": {
+    "name": "Sönnun fyrir vofum, þjóðsaga",
+    "story_is_len": 1929,
+    "story_en_len": 2092
+  },
+  "10864": {
+    "name": "Tólf skólapiltar á Hólum, þjóðsaga",
+    "story_is_len": 2833,
+    "story_en_len": 3106
+  },
+  "10865": {
+    "name": "Tungudraugurinn, þjóðsaga",
+    "story_is_len": 3070,
+    "story_en_len": 3588
+  },
+  "10866": {
+    "name": "Um Þorgeirsbola, þjóðsaga",
+    "story_is_len": 3264,
+    "story_en_len": 3602
+  },
+  "10867": {
+    "name": "Valdi á Hrafnfjarðareyri, þjóðsaga",
+    "story_is_len": 1933,
+    "story_en_len": 2260
+  },
+  "10868": {
+    "name": "Vinnukonan og biskupsfrú í Skálholti, þjóðsaga",
+    "story_is_len": 3149,
+    "story_en_len": 3114
+  },
+  "10869": {
+    "name": "Af Illuga smið, þjóðsaga",
+    "story_is_len": 2358,
+    "story_en_len": 2569
+  },
+  "10870": {
+    "name": "Amma mín hefur kennt mér nokkuð líka, þjóðsaga",
+    "story_is_len": 1789,
+    "story_en_len": 2014
+  },
+  "10871": {
+    "name": "Ástagaldur, þjóðsaga",
+    "story_is_len": 1568,
+    "story_en_len": 1770
+  },
+  "10872": {
+    "name": "Bjargið hjá Hringsdal, þjóðsaga",
+    "story_is_len": 1477,
+    "story_en_len": 1689
+  },
+  "10873": {
+    "name": "Bjarni fíritanni, þjóðsaga",
+    "story_is_len": 3074,
+    "story_en_len": 3195
+  },
+  "10874": {
+    "name": "Brynjúlfur læknir á Brekku og Jón sonur hans, þjóðsaga",
+    "story_is_len": 1848,
+    "story_en_len": 2137
+  },
+  "10875": {
+    "name": "Bænheitir menn, þjóðsaga",
+    "story_is_len": 2158,
+    "story_en_len": 2439
+  },
+  "10876": {
+    "name": "Draumar Sesselíu í Steinum, þjóðsaga",
+    "story_is_len": 2443,
+    "story_en_len": 2643
+  },
+  "10877": {
+    "name": "Draumar Sigurðar prests Gunnarssonar, þjóðsaga",
+    "story_is_len": 3221,
+    "story_en_len": 3454
+  },
+  "10879": {
+    "name": "Fiðlu-Björn, þjóðsaga",
+    "story_is_len": 2787,
+    "story_en_len": 2886
+  },
+  "10880": {
+    "name": "Frá séra Hálfdáni á Felli, þjóðsaga",
+    "story_is_len": 2666,
+    "story_en_len": 2974
+  },
+  "10881": {
+    "name": "Frá Ögmundi í Auraseli, þjóðsaga",
+    "story_is_len": 7484,
+    "story_en_len": 8059
+  },
+  "10882": {
+    "name": "Galdra-Loftur, þjóðsaga",
+    "story_is_len": 4232,
+    "story_en_len": 4526
+  },
+  "10883": {
+    "name": "Gandreið, þjóðsaga",
+    "story_is_len": 1886,
+    "story_en_len": 2049
+  },
+  "10884": {
+    "name": "Gottskálf biskup grimmi, þjóðsaga",
+    "story_is_len": 2385,
+    "story_en_len": 2639
+  },
+  "10885": {
+    "name": "Guðbjartur flóki og Hólabiskup, þjóðsaga",
+    "story_is_len": 3085,
+    "story_en_len": 3385
+  },
+  "10886": {
+    "name": "Guðmundur Bergþórsson, þjóðsaga",
+    "story_is_len": 3416,
+    "story_en_len": 3546
+  },
+  "10887": {
+    "name": "Guðmundur skáld Bergþórsson, þjóðsaga",
+    "story_is_len": 3220,
+    "story_en_len": 3647
+  },
+  "10888": {
+    "name": "Halldór Björnsson og harðindaárin, þjóðsaga",
+    "story_is_len": 2178,
+    "story_en_len": 2400
+  },
+  "10889": {
+    "name": "Horna og Þuríður, þjóðsaga",
+    "story_is_len": 1647,
+    "story_en_len": 1828
+  },
+  "10890": {
+    "name": "Hundafárið, þjóðsaga",
+    "story_is_len": 1617,
+    "story_en_len": 1744
+  },
+  "10891": {
+    "name": "Kálfur Árnason, þjóðsaga",
+    "story_is_len": 3369,
+    "story_en_len": 3477
+  },
+  "10892": {
+    "name": "Kálfur prestur, þjóðsaga",
+    "story_is_len": 3119,
+    "story_en_len": 3447
+  },
+  "10893": {
+    "name": "Kerlingin á Núpi, þjóðsaga",
+    "story_is_len": 2276,
+    "story_en_len": 2739
+  },
+  "10894": {
+    "name": "Krýsa og Herdís, þjóðsaga",
+    "story_is_len": 2058,
+    "story_en_len": 2364
+  },
+  "10895": {
+    "name": "Latínu-Bjarni, þjóðsaga",
+    "story_is_len": 2041,
+    "story_en_len": 2181
+  },
+  "10896": {
+    "name": "Látra-Björg, þjóðsaga",
+    "story_is_len": 2074,
+    "story_en_len": 2246
+  },
+  "10897": {
+    "name": "Leirulækjar-Fúsi, þjóðsaga",
+    "story_is_len": 3170,
+    "story_en_len": 3511
+  },
+  "10898": {
+    "name": "Páll skáldi, þjóðsaga",
+    "story_is_len": 2796,
+    "story_en_len": 3263
+  },
+  "10899": {
+    "name": "Séra Eiríkur í Vogsósum, þjóðsaga",
+    "story_is_len": 9483,
+    "story_en_len": 9791
+  },
+  "10900": {
+    "name": "Séra Magnús, þjóðsaga",
+    "story_is_len": 2613,
+    "story_en_len": 2831
+  },
+  "10901": {
+    "name": "Skapadægur séra Þorláks á Ósi, þjóðsaga",
+    "story_is_len": 2124,
+    "story_en_len": 2400
+  },
+  "10902": {
+    "name": "Snakksögur, þjóðsaga",
+    "story_is_len": 1462,
+    "story_en_len": 1714
+  },
+  "10903": {
+    "name": "Straumfjarðar-Halla, þjóðsaga",
+    "story_is_len": 2307,
+    "story_en_len": 2355
+  },
+  "10904": {
+    "name": "Sæmundur fróði, þjóðsaga",
+    "story_is_len": 2763,
+    "story_en_len": 2947
+  },
+  "10905": {
+    "name": "Sögn um brögð Grafar-Jóns og fjarskynjun Skúla fógeta, þjóðsaga",
+    "story_is_len": 2705,
+    "story_en_len": 2942
+  },
+  "10906": {
+    "name": "Sögur af Hallgrími Péturssyni, þjóðsaga",
+    "story_is_len": 1608,
+    "story_en_len": 1823
+  },
+  "10907": {
+    "name": "Tilberar, þjóðsaga",
+    "story_is_len": 2357,
+    "story_en_len": 2634
+  },
+  "10908": {
+    "name": "Ummæli á Breiðabólstað í Fljótshlíð, þjóðsaga",
+    "story_is_len": 1876,
+    "story_en_len": 2053
+  },
+  "10909": {
+    "name": "Vei þér móðir mín; ég átti að verða biskup í Skálholti, þjóðsaga",
+    "story_is_len": 1936,
+    "story_en_len": 2027
+  },
+  "10910": {
+    "name": "Þormóður í Gvendareyjum, þjóðsaga",
+    "story_is_len": 6495,
+    "story_en_len": 6573
+  },
+  "10911": {
+    "name": "Bakkabræður, þjóðsaga",
+    "story_is_len": 3940,
+    "story_en_len": 4192
+  },
+  "10912": {
+    "name": "Hverjum Oddinum þá, Drottinn minn, þjóðsaga",
+    "story_is_len": 1192,
+    "story_en_len": 1479
+  },
+  "10913": {
+    "name": "Skyldu bátar mínir róa í dag, þjóðsaga",
+    "story_is_len": 1883,
+    "story_en_len": 2056
+  },
+  "10914": {
+    "name": "18 skólabræður, þjóðsaga",
+    "story_is_len": 2848,
+    "story_en_len": 3172
+  },
+  "10915": {
+    "name": "Depilrassa og niðjar hennar, þjóðsaga",
+    "story_is_len": 2868,
+    "story_en_len": 3110
+  },
+  "10916": {
+    "name": "Jón bóndason og skessan á fjöllunum, þjóðsaga",
+    "story_is_len": 5373,
+    "story_en_len": 5365
+  },
+  "10917": {
+    "name": "Jóra í Jórukleif, þjóðsaga",
+    "story_is_len": 2584,
+    "story_en_len": 2815
+  },
+  "10918": {
+    "name": "Loppa og Jón Loppufóstri, þjóðsaga",
+    "story_is_len": 2841,
+    "story_en_len": 3066
+  },
+  "10919": {
+    "name": "Móðólfur í Móðólfsfelli, þjóðsaga",
+    "story_is_len": 884,
+    "story_en_len": 1076
+  },
+  "10920": {
+    "name": "Ólafur muður, þjóðsaga",
+    "story_is_len": 2351,
+    "story_en_len": 2612
+  },
+  "10921": {
+    "name": "Óvættur í Látrabjargi, þjóðsaga",
+    "story_is_len": 2250,
+    "story_en_len": 2533
+  },
+  "10922": {
+    "name": "Ragnhildur matselja og skessusonurinn, þjóðsaga",
+    "story_is_len": 3115,
+    "story_en_len": 3424
+  },
+  "10923": {
+    "name": "Saga af Maurhildi mannætu, þjóðsaga",
+    "story_is_len": 3255,
+    "story_en_len": 3438
+  },
+  "10924": {
+    "name": "Sagan af Skessu - Jóni, þjóðsaga",
+    "story_is_len": 6902,
+    "story_en_len": 7387
+  },
+  "10925": {
+    "name": "Skessan á Jökulhálsi, þjóðsaga",
+    "story_is_len": 2016,
+    "story_en_len": 2218
+  },
+  "10926": {
+    "name": "Skessan í Mjóafirði, þjóðsaga",
+    "story_is_len": 2379,
+    "story_en_len": 2740
+  },
+  "10927": {
+    "name": "Skessan og vermaðurinn, þjóðsaga",
+    "story_is_len": 2060,
+    "story_en_len": 2199
+  },
+  "10928": {
+    "name": "Smalinn á Silfrúnarstöðum, þjóðsaga",
+    "story_is_len": 3040,
+    "story_en_len": 3406
+  },
+  "10929": {
+    "name": "Stóri maðurinn á Eyvindarmúla, þjóðsaga",
+    "story_is_len": 1447,
+    "story_en_len": 1674
+  },
+  "10930": {
+    "name": "Stórkonan í Hólknardal, þjóðsaga",
+    "story_is_len": 1559,
+    "story_en_len": 1695
+  },
+  "10931": {
+    "name": "12 menn og tröll á afrétti, þjóðsaga",
+    "story_is_len": 1941,
+    "story_en_len": 2217
+  },
+  "10932": {
+    "name": "Tröllin undir hömrunum, þjóðsaga",
+    "story_is_len": 4399,
+    "story_en_len": 5054
+  },
+  "10933": {
+    "name": "Tröllkonan í Skaftafelli, þjóðsaga",
+    "story_is_len": 1543,
+    "story_en_len": 1807
+  },
+  "10934": {
+    "name": "Um Trölla - Láfa, þjóðsaga",
+    "story_is_len": 2998,
+    "story_en_len": 3272
+  },
+  "10935": {
+    "name": "Vígð Drangey, þjóðsaga",
+    "story_is_len": 3071,
+    "story_en_len": 3300
+  },
+  "10936": {
+    "name": "Bakkastaður, þjóðsaga",
+    "story_is_len": 1958,
+    "story_en_len": 2317
+  },
+  "10937": {
+    "name": "Brytinn í Skálholti, þjóðsaga",
+    "story_is_len": 3229,
+    "story_en_len": 3792
+  },
+  "10938": {
+    "name": "Dansinn í Hruna, þjóðsaga",
+    "story_is_len": 2018,
+    "story_en_len": 2316
+  },
+  "10939": {
+    "name": "Húsavíkur-Jón, þjóðsaga",
+    "story_is_len": 2938,
+    "story_en_len": 2901
+  },
+  "10940": {
+    "name": "Kolbeinn jöklaskáld, þjóðsaga",
+    "story_is_len": 1533,
+    "story_en_len": 1771
+  },
+  "10941": {
+    "name": "Púkarnir með pokana, þjóðsaga",
+    "story_is_len": 1798,
+    "story_en_len": 2131
+  },
+  "10942": {
+    "name": "Satan vitjar nafns, þjóðsaga",
+    "story_is_len": 1651,
+    "story_en_len": 1788
+  },
+  "10943": {
+    "name": "Skinþúfa, þjóðsaga",
+    "story_is_len": 1293,
+    "story_en_len": 1512
+  },
+  "10944": {
+    "name": "Sveitardrengurinn, þjóðsaga",
+    "story_is_len": 2950,
+    "story_en_len": 3073
+  },
+  "10945": {
+    "name": "Súlnasker og skerpresturinn, þjóðsaga",
+    "story_is_len": 2825,
+    "story_en_len": 3127
+  },
+  "10946": {
+    "name": "Túnið á Tindum, þjóðsaga",
+    "story_is_len": 2078,
+    "story_en_len": 2450
+  },
+  "10947": {
+    "name": "Vegurinn austan undir Tindastól, þjóðsaga",
+    "story_is_len": 2048,
+    "story_en_len": 2277
+  },
+  "10948": {
+    "name": "Björn á börn, þjóðsaga",
+    "story_is_len": 761,
+    "story_en_len": 932
+  },
+  "10949": {
+    "name": "Grímseyingurinn og bjarndýrið, þjóðsaga",
+    "story_is_len": 2845,
+    "story_en_len": 2796
+  },
+  "10950": {
+    "name": "Naddi, þjóðsaga",
+    "story_is_len": 1464,
+    "story_en_len": 1637
+  },
+  "10951": {
+    "name": "Nykurinn í Holtsvatni, þjóðsaga",
+    "story_is_len": 1835,
+    "story_en_len": 2063
+  },
+  "10952": {
+    "name": "Ormurinn í Lagarfljóti, þjóðsaga",
+    "story_is_len": 1672,
+    "story_en_len": 1834
+  },
+  "10953": {
+    "name": "Selshamurinn, þjóðsaga",
+    "story_is_len": 1758,
+    "story_en_len": 2119
+  },
+  "10954": {
+    "name": "Sæstúlkan á Höfða, þjóðsaga",
+    "story_is_len": 1802,
+    "story_en_len": 2011
+  },
+  "10955": {
+    "name": "Þá hló marbendill, þjóðsaga",
+    "story_is_len": 2314,
+    "story_en_len": 2686
+  },
+  "10956": {
+    "name": "Þórdís úr álfheimum, þjóðsaga",
+    "story_is_len": 1855,
+    "story_en_len": 2204
+  },
+  "10957": {
+    "name": "Biskupsdóttirin í Skálholti, þjóðsaga",
+    "story_is_len": 3559,
+    "story_en_len": 3795
+  },
+  "10958": {
+    "name": "Biskupsfóstri frá Skálholti, þjóðsaga",
+    "story_is_len": 4871,
+    "story_en_len": 5111
+  },
+  "10959": {
+    "name": "Brúðarhvarfið, þjóðsaga",
+    "story_is_len": 2813,
+    "story_en_len": 3046
+  },
+  "10960": {
+    "name": "Drepinn útilegumaður, þjóðsaga",
+    "story_is_len": 2141,
+    "story_en_len": 2337
+  },
+  "10961": {
+    "name": "Einar á Brúnastöðum, þjóðsaga",
+    "story_is_len": 2337,
+    "story_en_len": 2720
+  },
+  "10962": {
+    "name": "Fjalla-Eyvindur, þjóðsaga",
+    "story_is_len": 6010,
+    "story_en_len": 6390
+  },
+  "10963": {
+    "name": "Frásögur úr Áradalsbragnum, þjóðsaga",
+    "story_is_len": 3424,
+    "story_en_len": 3764
+  },
+  "10964": {
+    "name": "Glímumaðurinn, þjóðsaga",
+    "story_is_len": 3407,
+    "story_en_len": 3736
+  },
+  "10965": {
+    "name": "Glímu-Oddur á Hlíðarenda, þjóðsaga",
+    "story_is_len": 2676,
+    "story_en_len": 2970
+  },
+  "10966": {
+    "name": "Grasafjallsferðin, þjóðsaga",
+    "story_is_len": 3193,
+    "story_en_len": 3699
+  },
+  "10967": {
+    "name": "Grímur biskupsfóstri, þjóðsaga",
+    "story_is_len": 3753,
+    "story_en_len": 4185
+  },
+  "10968": {
+    "name": "Guðmundur og Þorsteinn, þjóðsaga",
+    "story_is_len": 4164,
+    "story_en_len": 4525
+  },
+  "10969": {
+    "name": "Gunnsteinsstaða - Sigurður, þjóðsaga",
+    "story_is_len": 1923,
+    "story_en_len": 2225
+  },
+  "10970": {
+    "name": "Halla bóndadóttir, þjóðsaga",
+    "story_is_len": 5256,
+    "story_en_len": 5705
+  },
+  "10971": {
+    "name": "Hellismannasaga, þjóðsaga",
+    "story_is_len": 4640,
+    "story_en_len": 4931
+  },
+  "10972": {
+    "name": "Hestadrengurinn í Skálholti, þjóðsaga",
+    "story_is_len": 3820,
+    "story_en_len": 3946
+  },
+  "10973": {
+    "name": "Jón á Sauðá, þjóðsaga",
+    "story_is_len": 3010,
+    "story_en_len": 3259
+  },
+  "10974": {
+    "name": "Jón bóndason frá Möðrudal, þjóðsaga",
+    "story_is_len": 6960,
+    "story_en_len": 7457
+  },
+  "10975": {
+    "name": "Jón bóndi og útilegumaðurinn, þjóðsaga",
+    "story_is_len": 3555,
+    "story_en_len": 3722
+  },
+  "10976": {
+    "name": "Jón frá Geitaskarði, þjóðsaga",
+    "story_is_len": 4429,
+    "story_en_len": 4715
+  },
+  "10977": {
+    "name": "Jón og Nikulás, þjóðsaga",
+    "story_is_len": 2238,
+    "story_en_len": 2525
+  },
+  "10978": {
+    "name": "Kaupamennirnir, þjóðsaga",
+    "story_is_len": 2806,
+    "story_en_len": 3067
+  },
+  "10979": {
+    "name": "Nítján útilegumenn, þjóðsaga",
+    "story_is_len": 2643,
+    "story_en_len": 2966
+  },
+  "10980": {
+    "name": "Oddur Hólaráðsmaður, þjóðsaga",
+    "story_is_len": 3500,
+    "story_en_len": 3791
+  },
+  "10982": {
+    "name": "Ólöf bóndadóttir, þjóðsaga",
+    "story_is_len": 3947,
+    "story_en_len": 4315
+  },
+  "10983": {
+    "name": "Pétur sýslumaður og útilegumennirnir, þjóðsaga",
+    "story_is_len": 2585,
+    "story_en_len": 2772
+  },
+  "10984": {
+    "name": "Saga af Ásmundi á Fjalli, þjóðsaga",
+    "story_is_len": 3863,
+    "story_en_len": 4267
+  },
+  "10985": {
+    "name": "Sagan af Bjarna Sveinssyni og Salvöru systur hans, þjóðsaga",
+    "story_is_len": 4042,
+    "story_en_len": 4205
+  },
+  "10986": {
+    "name": "Sagan af Hóla-Þorsteini, þjóðsaga",
+    "story_is_len": 3507,
+    "story_en_len": 3861
+  },
+  "10987": {
+    "name": "Sagan af Ketilríði bóndadóttur, þjóðsaga",
+    "story_is_len": 4452,
+    "story_en_len": 4653
+  },
+  "10988": {
+    "name": "Sauðamaðurinn á Grímsstöðum, þjóðsaga",
+    "story_is_len": 2950,
+    "story_en_len": 3536
+  },
+  "10989": {
+    "name": "Sendisveinn Skálholtsbiskups, þjóðsaga",
+    "story_is_len": 3595,
+    "story_en_len": 3972
+  },
+  "10990": {
+    "name": "Sigríður Eyjafjarðarsól, þjóðsaga",
+    "story_is_len": 4218,
+    "story_en_len": 4576
+  },
+  "10991": {
+    "name": "Símon á Hóli, þjóðsaga",
+    "story_is_len": 1328,
+    "story_en_len": 1628
+  },
+  "10992": {
+    "name": "Smalamaðurinn, þjóðsaga",
+    "story_is_len": 2331,
+    "story_en_len": 2670
+  },
+  "10993": {
+    "name": "Smalastúlkan á Ábæ, þjóðsaga",
+    "story_is_len": 3683,
+    "story_en_len": 3957
+  },
+  "10994": {
+    "name": "Suðurferða-Ásmundur, þjóðsaga",
+    "story_is_len": 3546,
+    "story_en_len": 3787
+  },
+  "10995": {
+    "name": "Sveinn Flóafífl, þjóðsaga",
+    "story_is_len": 4195,
+    "story_en_len": 4247
+  },
+  "10996": {
+    "name": "Systkinin í Ódáðahrauni, þjóðsaga",
+    "story_is_len": 2943,
+    "story_en_len": 3254
+  },
+  "10997": {
+    "name": "Sögubrot af Árna á Hlaðhamri, þjóðsaga",
+    "story_is_len": 3182,
+    "story_en_len": 3280
+  },
+  "10998": {
+    "name": "Tómasar saga, þjóðsaga",
+    "story_is_len": 2356,
+    "story_en_len": 2735
+  },
+  "10999": {
+    "name": "Úlfsvatn, þjóðsaga",
+    "story_is_len": 3808,
+    "story_en_len": 4488
+  },
+  "11000": {
+    "name": "Vísitasíuferð Skálholtsbiskups, þjóðsaga",
+    "story_is_len": 2840,
+    "story_en_len": 3206
+  },
+  "11001": {
+    "name": "Þorsteinn á Pund og Gestur, þjóðsaga",
+    "story_is_len": 2064,
+    "story_en_len": 2313
+  },
+  "11002": {
+    "name": "Álfheiðarskora, þjóðsaga",
+    "story_is_len": 1754,
+    "story_en_len": 1977
+  },
+  "11003": {
+    "name": "Barnafoss, þjóðsaga",
+    "story_is_len": 1773,
+    "story_en_len": 2031
+  },
+  "11004": {
+    "name": "Björn skafinn, þjóðsaga",
+    "story_is_len": 2680,
+    "story_en_len": 2918
+  },
+  "11005": {
+    "name": "Borgarvirki og Víga-Barði, þjóðsaga",
+    "story_is_len": 2753,
+    "story_en_len": 2884
+  },
+  "11006": {
+    "name": "Böðvar í Böðvarsdal, þjóðsaga",
+    "story_is_len": 1906,
+    "story_en_len": 2065
+  },
+  "11007": {
+    "name": "Daði í Snóksdal, þjóðsaga",
+    "story_is_len": 1571,
+    "story_en_len": 1732
+  },
+  "11008": {
+    "name": "Eiríkur í Bót, þjóðsaga",
+    "story_is_len": 3157,
+    "story_en_len": 3396
+  },
+  "11009": {
+    "name": "Grundarhelga, Örn og Eyvindur, þjóðsaga",
+    "story_is_len": 2699,
+    "story_en_len": 2842
+  },
+  "11010": {
+    "name": "Hafnarbræður, þjóðsaga",
+    "story_is_len": 6118,
+    "story_en_len": 6311
+  },
+  "11011": {
+    "name": "Hvanndalabræður og Jón stólpi, þjóðsaga",
+    "story_is_len": 3091,
+    "story_en_len": 3565
+  },
+  "11012": {
+    "name": "Ingólfur Arnarson, þjóðsaga",
+    "story_is_len": 2392,
+    "story_en_len": 2561
+  },
+  "11013": {
+    "name": "Jón Guttormsson, þjóðsaga",
+    "story_is_len": 3323,
+    "story_en_len": 3528
+  },
+  "11014": {
+    "name": "Jón murti, þjóðsaga",
+    "story_is_len": 2241,
+    "story_en_len": 2493
+  },
+  "11015": {
+    "name": "Jón Teitsson á Hafgrímsstöðum, þjóðsaga",
+    "story_is_len": 4349,
+    "story_en_len": 4828
+  },
+  "11016": {
+    "name": "Kirkjubæjarklaustur, þjóðsaga",
+    "story_is_len": 3164,
+    "story_en_len": 3510
+  },
+  "11017": {
+    "name": "Kirkjustaður undir Hekluhrauni, þjóðsaga",
+    "story_is_len": 1842,
+    "story_en_len": 2070
+  },
+  "11018": {
+    "name": "Konan sem fór í Svartaskóla, þjóðsaga",
+    "story_is_len": 2161,
+    "story_en_len": 2408
+  },
+  "11019": {
+    "name": "Sagnir af Torfa í Klofa, þjóðsaga",
+    "story_is_len": 3335,
+    "story_en_len": 3694
+  },
+  "11020": {
+    "name": "Sagnir úr Grettlu, þjóðsaga",
+    "story_is_len": 2630,
+    "story_en_len": 2846
+  },
+  "11021": {
+    "name": "Sagnir úr Njálu, þjóðsaga",
+    "story_is_len": 3029,
+    "story_en_len": 3124
+  },
+  "11022": {
+    "name": "Sigurður Íslandströll, þjóðsaga",
+    "story_is_len": 2664,
+    "story_en_len": 2690
+  },
+  "11023": {
+    "name": "Sveinn lögmaður í dularbúningi, þjóðsaga",
+    "story_is_len": 2569,
+    "story_en_len": 3082
+  },
+  "11024": {
+    "name": "Sveinn skotti, þjóðsaga",
+    "story_is_len": 2573,
+    "story_en_len": 2905
+  },
+  "11025": {
+    "name": "Sviði og Vífill, þjóðsaga",
+    "story_is_len": 2506,
+    "story_en_len": 2858
+  },
+  "11026": {
+    "name": "Villtur í fjárhúsi, þjóðsaga",
+    "story_is_len": 1447,
+    "story_en_len": 1669
+  },
+  "11027": {
+    "name": "Þjófahellir, þjóðsaga",
+    "story_is_len": 3022,
+    "story_en_len": 3207
+  },
+  "11028": {
+    "name": "Þorbjörn kólka, þjóðsaga",
+    "story_is_len": 3335,
+    "story_en_len": 3621
+  },
+  "11029": {
+    "name": "Þórdís spákona, þjóðsaga",
+    "story_is_len": 2805,
+    "story_en_len": 3009
+  },
+  "11030": {
+    "name": "Þrasi Þórólfsson og Loðmundur, þjóðsaga",
+    "story_is_len": 1922,
+    "story_en_len": 2177
+  },
+  "11031": {
+    "name": "Axlar-Björn, þjóðsaga",
+    "story_is_len": 7800,
+    "story_en_len": 8384
+  },
+  "11032": {
+    "name": "Árni Oddsson, þjóðsaga",
+    "story_is_len": 3967,
+    "story_en_len": 4175
+  },
+  "11033": {
+    "name": "Frá ríka Móra, þjóðsaga",
+    "story_is_len": 1801,
+    "story_en_len": 2082
+  },
+  "11034": {
+    "name": "Guðleif á Lambastöðum, þjóðsaga",
+    "story_is_len": 1011,
+    "story_en_len": 1213
+  },
+  "11035": {
+    "name": "Ingibjörg  í Kalmanstungu, þjóðsaga",
+    "story_is_len": 3428,
+    "story_en_len": 3765
+  },
+  "11036": {
+    "name": "Sagan af kerlingunni fjórdrepnu, þjóðsaga",
+    "story_is_len": 3971,
+    "story_en_len": 3896
+  },
+  "11037": {
+    "name": "Skíðastaðir, þjóðsaga",
+    "story_is_len": 2560,
+    "story_en_len": 2715
+  },
+  "11038": {
+    "name": "Skúli fógeti, þjóðsaga",
+    "story_is_len": 1807,
+    "story_en_len": 1726
+  },
+  "11039": {
+    "name": "Sturluhlaup, þjóðsaga",
+    "story_is_len": 2992,
+    "story_en_len": 3255
+  },
+  "11040": {
+    "name": "Sveinn spaki, þjóðsaga",
+    "story_is_len": 2502,
+    "story_en_len": 2827
+  },
+  "11041": {
+    "name": "Valtýr á grænni treyju, þjóðsaga",
+    "story_is_len": 4324,
+    "story_en_len": 4624
+  }
+}

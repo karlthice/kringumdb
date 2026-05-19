@@ -422,12 +422,12 @@ def export():
     return jsonify({'success': True})
 
 
-# --- API: Translate ---
+# --- API: Translate (via Google Gemini) ---
 
 @app.route('/api/translate', methods=['POST'])
 def translate():
-    if not config.GOOGLE_TRANSLATE_API_KEY:
-        return jsonify({'error': 'Google Translate API key not configured'}), 400
+    if not config.GEMINI_API_KEY:
+        return jsonify({'error': 'Gemini API key not configured'}), 400
 
     data = request.get_json(force=True)
     text = data.get('text', '')
@@ -435,15 +435,18 @@ def translate():
         return jsonify({'error': 'Text empty or too long (max 10000 chars)'}), 400
 
     try:
-        resp = http_requests.get('https://www.googleapis.com/language/translate/v2', params={
-            'key': config.GOOGLE_TRANSLATE_API_KEY,
-            'source': 'is',
-            'target': 'en',
-            'format': 'text',
-            'q': text
-        })
+        resp = http_requests.post(
+            'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent',
+            params={'key': config.GEMINI_API_KEY},
+            json={
+                'contents': [{'parts': [{'text':
+                    'Translate the following Icelandic text to English. '
+                    'Return ONLY the translated text, nothing else.\n\n' + text
+                }]}]
+            }
+        )
         result = resp.json()
-        translated = result['data']['translations'][0]['translatedText']
+        translated = result['candidates'][0]['content']['parts'][0]['text'].strip()
         return jsonify({'translatedText': translated})
     except Exception as e:
         return jsonify({'error': str(e)}), 500

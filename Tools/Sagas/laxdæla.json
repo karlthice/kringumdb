@@ -1,0 +1,64 @@
+```json
+[
+  {
+    "Name": "Hjarðarholt",
+    "Story": "Hjarðarholt í Laxárdal er ein mikilvægasta staðsetning sögunnar og þjónar sem aðalbústaður Ólafs páa Höskuldssonar. Ólafur reisti þar glæsilegan bæ eftir utanlandsferðir sínar og skreytti hann með útskurði sem lýsti goðsögulegum atburðum. Bærinn varð miðstöð valda og menningar í héraðinu og þar ólst Kjartan Ólafsson upp við mikið atlæti. Hjarðarholt var vettvangur margra stórveislna en varð síðar miðpunktur í deilum ættarinnar þegar samskiptin við fólkið á Laugum versnuðu. Eftir dauða Kjartans bjó Þorgerður Egilsdóttir þar áfram og hvatti syni sína til hefnda gegn þeim sem höfðu vegið hann, sem sýnir hversu ríka merkingu bærinn hafði fyrir ættarstoltið."
+  },
+  {
+    "Name": "Höskuldsstaðir",
+    "Story": "Höskuldsstaðir í Laxárdal eru kenndir við Höskuld Dala-Kollsson, sem var einn helsti höfðingi Dalamanna í upphafi sögunnar. Staðurinn er mikilvægur vegna þess að þar hófst sú ættargrein sem Laxdæla fjallar að mestu um. Höskuldur bjó þar ásamt konu sinni Jórunni, en þangað flutti hann einnig ambáttina Melkorku sem reyndist vera írsk konungsdóttir. Sonur þeirra, Ólafur pái, fæddist og ólst upp á Höskuldsstöðum áður en hann síðar stofnaði sitt eigið bú í Hjarðarholti. Bærinn var tákn um landnám og festu í dalnum og sýnir hvernig valdi og eignum var deilt á milli kynslóða í upphafi Íslandsbyggðar."
+  },
+  {
+    "Name": "Laugar í Sælingsdal",
+    "Story": "Laugar í Sælingsdal voru heimili Ósvífurs Helgasonar og dóttur hans, Guðrúnar Ósvífursdóttur, sem er ein aðalpersóna sögunnar. Nafn staðarins dregur dám af heitum laugum sem þar voru, en þær gegndu lykilhlutverki í félagslífi fólksins. Kjartan Ólafsson og Guðrún hittust reglulega við laugarnar til að ræða saman og þar þróuðust þeirra fyrstu tilfinningar. Síðar varð staðurinn að vettvangi fyrir sárindi og ráðabrugg þegar Guðrún giftist Bolla Þorleikssyni í stað Kjartans. Eftir að Kjartan sneri aftur til Íslands og herjaði á fólkið á Laugum með því að loka þau inni á bænum í þrjá daga, varð þessi staðsetning að miðpunkti þeirrar reiði sem leiddi til vígs Kjartans."
+  },
+  {
+    "Name": "Hvammur í Dölum",
+    "Story": "Hvammur er sögufræg jörð sem Auður djúpúðga nam og settist að á eftir að hafa misst mann sinn og son í hernaði erlendis. Hún var ein fárra kvenna sem leiddu landnám á Íslandi og stýrði hún skipi sínu og fylgdarmönnum af mikilli skörungsskap. Í Hvammi reisti hún bú sitt og var staðurinn þekktur fyrir að vera miðstöð kristinnar trúar á landnámstímanum, þar sem Auður lét reisa krossa og baðst fyrir. Saga Hvamms í Laxdælu sýnir hvernig öflug ættmóðir lagði grunninn að valdastöðu afkomenda sinna í Dölum og hvernig félagslegt skipulag héraðsins mótast af fyrstu landnemunum og þeim sem þeir gáfu land."
+  },
+  {
+    "Name": "Svínadalur",
+    "Story": "Svínadalur er staðurinn þar sem einn dramatískasti atburður sögunnar átti sér stað, en þar var Kjartan Ólafsson veginn. Kjartan var á leið vestan úr Tungu ásamt tveimur fylgdarmönnum þegar synir Ósvífurs og Bolli Þorleiksson sátu fyrir honum við Hafragil. Þegar bardaginn hófst varðist Kjartan af mikilli hreysti og lagði niður vopn sín þegar hann sá að fóstbróðir hans, Bolli, ætlaði að taka þátt í atlögunni. Vígið í Svínadal breytti gangi sögunnar algjörlega, þar sem það breytti vinfengi í blóðhefnd og markaði upphafið að endalokum margra helstu persóna verksins. Dalurinn er síðan þá órjúfanlega tengdur þessum örlagaríka fundi fóstbræðranna."
+  },
+  {
+    "Name": "Helgafell",
+    "Story": "Helgafell á Snæfellsnesi er staðurinn þar sem Guðrún Ósvífursdóttir eyddi síðustu æviárum sínum. Eftir fall Bolla Þorleikssonar og fjórða hjónabands síns við Þorkel Eyjólfsson, fluttist Guðrún þangað og gerðist nunna. Helgafell varð á þeim tíma miðstöð trúariðkana og er talið að Guðrún hafi látið reisa þar kirkju. Staðurinn er sögulega mikilvægur sem lokapunktur sögunnar, því þar átti sér stað hið fræga samtal milli Guðrúnar og Bolla sonar hennar þar sem hún játaði hverjum hún hefði verið verst. Helgafell táknar þannig iðrun og kyrrð eftir þá miklu atburði og blóðsúthellingar sem einkenndu líf persónanna í Laxárdal og Sælingsdal."
+  },
+  {
+    "Name": "Saurbær",
+    "Story": "Saurbær í Gilsfirði kemur við sögu sem dvalarstaður Ósvífurs Helgasonar og fjölskyldu hans áður en þau fluttu að Laugum. Í Saurbæ hófst þróun þeirra atburða sem leiddu til mikillar spennu í héraðinu, þar sem ættin var að treysta stöðu sína. Staðurinn er einnig tengdur ráðagerðum og fundum höfðingja sem þurftu að fara um fjörðinn á leið sinni milli norðurhluta landsins og Breiðafjarðar. Sagan lýsir því hvernig búskapur og hagsmunir bænda í Saurbæ fléttuðust inn í stærri pólitísk mál þess tíma, sérstaklega þegar kom að því að verja heiður ættarinnar gagnvart öðrum stórbýlum á borð við Hjarðarholt eða Höskuldsstaði."
+  },
+  {
+    "Name": "Sælingsdalstunga",
+    "Story": "Sælingsdalstunga var eign Snorra goða, eins valdamesta manns landsins á söguöld. Bærinn varð miðpunktur í samningaviðræðum þegar Snorri og Guðrún Ósvífursdóttir skiptust á jörðum, en Snorri flutti þaðan að Helgafelli á meðan Guðrún tók við Tungu. Áður en þessi skipti fóru fram var staðurinn notaður sem athvarf fyrir þá sem þurftu að skipuleggja hefndir eða lagaleg eftirmál vegna víga. Sælingsdalstunga sýnir hvernig jarðeignir voru notaðar sem tæki í pólitísku tafli höfðingja og hvernig búseta á ákveðnum stöðum gat veitt fólki vernd eða betra aðgengi að bandamönnum í átökum."
+  },
+  {
+    "Name": "Þingvellir",
+    "Story": "Þingvellir við Öxará eru vettvangur Alþingis þar sem mikilvægustu lagalegu ákvarðanir og dómar sögunnar voru kveðnir upp. Persónur Laxdælu sóttu þingið af kappi, bæði til að sýna glæsileika sinn með fjölmennum fylgdarsveitum og til að útkljá deilur sem ekki tókst að leysa heima í héraði. Einn helsti atburðurinn á Þingvöllum í sögunni er þegar Kjartan Ólafsson sýndi yfirburði sína eftir heimkomuna frá Noregi, en einnig þegar dæmt var í málum eftir víg hans og Bolla. Staðurinn þjónaði sem hlutlaus grundvöllur þar sem ættir gátu mæst undir vopnahléi til að semja um manngjöld og frið, þótt spennan væri oft mikil undir yfirborðinu."
+  },
+  {
+    "Name": "Hóll í Sælingsdal",
+    "Story": "Hóll er staðurinn þar sem Bolli Þorleiksson var drepinn í seli sínu. Eftir að hafa vegið Kjartan Ólafsson vissi Bolli að hefndar væri von og bjó hann um sig á Hóli til að verjast. Þangað mættu synir Ólafs páa ásamt Ásbirni og Steinþóri með stórt lið. Bardaginn var harður og Bolli varðist einn inni í selinu eftir að fylgdarmenn hans höfðu verið yfirbugaðir. Að lokum var hann veginn af Helga Harðbeinssyni. Þessi atburður á Hóli markar einn af hápunktum hefndarinnar í sögunni og sýnir hvernig ofbeldið í samfélaginu gat stigmagnast þar til helstu kappar þess lágu í valnum."
+  },
+  {
+    "Name": "Tunga í Snæfellsnesi",
+    "Story": "Tunga á Snæfellsnesi var heimili Þorleiks Höskuldssonar, bróður Ólafs páa. Þar ólst Bolli Þorleiksson upp áður en hann fór í fóstur til Hjarðarholts. Staðurinn er mikilvægur vegna þess að þar hófst rígurinn milli Þorleiks og Ólafs, sem síðar erfðist til sona þeirra. Þorleikur taldi hlut sinn rýrari en bróður síns og sýndi það sig í ýmsum erjum um land og völd. Tunga þjónaði sem bækistöð fyrir þá ættkvísl sem fannst hún standa í skugganum af auði og vinsældum Hjarðarholtsmanna, sem er ein af undirliggjandi orsökum þess að vinátta fóstbræðranna Bolla og Kjartans rofnaði að lokum."
+  },
+  {
+    "Name": "Orrahvoll",
+    "Story": "Orrahvoll er staður þar sem herflokkar söfnuðust saman í aðdraganda stærri herhlaupa. Í Laxdælu er hann nefndur í tengslum við liðssafnað þegar höfðingjar þurftu að sýna afl sitt eða leita hefnda. Slíkir staðir voru hernaðarlega mikilvægir þar sem þeir lágu vel við flutningum um Dali og Breiðafjörð. Frásögnin af atburðum á Orrahvoli lýsir því hvernig bændur og húskarlar voru kallaðir til vopna og hvernig skipulagningu árása var háttað í íslensku ættarsamfélagi. Staðurinn er dæmi um þau kennileiti í landslaginu sem þjónuðu sem samkomustaðir þegar átök voru yfirvofandi."
+  },
+  {
+    "Name": "Skarfstaðir",
+    "Story": "Skarfstaðir voru bústaður Þorgerðar Egilsdóttur um tíma og staður þar sem hún sýndi hvað mestan skörungsskap sinn. Þorgerður, sem var dóttir Egils Skallagrímssonar, var ekki sátt við að bætur yrðu teknar fyrir víg Kjartans sonar hennar heldur vildi hún blóðhefnd. Á Skarfstöðum bjó hún og hvatti sonu sína til dáða með því að sýna þeim blóðuga skyrtu Kjartans. Staðurinn tengist því harðri kvenímynd sögunnar og þeim siðferðislegu kröfum sem gerðar voru til ættmenna um að verja heiðurinn með vopnum fremur en sættum. Skarfstaðir sýna því mikilvægi baklandsins í þeim herferðum sem farnar voru."
+  },
+  {
+    "Name": "Goddaustaðir",
+    "Story": "Goddaustaðir voru bústaður Þorsteins surts og síðar annarra sem fléttuðust inn í eignadeilur og landamerkjamál Dalamanna. Staðurinn er dæmi um meðalstórt býli sem varð að taka afstöðu í deilum stórhöfðingjanna í kring. Í Laxdælu er lýst hvernig völd yfir svona jörðum gátu skipt um hendur vegna erfða eða pólitísks þrýstings. Saga Goddaustaða sýnir hversu náið fólk bjó og hvernig jafnvel minni háttar ágreiningur um beitiland eða reka gat undið upp á sig og orðið hluti af stærri átökum milli valdamestu ætta héraðsins."
+  },
+  {
+    "Name": "Lambi",
+    "Story": "Bærinn Lambi í Laxárdal kemur fyrir í sögunni sem staður þar sem fréttir og fólk fóru um á leið sinni um dalinn. Hann er mikilvægur hlekkur í þeirri keðju atburða sem áttu sér stað þegar lið voru dregin saman til bardaga. Staðurinn lýsir vel hvernig byggðin í Laxárdal var þétt og hvernig nábýlið hafði áhrif á samskipti manna. Á Lambi komu oft saman menn til að ræða málin eða bíða eftir færi á að láta til skarar skríða gegn andstæðingum sínum. Bærinn þjónar þannig sem sýnishorn af hversdagslegu umhverfi sögunnar sem varð reglulega vettvangur fyrir undirbúning hernaðarlegra átaka."
+  }
+]
+```

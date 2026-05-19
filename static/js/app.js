@@ -112,12 +112,13 @@ $(document).on("keypress", ".IceSearchField", function (e) {
 var mapInstance = null;
 var mapMarkers = null;
 var mapAreas = null;
+var userLocationMarker = null;
 
 function updateMapCounter() {
     var count = 0;
     if (mapMarkers) {
         mapMarkers.eachLayer(function (layer) {
-            if (layer._itemData && layer.getRadius() > 0) count++;
+            if (layer._itemData && !layer._filteredOut) count++;
         });
     }
     $("#map-counter").text(count + " atriði");
@@ -141,6 +142,25 @@ function getTagColor(tag) {
         if (tag.indexOf(key) >= 0) return TAG_COLORS[key];
     }
     return '#3388ff';
+}
+
+function buildItemPopup(item) {
+    var html = "<div style='max-width:350px;max-height:300px;overflow-y:auto'>" +
+        "<b style='cursor:pointer' class='map-item-link' data-id='" + item.ID + "'>" +
+        escapeHtml(item.Name) + "</b><br>" +
+        "<span style='color:gray;font-size:11px'>" + escapeHtml(item.Tag || '') + "</span>" +
+        (item.Area ? " <span style='background:#5bc0de;color:white;padding:1px 5px;border-radius:4px;font-size:11px;font-weight:bold'>" + escapeHtml(item.Area) + "</span>" : "") +
+        (item.StoryEng ? " <span style='background:darkorange;color:white;padding:1px 5px;border-radius:4px;font-size:11px;font-weight:bold'>English</span>" : "");
+    if (item.Story) {
+        html += "<hr style='margin:4px 0'><div style='font-size:13px;white-space:pre-wrap'>" +
+            escapeHtml(item.Story) + "</div>";
+    }
+    html += "<hr style='margin:4px 0'><div class='map-edit-link' data-id='" + item.ID + "' " +
+        "style='cursor:pointer;display:inline-block;padding:3px 10px;background:#17a2b8;color:white;border-radius:4px;font-size:12px;font-weight:bold'>Breyta</div> " +
+        "<div class='map-move-link' data-id='" + item.ID + "' " +
+        "style='cursor:pointer;display:inline-block;padding:3px 10px;background:#e67e22;color:white;border-radius:4px;font-size:12px;font-weight:bold;margin-left:4px'>Breyta hnitum</div>";
+    html += "</div>";
+    return html;
 }
 
 function doShowMap() {
@@ -174,22 +194,7 @@ function doShowMap() {
                     fillOpacity: 0.8
                 });
                 marker._itemData = item;
-                var popupContent = "<div style='max-width:350px;max-height:300px;overflow-y:auto'>" +
-                    "<b style='cursor:pointer' class='map-item-link' data-id='" + item.ID + "'>" +
-                    escapeHtml(item.Name) + "</b><br>" +
-                    "<span style='color:gray;font-size:11px'>" + escapeHtml(item.Tag || '') + "</span>" +
-                    (item.Area ? " <span style='background:#5bc0de;color:white;padding:1px 5px;border-radius:4px;font-size:11px;font-weight:bold'>" + escapeHtml(item.Area) + "</span>" : "") +
-                    (item.StoryEng ? " <span style='background:darkorange;color:white;padding:1px 5px;border-radius:4px;font-size:11px;font-weight:bold'>English</span>" : "");
-                if (item.Story) {
-                    popupContent += "<hr style='margin:4px 0'><div style='font-size:13px;white-space:pre-wrap'>" +
-                        escapeHtml(item.Story) + "</div>";
-                }
-                popupContent += "<hr style='margin:4px 0'><div class='map-edit-link' data-id='" + item.ID + "' " +
-                    "style='cursor:pointer;display:inline-block;padding:3px 10px;background:#17a2b8;color:white;border-radius:4px;font-size:12px;font-weight:bold'>Breyta</div> " +
-                    "<div class='map-move-link' data-id='" + item.ID + "' " +
-                    "style='cursor:pointer;display:inline-block;padding:3px 10px;background:#e67e22;color:white;border-radius:4px;font-size:12px;font-weight:bold;margin-left:4px'>Breyta hnitum</div>";
-                popupContent += "</div>";
-                marker.bindPopup(popupContent, { minWidth: 300, maxWidth: 400 });
+                marker.bindPopup(buildItemPopup(item), { minWidth: 300, maxWidth: 400 });
                 marker.addTo(mapMarkers);
             }
             updateMapCounter();
@@ -242,10 +247,10 @@ function doShowMap() {
             }
         });
 
-        // Item counter below close button
+        // Item counter below the Leaflet zoom controls (top-left)
         var counterDiv = document.createElement('div');
         counterDiv.id = 'map-counter';
-        counterDiv.style.cssText = 'position:absolute;top:50px;left:10px;z-index:5100;background:white;padding:4px 10px;border:2px solid #666;border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,0.3);font-size:13px;font-weight:bold';
+        counterDiv.style.cssText = 'position:absolute;top:100px;left:10px;z-index:5100;background:white;padding:4px 10px;border:2px solid #666;border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,0.3);font-size:13px;font-weight:bold';
         document.getElementById('map-overlay').appendChild(counterDiv);
 
         // Toggle control for areas - positioned below the close button
@@ -263,6 +268,14 @@ function doShowMap() {
             "<div id='map-search-clear' style='display:none;cursor:pointer;padding:4px 8px;background:white;border:2px solid #666;border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,0.3);font-size:11px;font-weight:bold;margin-top:4px;text-align:center'>Hreinsa</div>";
         document.getElementById('map-overlay').appendChild(searchDiv);
 
+        // Locate-me button below the search field
+        var locateDiv = document.createElement('div');
+        locateDiv.id = 'map-locate';
+        locateDiv.innerHTML = "<button type='button' title='Mín staðsetning' " +
+            "style='padding:6px 10px;background:white;cursor:pointer;font-size:13px;font-weight:bold;white-space:nowrap;border:2px solid #666;border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,0.3)'>" +
+            "&#x1F4CD; Mín staðsetning</button>";
+        document.getElementById('map-overlay').appendChild(locateDiv);
+
         $(document).on("change", "#area-toggle-cb", function () {
             if (this.checked) {
                 mapAreas.addTo(mapInstance);
@@ -278,12 +291,25 @@ function doShowMap() {
             mapMarkers.eachLayer(function (layer) {
                 if (!layer._itemData) return;
                 var name = (layer._itemData.Name || '').toLowerCase();
-                if (!query || name.indexOf(query) >= 0) {
-                    layer.setStyle({ fillOpacity: 0.8, radius: 5 });
+                var match = !query || name.indexOf(query) >= 0;
+                if (match && query) {
+                    // Active filter: matched items are bright red and interactive
+                    layer.setStyle({ fillColor: '#ff0000', fillOpacity: 1, radius: 7 });
+                    layer.setRadius(7);
+                    if (layer._path) layer._path.style.pointerEvents = '';
+                    layer._filteredOut = false;
+                } else if (match) {
+                    // No filter: restore normal tag color and interactivity
+                    layer.setStyle({ fillColor: getTagColor(layer._itemData.Tag), fillOpacity: 0.8, radius: 5 });
                     layer.setRadius(5);
+                    if (layer._path) layer._path.style.pointerEvents = '';
+                    layer._filteredOut = false;
                 } else {
-                    layer.setStyle({ fillOpacity: 0, radius: 0 });
-                    layer.setRadius(0);
+                    // Filtered out: dim and non-interactive
+                    layer.setStyle({ fillOpacity: 0.15, radius: 3, fillColor: '#999' });
+                    layer.setRadius(3);
+                    if (layer._path) layer._path.style.pointerEvents = 'none';
+                    layer._filteredOut = true;
                 }
             });
             updateMapCounter();
@@ -293,6 +319,37 @@ function doShowMap() {
             $("#map-search-input").val("").trigger("input");
         });
 
+        $(document).on("click", "#map-locate button", function () {
+            if (!navigator.geolocation) {
+                alert("Vafrinn styður ekki staðsetningu.");
+                return;
+            }
+            var $btn = $(this).prop("disabled", true);
+            navigator.geolocation.getCurrentPosition(
+                function (pos) {
+                    var lat = pos.coords.latitude;
+                    var lng = pos.coords.longitude;
+                    mapInstance.flyTo([lat, lng], 14);
+                    if (userLocationMarker) {
+                        mapInstance.removeLayer(userLocationMarker);
+                    }
+                    userLocationMarker = L.circleMarker([lat, lng], {
+                        radius: 7,
+                        color: '#fff',
+                        weight: 2,
+                        fillColor: '#1976d2',
+                        fillOpacity: 1
+                    }).addTo(mapInstance);
+                    $btn.prop("disabled", false);
+                },
+                function (err) {
+                    alert("Gat ekki sótt staðsetningu: " + err.message);
+                    $btn.prop("disabled", false);
+                },
+                { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
+            );
+        });
+
         // Relocate banner
         var bannerDiv = document.createElement('div');
         bannerDiv.id = 'map-relocate-banner';
@@ -300,9 +357,17 @@ function doShowMap() {
         bannerDiv.innerHTML = 'Smelltu á kortið til að velja nýja staðsetningu &nbsp; <span id="map-relocate-cancel" style="cursor:pointer;text-decoration:underline;margin-left:8px">Hætta við</span>';
         document.getElementById('map-overlay').appendChild(bannerDiv);
 
-        // Handle map click for relocation
+        // Handle map click for relocation or Ctrl+click to create new item
         mapInstance.on('click', function (e) {
-            if (!relocatingItem) return;
+            if (!relocatingItem) {
+                if (e.originalEvent.shiftKey) {
+                    var lat = e.latlng.lat.toFixed(6);
+                    var lng = e.latlng.lng.toFixed(6);
+                    doCloseMap();
+                    doInsertUpdateItem($(".IceNew"), { GPS: lat + ", " + lng });
+                }
+                return;
+            }
 
             var newLat = e.latlng.lat.toFixed(6);
             var newLng = e.latlng.lng.toFixed(6);
@@ -313,6 +378,13 @@ function doShowMap() {
             // Move the marker
             marker.setLatLng(e.latlng);
             item.GPS = newGps;
+
+            // Clean up legacy ",-" formatting in the caption when relocating
+            var cleanedName = (item.Name || '').replace(/,-/g, ', ');
+            if (cleanedName !== item.Name) {
+                item.Name = cleanedName;
+                marker.setPopupContent(buildItemPopup(item));
+            }
 
             // Save to DB
             API.call("items/save", {

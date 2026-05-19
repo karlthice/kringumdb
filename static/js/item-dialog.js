@@ -26,7 +26,7 @@ function doInsertUpdateItem(inElement, inItem) {
             Link: inItem.Link || '',
             LinkEng: inItem.LinkEng || '',
             Visibility: inItem.Visibility != null ? String(inItem.Visibility) : '0',
-            Ref: inItem.Ref || ('Sótt af Wikipedia ' + sDate)
+            Ref: inItem.Ref || 'Stratos ehf'
         },
         [
             { Caption: 'ID', id: 'ID', PropertyType: 'String' },
