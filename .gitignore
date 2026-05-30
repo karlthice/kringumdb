@@ -3,3 +3,10 @@ export/
 .env
 venv/
 Tools/NatScraper/.nat_en_posts.json
+
+# TTS: large Piper voice models and generated audio (regenerated from the DB)
+tts/voices/
+tts/audio/
+tts/audio_en/
+tts/compare/
+tts/kringum.db

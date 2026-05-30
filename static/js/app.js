@@ -18,9 +18,7 @@ function doRefresh(filter) {
 }
 
 function doExport(language) {
-    API.call("export", { language: language || '' }).then(function () {
-        alert('Komið!');
-    });
+    window.location.href = '/api/export?language=' + encodeURIComponent(language || '');
 }
 
 function Render(filter) {

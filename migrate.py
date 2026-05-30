@@ -46,6 +46,12 @@ CREATE TABLE IF NOT EXISTS items (
     link_eng TEXT,
     visibility INTEGER DEFAULT 0
 );
+
+CREATE TABLE IF NOT EXISTS area2item (
+    area_id INTEGER NOT NULL REFERENCES areas(id) ON DELETE CASCADE,
+    item_id INTEGER NOT NULL REFERENCES items(id) ON DELETE CASCADE,
+    PRIMARY KEY (area_id, item_id)
+);
 """
 
 

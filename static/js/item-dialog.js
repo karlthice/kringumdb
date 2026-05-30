@@ -6,8 +6,10 @@
 var TAG_LIST = ['Náttúra', 'Saga', 'Menning', 'Fólk', 'Ferð', 'Bók', 'Kringum', 'Gisting'];
 
 function doInsertUpdateItem(inElement, inItem) {
-    var dtDate = new Date();
-    var sDate = dtDate.getDate() + "." + (dtDate.getMonth() + 1) + "." + dtDate.getFullYear();
+  API.get("areas").then(function (areaData) {
+    var aAreas = areaData.Areas || [];
+    var areaIds = aAreas.map(function (a) { return String(a.ID); });
+    var areaCaptions = aAreas.map(function (a) { return a.Caption; });
 
     // Parse tag string into array for multi-select matching
     var currentTags = inItem.Tag ? inItem.Tag.split(';') : [];
@@ -19,7 +21,7 @@ function doInsertUpdateItem(inElement, inItem) {
             Name: inItem.Name || '',
             NameEng: inItem.NameEng || '',
             GPS: inItem.GPS || '',
-            Area: inItem.Area || '',
+            Area: (inItem.AreaIds || []).map(String),
             Tag: currentTags,
             Story: inItem.Story || '',
             StoryEng: inItem.StoryEng || '',
@@ -32,7 +34,7 @@ function doInsertUpdateItem(inElement, inItem) {
             { Caption: 'ID', id: 'ID', PropertyType: 'String' },
             { Caption: 'Nafn', id: 'Name', PropertyType: 'String' },
             { Caption: 'GPS', id: 'GPS', PropertyType: 'String' },
-            { Caption: 'Svæði', id: 'Area', PropertyType: 'String', ReadOnly: true },
+            { Caption: 'Svæði', id: 'Area', multiple: true, PropertyType: 'Select', ValueData: areaIds, TextData: areaCaptions },
             { Caption: 'Tag', id: 'Tag', multiple: true, PropertyType: 'Select', ValueData: TAG_LIST, TextData: TAG_LIST },
             { Caption: 'Texti', id: 'Story', PropertyType: 'Text', maxlength: 4000, rows: 9 },
             { Caption: 'Reference', id: 'Ref', PropertyType: 'Text', maxlength: 3000 },
@@ -125,7 +127,8 @@ function doInsertUpdateItem(inElement, inItem) {
                         ref: inObject.Ref,
                         link: inObject.Link,
                         link_eng: inObject.LinkEng,
-                        visibility: inObject.Visibility
+                        visibility: inObject.Visibility,
+                        areas: inObject.Area || []
                     }).then(function () {
                         CloseQuickDialog("New");
                         Render("");
@@ -136,6 +139,7 @@ function doInsertUpdateItem(inElement, inItem) {
                 }
             }
         );
+  });
 }
 
 /**

@@ -75,7 +75,7 @@ function doInsertUpdateArea(inElement, areaId) {
                     }
 
                     // Validate
-                    if (!result.Caption || !result.CaptionEng || !result.GPS) {
+                    if (!result.Caption || !result.CaptionEng || !result.GPS || !result.Radius) {
                         return "Þarf að fylla út svæði";
                     }
 

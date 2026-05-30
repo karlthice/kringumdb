@@ -1,3 +1,5 @@
 flask>=3.0
 pyodbc>=5.0
 requests>=2.31
+piper-tts>=1.3  # Icelandic TTS batch rendering (tts/, piper engine) — also needs system ffmpeg
+edge-tts>=7.0   # Azure neural voices Guðrún/Gunnar (tts/, edge engine)

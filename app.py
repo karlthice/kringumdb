@@ -1,8 +1,9 @@
 import math
-import os
+import io
 import json
+import zipfile
 import sqlite3
-from flask import Flask, g, request, jsonify, send_from_directory
+from flask import Flask, g, request, jsonify, send_from_directory, send_file
 import requests as http_requests
 import config
 
@@ -17,6 +18,7 @@ def get_db():
     if 'db' not in g:
         g.db = sqlite3.connect(config.DATABASE)
         g.db.row_factory = sqlite3.Row
+        g.db.execute("PRAGMA foreign_keys=ON")
     return g.db
 
 
@@ -38,32 +40,6 @@ def haversine(lat1, lon1, lat2, lon2):
     return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
 
-# --- Area computation helper ---
-
-def compute_area_for_gps(gps_str, areas):
-    """Given a GPS string 'lat,lon' and a list of area rows, return matching area captions."""
-    if not gps_str or ',' not in gps_str:
-        return ''
-    gps_str = gps_str.replace(' ', '')
-    try:
-        lat, lon = float(gps_str.split(',')[0]), float(gps_str.split(',')[1])
-    except (ValueError, IndexError):
-        return ''
-    matches = []
-    for area in areas:
-        area_gps = (area['gps'] or '').replace(' ', '')
-        if not area_gps or ',' not in area_gps:
-            continue
-        try:
-            alat, alon = float(area_gps.split(',')[0]), float(area_gps.split(',')[1])
-        except (ValueError, IndexError):
-            continue
-        radius = int(area['radius'] or 0)
-        if haversine(lat, lon, alat, alon) < radius:
-            matches.append(area['caption'])
-    return ', '.join(matches)
-
-
 # --- Static serving ---
 
 @app.route('/')
@@ -79,27 +55,36 @@ def get_items():
     filt = (data.get('filter') or '').strip()
     db = get_db()
 
+    # Örnefni (place-name imports) are export-only: hide them from the map and item list.
     if not filt:
-        rows = db.execute("SELECT * FROM items ORDER BY id DESC").fetchall()
+        rows = db.execute(
+            "SELECT * FROM items WHERE IFNULL(tag,'') <> 'Örnefni' ORDER BY id DESC"
+        ).fetchall()
     elif len(filt) == 1:
         rows = db.execute(
-            "SELECT * FROM items WHERE UPPER(name) LIKE UPPER(? || '%') ORDER BY name",
+            "SELECT * FROM items WHERE UPPER(name) LIKE UPPER(? || '%') AND IFNULL(tag,'') <> 'Örnefni' ORDER BY name",
             (filt,)
         ).fetchall()
     else:
         rows = db.execute(
-            "SELECT * FROM items WHERE UPPER(story) LIKE UPPER('%' || ? || '%') OR UPPER(name) LIKE UPPER('%' || ? || '%') ORDER BY id DESC",
+            "SELECT * FROM items WHERE (UPPER(story) LIKE UPPER('%' || ? || '%') OR UPPER(name) LIKE UPPER('%' || ? || '%')) AND IFNULL(tag,'') <> 'Örnefni' ORDER BY id DESC",
             (filt, filt)
         ).fetchall()
 
-    # Fetch all areas for computing area membership
-    areas = db.execute("SELECT * FROM areas").fetchall()
+    # Map each item to its curated areas (id + caption) via the join table
+    area_map = {}
+    for r in db.execute(
+        """SELECT a2i.item_id AS item_id, ar.id AS area_id, ar.caption AS caption
+           FROM area2item a2i JOIN areas ar ON ar.id = a2i.area_id"""
+    ).fetchall():
+        area_map.setdefault(r['item_id'], []).append((str(r['area_id']), r['caption']))
 
     items = []
     total_translate = 0
     total_done = 0
 
     for row in rows:
+        item_areas = area_map.get(row['id'], [])
         items.append({
             'ID': row['id'],
             'Name': row['name'],
@@ -112,7 +97,8 @@ def get_items():
             'LinkEng': row['link_eng'],
             'Visibility': row['visibility'],
             'Ref': row['ref'],
-            'Area': compute_area_for_gps(row['gps'], areas),
+            'Area': ', '.join(c for _, c in item_areas),
+            'AreaIds': [aid for aid, _ in item_areas],
         })
 
         name = row['name'] or ''
@@ -154,7 +140,7 @@ def save_item():
     item_id = d.get('id', '').strip()
 
     if not item_id:
-        db.execute(
+        cur = db.execute(
             """INSERT INTO items (name, name_eng, gps, tag, fromdate, todate, story, story_eng, ref, link, link_eng, visibility, lastchanged)
                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))""",
             (d.get('name'), d.get('name_eng'), d.get('gps'), d.get('tag'),
@@ -163,7 +149,9 @@ def save_item():
              d.get('ref'), d.get('link'), d.get('link_eng'),
              d.get('visibility', 0))
         )
+        item_id = cur.lastrowid
     else:
+        item_id = int(item_id)
         db.execute(
             """UPDATE items SET name=?, name_eng=?, gps=?, tag=?, fromdate=?, todate=?,
                story=?, story_eng=?, ref=?, link=?, link_eng=?, visibility=?, lastchanged=datetime('now')
@@ -174,6 +162,12 @@ def save_item():
              d.get('ref'), d.get('link'), d.get('link_eng'),
              d.get('visibility', 0), item_id)
         )
+
+    # Rewrite curated area membership
+    db.execute("DELETE FROM area2item WHERE item_id=?", (item_id,))
+    for aid in (d.get('areas') or []):
+        db.execute("INSERT OR IGNORE INTO area2item (area_id, item_id) VALUES (?, ?)", (int(aid), item_id))
+
     db.commit()
     return jsonify({'success': True})
 
@@ -237,42 +231,17 @@ def save_area():
     return jsonify({'success': True})
 
 
-@app.route('/api/areas/for-item', methods=['GET'])
-def areas_for_item():
-    gps = request.args.get('gps', '')
-    db = get_db()
-    areas = db.execute("SELECT * FROM areas").fetchall()
-    result = compute_area_for_gps(gps, areas)
-    return jsonify({'areas': result})
-
-
 @app.route('/api/areas/<int:area_id>/items', methods=['GET'])
 def items_in_area(area_id):
     db = get_db()
-    area = db.execute("SELECT * FROM areas WHERE id=?", (area_id,)).fetchone()
-    if not area:
-        return jsonify({'Items': []})
-    area_gps = (area['gps'] or '').replace(' ', '')
-    if not area_gps or ',' not in area_gps:
-        return jsonify({'Items': []})
-    try:
-        alat, alon = float(area_gps.split(',')[0]), float(area_gps.split(',')[1])
-    except (ValueError, IndexError):
-        return jsonify({'Items': []})
-    radius = int(area['radius'] or 0)
-
-    rows = db.execute("SELECT * FROM items ORDER BY name").fetchall()
-    items = []
-    for row in rows:
-        item_gps = (row['gps'] or '').replace(' ', '')
-        if not item_gps or ',' not in item_gps:
-            continue
-        try:
-            lat, lon = float(item_gps.split(',')[0]), float(item_gps.split(',')[1])
-        except (ValueError, IndexError):
-            continue
-        if haversine(lat, lon, alat, alon) < radius:
-            items.append({'ID': row['id'], 'Name': row['name'], 'Tag': row['tag']})
+    rows = db.execute(
+        """SELECT i.id, i.name, i.tag
+           FROM area2item a2i JOIN items i ON i.id = a2i.item_id
+           WHERE a2i.area_id = ?
+           ORDER BY i.name""",
+        (area_id,)
+    ).fetchall()
+    items = [{'ID': r['id'], 'Name': r['name'], 'Tag': r['tag']} for r in rows]
     return jsonify({'Items': items})
 
 
@@ -328,13 +297,10 @@ def nearby():
 
 # --- API: Export ---
 
-@app.route('/api/export', methods=['POST'])
+@app.route('/api/export', methods=['GET'])
 def export():
-    data = request.get_json(force=True)
-    language = data.get('language', '')
+    language = request.args.get('language', '')
     db = get_db()
-
-    os.makedirs(config.EXPORT_DIR, exist_ok=True)
 
     # Export items
     rows = db.execute("SELECT * FROM items ORDER BY name").fetchall()
@@ -350,6 +316,9 @@ def export():
         if name_val.startswith('*') or name_val.startswith('+'):
             continue
         if name_val == last_name and item_gps == last_gps:
+            continue
+        # Örnefni are Icelandic-only: exclude them from the English export.
+        if language == 'ENG' and (row['tag'] or '') == 'Örnefni':
             continue
 
         lat, lon = '0', '0'
@@ -378,7 +347,11 @@ def export():
         last_name = name_val
         last_gps = item_gps
 
-    # Export areas
+    # Export areas (with their curated item ids)
+    area_items = {}
+    for r in db.execute("SELECT area_id, item_id FROM area2item").fetchall():
+        area_items.setdefault(r['area_id'], []).append(str(r['item_id']))
+
     area_rows = db.execute("SELECT * FROM areas ORDER BY caption").fetchall()
     areas_out = []
     for row in area_rows:
@@ -404,22 +377,26 @@ def export():
             'id': str(row['id']), 'caption': caption, 'description': description,
             'gps': area_gps, 'lat': lat, 'lon': lon,
             'radius': str(row['radius']), 'media': row['media'] or '',
-            'visibility': row['visibility']
+            'visibility': row['visibility'],
+            'itemIds': area_items.get(row['id'], [])
         })
 
     if language == 'ENG':
         items_file = 'travel_eng.json'
         areas_file = 'areas_eng.json'
+        zip_name = 'kringum_export_eng.zip'
     else:
         items_file = 'travel.json'
         areas_file = 'areas.json'
+        zip_name = 'kringum_export.zip'
 
-    with open(os.path.join(config.EXPORT_DIR, items_file), 'w', encoding='utf-8') as f:
-        json.dump(items_out, f, ensure_ascii=False, indent=2)
-    with open(os.path.join(config.EXPORT_DIR, areas_file), 'w', encoding='utf-8') as f:
-        json.dump(areas_out, f, ensure_ascii=False, indent=2)
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, 'w', zipfile.ZIP_DEFLATED) as zf:
+        zf.writestr(items_file, json.dumps(items_out, ensure_ascii=False, indent=2))
+        zf.writestr(areas_file, json.dumps(areas_out, ensure_ascii=False, indent=2))
+    buf.seek(0)
 
-    return jsonify({'success': True})
+    return send_file(buf, mimetype='application/zip', as_attachment=True, download_name=zip_name)
 
 
 # --- API: Translate (via Google Gemini) ---
