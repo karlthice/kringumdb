@@ -131,11 +131,15 @@ def _init_worker(engine: str, voice_name: str) -> None:
     # edge needs no per-worker state (each render is an independent network call)
 
 
-def out_path_for(item_id: int, out_dir: Path, voice_tag: str | None = None) -> Path:
+def out_path_for(item_id: int, out_dir: Path, voice_tag: str | None = None,
+                 lang: str = "is") -> Path:
     # voice_tag = short voice name (e.g. "salka") for side-by-side comparison.
+    # Non-default languages get a language suffix (e.g. "<id>_en.mp3") so English
+    # files are distinguishable from Icelandic ones even outside audio_en/.
+    suffix = "" if lang == "is" else f"_{lang}"
     if voice_tag:
-        return out_dir / f"{item_id}-{voice_tag}.mp3"
-    return out_dir / f"{item_id}.mp3"
+        return out_dir / f"{item_id}-{voice_tag}{suffix}.mp3"
+    return out_dir / f"{item_id}{suffix}.mp3"
 
 
 def voice_tag_of(voice: str) -> str:
@@ -308,7 +312,7 @@ def main() -> int:
     # so a plain <id>.mp3 stays resume-safe.
     def item_out(r) -> Path:
         tag = voice_tag_of(voice_for_item(r["id"], args)) if args.name_with_voice else None
-        return out_path_for(r["id"], args.out, tag)
+        return out_path_for(r["id"], args.out, tag, args.lang)
 
     if not args.overwrite:
         items = [r for r in items if not item_out(r).exists()]
