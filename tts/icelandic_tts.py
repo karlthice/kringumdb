@@ -150,6 +150,10 @@ _UNIT_GENDER = {
         ("dagur dagar daga dögum", "m"),
         ("mánuður mánuðir mánuði mánuðum", "m"),
         ("klukkutími klukkutímar klukkutíma", "m"),
+        # population / head-counts — keeps a 4-digit count (e.g. "1850 íbúar")
+        # from being mistaken for a year by the year heuristic below.
+        ("íbúi íbúar íbúa íbúum", "m"),
+        ("manns", "m"),
         # feminine
         ("króna krónur krónum króna", "f"),
         ("mínúta mínútur mínútum mínútna", "f"),
@@ -191,6 +195,15 @@ def _cardinal_sub(m: "re.Match[str]") -> str:
     after = [w.lower() for w in _WORD_RE.findall(tail)]
     noun = after[0] if after else None
     adj = after[1] if len(after) > 1 else None
+    # A bare 4-digit number in the plausible year range, not counting a known
+    # unit, is almost always a year in this corpus (settlement era onward), so
+    # read it year-style ("1907" -> "nítján hundruð og sjö") rather than as a
+    # huge cardinal. Heights/areas/prices/populations are followed by a unit or
+    # count noun (metra, króna, íbúar, ...) and fall through to the cardinal
+    # reading below. Years in an explicit "ár…"/month context are already
+    # converted in normalize_text before this runs.
+    if 1000 <= num <= 2099 and noun not in _UNIT_GENDER:
+        return read_year(num) + tail
     gender = _UNIT_GENDER.get(noun, "n") if noun else "n"
     # Attributive measure phrase "<num> <unit> <dim-adj>" -> genitive numeral.
     case = "gen" if (noun in _UNIT_GENDER and adj in _DIM_ADJ) else "nom"
@@ -279,6 +292,82 @@ def _yearrange_sub(m: "re.Match[str]") -> str:
     return m.group(0)
 
 
+# --- Centuries --------------------------------------------------------------
+# "18. öld" -> "átjánda öld"; neither engine reads the bare "18." as an ordinal.
+# Century ordinals are weak feminine adjectives: the nominative ends in -a, and
+# every oblique case (acc/dat/gen) ends in -u. "öld" is feminine, so a governing
+# preposition (á/í/um/frá/til/…) selects the -u form ("á 18. öld" -> "á átjándu
+# öld"); a bare "18. öld" stays nominative ("átjánda öld").
+_CENTURY_ORDINAL = {
+    #    nominative (-a)            oblique (-u)
+    1:  ("fyrsta",                 "fyrstu"),
+    2:  ("önnur",                  "annarri"),
+    3:  ("þriðja",                 "þriðju"),
+    4:  ("fjórða",                 "fjórðu"),
+    5:  ("fimmta",                 "fimmtu"),
+    6:  ("sjötta",                 "sjöttu"),
+    7:  ("sjöunda",                "sjöundu"),
+    8:  ("áttunda",                "áttundu"),
+    9:  ("níunda",                 "níundu"),
+    10: ("tíunda",                 "tíundu"),
+    11: ("ellefta",                "elleftu"),
+    12: ("tólfta",                 "tólftu"),
+    13: ("þrettánda",              "þrettándu"),
+    14: ("fjórtánda",              "fjórtándu"),
+    15: ("fimmtánda",              "fimmtándu"),
+    16: ("sextánda",               "sextándu"),
+    17: ("sautjánda",              "sautjándu"),
+    18: ("átjánda",                "átjándu"),
+    19: ("nítjánda",               "nítjándu"),
+    20: ("tuttugasta",             "tuttugustu"),
+    21: ("tuttugasta og fyrsta",   "tuttugustu og fyrstu"),
+}
+
+# Prepositions that put the following "öld" phrase in an oblique case and so
+# select the -u ordinal form. A phrase with no governing preposition is read as
+# nominative (-a).
+_OBLIQUE_PREPS = (
+    "á í um frá til eftir fyrir undir yfir gegnum kringum með að milli við úr"
+).split()
+_PREP_ALT = "|".join(_OBLIQUE_PREPS)
+
+# Inflected forms of "öld" (sg. + pl.), listed explicitly so the rule doesn't
+# fire on unrelated words like "aldur" (age) or "öldungur" (elder).
+_OLD_FORMS = (
+    "öld öldin öldina öldinni aldar aldarinnar "
+    "aldir aldirnar alda aldanna öldum öldunum"
+).split()
+# Optional governing preposition, a century number, an optional second number
+# (range/coordination via –, -, "og" or "til"), then a form of "öld".
+_CENTURY_RE = re.compile(
+    r"\b((?:%s)\s+)?(\d{1,2})\.\s*(?:([–-]|og|til)\s*(\d{1,2})\.\s*)?(%s)\b"
+    % (_PREP_ALT, "|".join(_OLD_FORMS)),
+    re.IGNORECASE,
+)
+
+
+def _century_word(n: int, oblique: bool) -> str | None:
+    forms = _CENTURY_ORDINAL.get(n)
+    return None if forms is None else forms[1 if oblique else 0]
+
+
+def _century_sub(m: "re.Match[str]") -> str:
+    prep, n1, sep, n2, noun = m.groups()
+    oblique = prep is not None
+    w1 = _century_word(int(n1), oblique)
+    if w1 is None:
+        return m.group(0)
+    if n2:
+        w2 = _century_word(int(n2), oblique)
+        if w2 is None:
+            return m.group(0)
+        conj = "og" if sep == "og" else "til"   # "17.–18." / "17. til 18." -> "til"
+        mid = f"{w1} {conj} {w2}"
+    else:
+        mid = w1
+    return f"{prep or ''}{mid} {noun}"
+
+
 # --- General Icelandic text normalization -----------------------------------
 # Ported from the original C# pre-processor: expand abbreviations, units,
 # compass directions, number ranges, and HTML breaks that the TTS engines
@@ -346,6 +435,7 @@ def normalize_text(text: str) -> str:
     text = _DAYMONTH_RE.sub(_daymonth_sub, text)      # then "8. júní"
     text = _YEAR_RANGE_RE.sub(_yearrange_sub, text)   # "1908-1912" (before generic range)
     text = _YEAR_CTX_RE.sub(_yearctx_sub, text)       # "árið 1783" / "febrúar 1784"
+    text = _CENTURY_RE.sub(_century_sub, text)        # "18. öld" -> "átjánda öld"
     for rx, repl in _TEXT_RULES:
         text = rx.sub(repl, text)
     # Collapse the runs of spaces left by substitutions, but keep newlines

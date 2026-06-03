@@ -88,7 +88,8 @@ Two normalization passes in `icelandic_tts.py`, applied before synthesis:
    from the original C# pre-processor: expands abbreviations (`klst`,
    `u.þ.b.`, `t.d.`, `m.a.`, …), units (`m²`/`km²`/`km³`/`MW`/`ha`/`fm`/
    `m y.s` → full words), compass directions (`NV`→norðvestur, `SSA`→…),
-   number/year ranges (`1908-1912` → "1908 til 1912"), HTML breaks
+   number/year ranges (`1908-1912` → "1908 til 1912"), centuries
+   (`18. öld` → "átjánda öld", `á 18. öld` → "á átjándu öld"), HTML breaks
    (`<br>`/`<p>` → paragraph break), `&` → "og", and strips footnote markers
    like `(1,2,3)`. Edit `_TEXT_RULES` to add/remove rules.
 
@@ -102,6 +103,13 @@ Two normalization passes in `icelandic_tts.py`, applied before synthesis:
    noun's gender, and the genitive in attributive measure phrases
    (`1682 metra hátt` → "...áttatíu og tveggja metra hátt"). Extend
    `_UNIT_GENDER` / `_DIM_ADJ` as new units show up.
+
+   A bare 4-digit number in 1000–2099 is read **year-style** by default
+   (`byggð 1907` → "...nítján hundruð og sjö") — the common case in this
+   corpus — *unless* it is immediately followed by a known unit/count noun in
+   `_UNIT_GENDER` (`1682 metra`, `1850 íbúar`, `2500 krónur`), which keeps the
+   cardinal reading. A bare 4-digit quantity with no unit noun (rare) will be
+   read as a year; add its noun to `_UNIT_GENDER` if that comes up.
 
 ## Layout
 
