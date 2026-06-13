@@ -9,6 +9,7 @@ already present is skipped.
 import json
 import os
 import sqlite3
+import sys
 from datetime import datetime
 
 HERE = os.path.dirname(__file__)
@@ -20,7 +21,8 @@ TAG = "Saga"
 
 
 def main():
-    with open(JSON_PATH, "r", encoding="utf-8") as f:
+    json_path = sys.argv[1] if len(sys.argv) > 1 else JSON_PATH
+    with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
     items = data["items"]
 
