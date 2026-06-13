@@ -53,6 +53,7 @@ EDGE_VOICES = {
 LANGS = {
     "is": {
         "field": "story",
+        "name_field": "name",
         "default_voice": "is-IS-GudrunNeural",
         "alternate": ("is-IS-GunnarNeural", "is-IS-GudrunNeural"),
         "voices": ("is-IS-GudrunNeural", "is-IS-GunnarNeural"),
@@ -60,6 +61,7 @@ LANGS = {
     },
     "en": {
         "field": "story_eng",
+        "name_field": "name_eng",
         "default_voice": "en-US-AndrewNeural",
         "alternate": ("en-US-AndrewNeural", "en-GB-SoniaNeural"),
         "voices": ("en-US-AndrewNeural", "en-GB-SoniaNeural",
@@ -91,6 +93,7 @@ def fetch_items(
     db_path: Path,
     *,
     field: str = "story",
+    name_field: str = "name",
     ids: list[int] | None = None,
     visible_only: bool = False,
     limit: int | None = None,
@@ -98,10 +101,12 @@ def fetch_items(
 ) -> list[sqlite3.Row]:
     """Return items whose `field` (story / story_eng) is non-empty.
 
-    The chosen column is aliased to `story` so the rest of the pipeline is
-    language-agnostic."""
+    The chosen story/caption columns are aliased to `story`/`name` so the rest
+    of the pipeline is language-agnostic."""
     if field not in ("story", "story_eng"):  # guard against SQL injection
         raise ValueError(f"unsupported field: {field}")
+    if name_field not in ("name", "name_eng"):  # guard against SQL injection
+        raise ValueError(f"unsupported name_field: {name_field}")
     where = [f"{field} IS NOT NULL", f"TRIM({field}) <> ''"]
     params: list[object] = []
     if visible_only:
@@ -112,7 +117,7 @@ def fetch_items(
     if ids:
         where.append(f"id IN ({','.join('?' * len(ids))})")
         params.extend(ids)
-    sql = (f"SELECT id, name, {field} AS story FROM items "
+    sql = (f"SELECT id, {name_field} AS name, {field} AS story FROM items "
            f"WHERE {' AND '.join(where)} ORDER BY id")
     if limit:
         sql += f" LIMIT {int(limit)}"
@@ -153,6 +158,21 @@ def voice_tag_of(voice: str) -> str:
 def _has_speech(text: str) -> bool:
     """True if the text contains at least one letter (something to pronounce)."""
     return any(c.isalpha() for c in text)
+
+
+def spoken_text(r: sqlite3.Row) -> str:
+    """The text to synthesize: caption (item name) read first, then the story.
+
+    The caption is emitted as its own paragraph (blank line) so it gets the
+    paragraph pause before the body, and is terminated like a sentence so the
+    neural voices give it sentence prosody. Falls back to the story alone if the
+    caption is empty."""
+    name = (r["name"] or "").strip()
+    story = (r["story"] or "").strip()
+    if not name:
+        return story
+    sep = "" if name[-1] in ".!?:" else "."
+    return f"{name}{sep}\n\n{story}"
 
 
 def _render_piper(item_id: int, story: str, out: Path, opts: dict) -> tuple[int, str]:
@@ -302,7 +322,8 @@ def main() -> int:
 
     exclude_tags = [t.strip() for t in args.exclude_tag.split(",") if t.strip()]
     ids = [int(x) for x in args.ids.split(",")] if args.ids else None
-    items = fetch_items(args.db, field=lang["field"], ids=ids, visible_only=args.visible_only,
+    items = fetch_items(args.db, field=lang["field"], name_field=lang["name_field"],
+                        ids=ids, visible_only=args.visible_only,
                         limit=args.limit, exclude_tags=exclude_tags)
     if exclude_tags:
         print(f"Excluding tags: {', '.join(exclude_tags)}", file=sys.stderr)
@@ -336,7 +357,7 @@ def main() -> int:
     ) as ex:
         futs = [
             ex.submit(
-                _render_one, args.engine, r["id"], r["story"],
+                _render_one, args.engine, r["id"], spoken_text(r),
                 item_out(r), voice_for_item(r["id"], args), opts,
             )
             for r in items
