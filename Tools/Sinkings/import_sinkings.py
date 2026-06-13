@@ -52,7 +52,7 @@ def main():
                 item.get("tag", TAG),
                 item["story"],
                 item["story_eng"],
-                REF,
+                item.get("ref", REF),
                 item.get("fromdate", ""),
                 item.get("todate", ""),
                 SOURCE,
