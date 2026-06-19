@@ -294,10 +294,16 @@ def _yearrange_sub(m: "re.Match[str]") -> str:
 
 # --- Centuries --------------------------------------------------------------
 # "18. öld" -> "átjánda öld"; neither engine reads the bare "18." as an ordinal.
-# Century ordinals are weak feminine adjectives: the nominative ends in -a, and
-# every oblique case (acc/dat/gen) ends in -u. "öld" is feminine, so a governing
-# preposition (á/í/um/frá/til/…) selects the -u form ("á 18. öld" -> "á átjándu
-# öld"); a bare "18. öld" stays nominative ("átjánda öld").
+# Century ordinals are weak feminine adjectives: the nominative singular ends in
+# -a, and every other form (acc/dat/gen singular and the whole plural) ends in
+# -u. The case is driven first by the inflected form of "öld" itself: the
+# genitive "aldar"/"aldarinnar", the definite acc/dat "öldina"/"öldinni" and the
+# plural forms are oblique in every context, so they always take the -u form
+# ("í lok 18. aldar" -> "í lok átjándu aldar"). Only the bare "öld" (nom/acc/dat
+# sg) and the definite nominative "öldin" can be nominative; for "öld" a
+# governing preposition (á/í/um/frá/…) or a quantifier adjective (miðja/miðri/…)
+# selects the -u form ("á 18. öld" -> "á átjándu öld", "um miðja 18. öld" -> "um
+# miðja átjándu öld"), otherwise it stays nominative ("18. öld" -> "átjánda öld").
 _CENTURY_ORDINAL = {
     #    nominative (-a)            oblique (-u)
     1:  ("fyrsta",                 "fyrstu"),
@@ -323,13 +329,24 @@ _CENTURY_ORDINAL = {
     21: ("tuttugasta og fyrsta",   "tuttugustu og fyrstu"),
 }
 
-# Prepositions that put the following "öld" phrase in an oblique case and so
-# select the -u ordinal form. A phrase with no governing preposition is read as
-# nominative (-a).
+# Prepositions that put a following bare "öld" in an oblique case and so select
+# the -u ordinal form. A bare "öld" with no governing preposition (and no
+# quantifier adjective, below) is read as nominative (-a).
 _OBLIQUE_PREPS = (
     "á í um frá til eftir fyrir undir yfir gegnum kringum með að milli við úr"
 ).split()
 _PREP_ALT = "|".join(_OBLIQUE_PREPS)
+
+# Quantifier adjectives that sit between the preposition and the numeral
+# ("um miðja 19. öld", "frá miðri 20. öld", "á öndverðri 18. öld"). They are
+# themselves in an oblique (acc/dat) case agreeing with "öld", so their presence
+# forces the -u form even when the governing preposition is not adjacent to the
+# numeral. Listed as a closed set so the rule never swallows an arbitrary word.
+_OBLIQUE_MODS = (
+    "miðja miðri miðjan miðrar miðju síðari fyrri öndverðri öndverða "
+    "ofanverðri ofanverða framanverðri endilanga alla allri hálfa hálfri"
+).split()
+_MOD_ALT = "|".join(_OBLIQUE_MODS)
 
 # Inflected forms of "öld" (sg. + pl.), listed explicitly so the rule doesn't
 # fire on unrelated words like "aldur" (age) or "öldungur" (elder).
@@ -337,11 +354,16 @@ _OLD_FORMS = (
     "öld öldin öldina öldinni aldar aldarinnar "
     "aldir aldirnar alda aldanna öldum öldunum"
 ).split()
-# Optional governing preposition, a century number, an optional second number
-# (range/coordination via –, -, "og" or "til"), then a form of "öld".
+# Only the bare "öld" (nom/acc/dat sg) and the definite nominative "öldin" can be
+# nominative; every other form is oblique in all contexts. "öldin" is always
+# nominative, so only "öld" still depends on a preposition/adjective trigger.
+_OLD_NOMINATIVE_FORMS = {"öld", "öldin"}
+# Optional governing preposition, optional quantifier adjective, a century
+# number, an optional second number (range/coordination via –, -, "og", "til" or
+# "eða"), then a form of "öld".
 _CENTURY_RE = re.compile(
-    r"\b((?:%s)\s+)?(\d{1,2})\.\s*(?:([–-]|og|til)\s*(\d{1,2})\.\s*)?(%s)\b"
-    % (_PREP_ALT, "|".join(_OLD_FORMS)),
+    r"\b((?:%s)\s+)?((?:%s)\s+)?(\d{1,2})\.\s*(?:([–-]|og|til|eða)\s*(\d{1,2})\.\s*)?(%s)\b"
+    % (_PREP_ALT, _MOD_ALT, "|".join(_OLD_FORMS)),
     re.IGNORECASE,
 )
 
@@ -352,8 +374,14 @@ def _century_word(n: int, oblique: bool) -> str | None:
 
 
 def _century_sub(m: "re.Match[str]") -> str:
-    prep, n1, sep, n2, noun = m.groups()
-    oblique = prep is not None
+    prep, mod, n1, sep, n2, noun = m.groups()
+    noun_l = noun.lower()
+    if noun_l == "öldin":
+        oblique = False                        # definite nominative singular -> -a
+    elif noun_l not in _OLD_NOMINATIVE_FORMS:
+        oblique = True                         # gen sg, definite acc/dat, all plurals -> -u
+    else:                                      # bare "öld": nominative unless governed
+        oblique = prep is not None or mod is not None
     w1 = _century_word(int(n1), oblique)
     if w1 is None:
         return m.group(0)
@@ -361,11 +389,11 @@ def _century_sub(m: "re.Match[str]") -> str:
         w2 = _century_word(int(n2), oblique)
         if w2 is None:
             return m.group(0)
-        conj = "og" if sep == "og" else "til"   # "17.–18." / "17. til 18." -> "til"
+        conj = sep if sep in ("og", "eða") else "til"  # "17.–18." / "17. til 18." -> "til"
         mid = f"{w1} {conj} {w2}"
     else:
         mid = w1
-    return f"{prep or ''}{mid} {noun}"
+    return f"{prep or ''}{mod or ''}{mid} {noun}"
 
 
 # --- General Icelandic text normalization -----------------------------------
@@ -429,6 +457,52 @@ _TEXT_RULES = [
 ]
 
 
+# All-caps acronyms (MH, KR, ÍSÍ, KFUM …) are spelled out letter by letter using
+# the Icelandic names of the letters, so the voice says "emm há" for "MH" instead
+# of trying to pronounce it as a word. Only short runs (2–4 letters) are treated
+# as acronyms; longer all-caps tokens are almost always ordinary words set in
+# capitals (headings, emphasis) and are left for the voice to read normally.
+_LETTER_NAMES = {
+    "A": "a", "Á": "á", "B": "bé", "C": "sé", "D": "dé", "Ð": "eð",
+    "E": "e", "É": "é", "F": "eff", "G": "ge", "H": "há", "I": "i",
+    "Í": "í", "J": "joð", "K": "ká", "L": "ell", "M": "emm", "N": "enn",
+    "O": "o", "Ó": "ó", "P": "pé", "Q": "kú", "R": "err", "S": "ess",
+    "T": "té", "U": "u", "Ú": "ú", "V": "vaff", "W": "tvöfalt vaff",
+    "X": "ex", "Y": "ufsilon", "Ý": "ufsilon ý", "Z": "seta",
+    "Þ": "þorn", "Æ": "æ", "Ö": "ö",
+}
+
+# All-caps tokens that are pronounced as a word (acronym read as a word, proper
+# name, or an ordinary word set in capitals) and so must NOT be spelled out.
+# Only 2–4-letter tokens need listing here; anything longer is left alone by the
+# length cap in _ACRONYM_RE. Extend as new cases turn up.
+_SPELL_EXCEPTIONS = frozenset((
+    # acronyms read as a single word
+    "NATO NATÓ NASA RÚV SÍS KEA LAVA RAF SKY RES SUP RIB NUTS "
+    # company / brand names
+    "EFLA DISA BYKO SAAB ASK ÍSOR "
+    # ordinary Icelandic words written in capitals
+    "VOR LÍF BÆR GOTT SALT ROK SÝN SÚM BARA HIN HINS FRÁ SKAL GÓÐA EMIR KLÓ "
+    # ordinary English words written in capitals
+    "YES NOT FLY TOUR OVER WOW"
+).split())
+
+# A run of 2–4 uppercase Icelandic letters, bounded on both sides; longer runs
+# fall through untouched. Runs through after _TEXT_RULES so units (MW) and
+# compass directions (NA/NV/SSV) have already been expanded to words.
+_ACRONYM_RE = re.compile(r"\b[A-ZÁÉÍÓÚÝÞÆÖÐ]{2,4}\b")
+# Tokens that look like Roman numerals (II, III, IX, VIII …) are left as-is so we
+# don't read "II" as the letters "i i".
+_ROMAN_RE = re.compile(r"^[IVXLCDM]+$")
+
+
+def _spell_acronym(m: "re.Match[str]") -> str:
+    tok = m.group(0)
+    if tok in _SPELL_EXCEPTIONS or _ROMAN_RE.match(tok):
+        return tok
+    return " ".join(_LETTER_NAMES.get(ch, ch) for ch in tok)
+
+
 def normalize_text(text: str) -> str:
     """Expand dates, years, abbreviations, units, directions, ranges, HTML breaks."""
     text = _NUMDATE_RE.sub(_numdate_sub, text)        # dd.mm.yyyy first
@@ -438,6 +512,7 @@ def normalize_text(text: str) -> str:
     text = _CENTURY_RE.sub(_century_sub, text)        # "18. öld" -> "átjánda öld"
     for rx, repl in _TEXT_RULES:
         text = rx.sub(repl, text)
+    text = _ACRONYM_RE.sub(_spell_acronym, text)      # "MH" -> "emm há"
     # Collapse the runs of spaces left by substitutions, but keep newlines
     # (paragraph breaks) intact.
     text = re.sub(r"[ \t]{2,}", " ", text)
