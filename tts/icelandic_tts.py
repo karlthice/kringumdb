@@ -222,6 +222,47 @@ def normalize_icelandic_numbers(text: str) -> str:
     return text
 
 
+# A standalone 4-digit number plus an optional following word, used to spot bare
+# years in terse text like captions ("Kaupþing stofnað, 1982") that lack the
+# "árið"/month context normalize_text keys off. The trailing word is captured
+# only to apply the unit guard; it is re-emitted unchanged.
+_BARE_YEAR_RE = re.compile(r"\b(\d{4})\b((?:\s+[^\W\d_]+)?)", re.UNICODE)
+
+
+# Measurement unit abbreviations that follow a quantity ("1536 m", "1380 km",
+# "2000 kr", "1800 kW"). Unlike the spelled-out nouns in _UNIT_GENDER these are
+# short tokens, so a 4-digit value in the year range that is immediately followed
+# by one is a height/distance/price, not a year — keep it as digits.
+_UNIT_ABBR = set(
+    "m km cm mm nm fm ha kr mkr kg hg g mg t l ml dl cl "
+    "w kw mw gw kv v hz khz mhz mb gb tb".split()
+)
+
+
+def _bare_year_sub(m: "re.Match[str]") -> str:
+    num = int(m.group(1))
+    tail = m.group(2) or ""
+    after = _WORD_RE.findall(tail)
+    noun = after[0].lower() if after else None
+    if 1000 <= num <= 2099 and noun not in _UNIT_GENDER and noun not in _UNIT_ABBR:
+        return read_year(num) + tail
+    return m.group(0)
+
+
+def normalize_bare_years(text: str) -> str:
+    """Spell standalone 4-digit years the Icelandic year way, leaving every other
+    number as digits.
+
+    The edge (neural) engine reads a context-free year like "1982" as a plain
+    cardinal ("eitt þúsund níu hundruð ...") instead of the year idiom
+    ("nítján hundruð áttatíu og tvö"); normalize_text only catches years in an
+    explicit "árið"/month/date context, so bare years (typically in captions)
+    slip through. A 4-digit number immediately followed by a counted-unit noun
+    (íbúar, krónur, metra, ...) is left untouched so populations/prices/heights
+    still read as cardinals."""
+    return _BARE_YEAR_RE.sub(_bare_year_sub, text)
+
+
 # --- Dates ------------------------------------------------------------------
 # Day-of-month is read as an ordinal in the fixed date form ("8. júní" ->
 # "áttunda júní"); neither engine does this from "8." on its own.

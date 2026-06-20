@@ -204,7 +204,11 @@ def _render_edge(item_id: int, story: str, out: Path, voice: str, opts: dict) ->
     if opts.get("lang") == "en":
         text = itts.normalize_text_en(story.strip())
     else:
-        text = itts.normalize_text(story.strip())
+        # The neural voice reads a context-free year ("1982", "Hann fórst 1887")
+        # as a plain cardinal, so spell bare years (caption + body) the year way
+        # after the contextual/date normalization. piper doesn't need this — it
+        # spells every number via normalize_icelandic_numbers.
+        text = itts.normalize_bare_years(itts.normalize_text(story.strip()))
     if not _has_speech(text):  # nothing but punctuation/digits -> skip, don't error
         return item_id, "empty"
 
