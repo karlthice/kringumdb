@@ -573,11 +573,31 @@ _EN_RULES = [
     ]
 ]
 
+# Romanize Icelandic letters for the English voices. þ/ð aren't Latin letters, so
+# the English neural frontend drops them silently ("Þingvellir" -> "ingvellir");
+# the accented vowels and æ/ö are read inconsistently. Mapping them to their
+# conventional ASCII forms keeps every name fully pronounced (anglicized, not
+# native): Þingvellir -> Thingvellir, Búðardalur -> Budardalur. ð -> d matches
+# how Icelandic names are romanized for visitors.
+_EN_TRANSLIT = str.maketrans({
+    "Þ": "Th", "þ": "th",
+    "Ð": "D",  "ð": "d",
+    "Æ": "Ae", "æ": "ae",
+    "Ö": "O",  "ö": "o",
+    "Á": "A",  "á": "a",
+    "É": "E",  "é": "e",
+    "Í": "I",  "í": "i",
+    "Ó": "O",  "ó": "o",
+    "Ú": "U",  "ú": "u",
+    "Ý": "Y",  "ý": "y",
+})
+
 
 def normalize_text_en(text: str) -> str:
     """Minimal, language-neutral cleanup for English text before synthesis."""
     for rx, repl in _EN_RULES:
         text = rx.sub(repl, text)
+    text = text.translate(_EN_TRANSLIT)
     return re.sub(r"[ \t]{2,}", " ", text)
 
 

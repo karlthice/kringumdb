@@ -8,5 +8,7 @@ Tools/NatScraper/.nat_en_posts.json
 tts/voices/
 tts/audio/
 tts/audio_en/
+tts/audio_edge/
+tts/audio_edge_en/
 tts/compare/
 tts/kringum.db
