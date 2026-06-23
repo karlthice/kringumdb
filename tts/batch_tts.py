@@ -273,9 +273,10 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--paragraph-silence", type=float, default=0.0,
                    help="Seconds of extra silence at paragraph breaks (piper only).")
     p.add_argument("--retries", type=int, default=4, help="Retries per item for the edge engine (default: %(default)s).")
-    p.add_argument("--alternate", action="store_true",
+    p.add_argument("--alternate", action=argparse.BooleanOptionalAction, default=None,
                    help="edge: alternate voices by item id — odd ids -> male, even ids -> female "
-                        "(is: Gunnar/Guðrún, en: Andrew/Sonia).")
+                        "(is: Gunnar/Guðrún, en: Andrew/Sonia). Default: ON for --engine edge "
+                        "unless a single -v/--voice is given; pass --no-alternate to force one voice.")
     p.add_argument("--name-with-voice", action="store_true",
                    help="Append the voice name to filenames (e.g. 9-gudrun.mp3) for comparison.")
     return p.parse_args()
@@ -295,6 +296,13 @@ def main() -> int:
 
     if args.lang == "en" and args.engine != "edge":
         sys.exit("--lang en requires --engine edge (Piper voices are Icelandic only).")
+
+    # Alternation is the default for the edge engine (its voices come in male/female
+    # pairs). A single explicit -v/--voice opts out; --no-alternate forces one voice;
+    # piper can't alternate at all.
+    voice_explicit = args.voice is not None
+    if args.alternate is None:
+        args.alternate = args.engine == "edge" and not voice_explicit
     if args.alternate and args.engine != "edge":
         sys.exit("--alternate only applies to --engine edge.")
 

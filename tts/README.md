@@ -45,11 +45,14 @@ use; ~80 MB each, git-ignored).
 # Full run (all ~6800 items with a story), 8 workers, with paragraph pauses
 ../venv/bin/python batch_tts.py --jobs 8 --paragraph-silence 0.6 --length-scale 1.05
 
-# Same, but the better Azure neural voice Guðrún (free via edge-tts)
-../venv/bin/python batch_tts.py --engine edge -v is-IS-GudrunNeural --jobs 6
+# Azure neural voices, alternating by item id (odd -> Gunnar, even -> Guðrún) —
+# this is the DEFAULT for --engine edge; small mono files
+../venv/bin/python batch_tts.py --engine edge -b 32k --jobs 6
 
-# Alternate voices by item id (odd -> Gunnar, even -> Guðrún), small mono files
-../venv/bin/python batch_tts.py --engine edge --alternate -b 32k --jobs 6
+# Force a single Azure neural voice (Guðrún) instead of alternating
+../venv/bin/python batch_tts.py --engine edge -v is-IS-GudrunNeural --jobs 6
+# ...or keep the default voice but disable alternation explicitly
+../venv/bin/python batch_tts.py --engine edge --no-alternate -b 32k --jobs 6
 ```
 
 Every `edge` output is re-encoded through ffmpeg to **mono** at `--bitrate`
@@ -69,7 +72,7 @@ skipped, so it is safe to interrupt and restart.
 | `--paragraph-silence S` | extra silence (seconds) at paragraph breaks (piper only) |
 | `--length-scale X` | speech pace; `>1.0` is slower/clearer (piper only) |
 | `--retries N` | per-item retries for the `edge` engine (default 4) |
-| `--alternate` | edge: odd ids → Gunnar, even ids → Guðrún |
+| `--alternate` / `--no-alternate` | edge: odd ids → male, even ids → female (is: Gunnar/Guðrún, en: Andrew/Sonia). **On by default for `edge`** unless a single `-v/--voice` is given; `--no-alternate` forces one voice |
 | `-b, --bitrate` | output MP3 bitrate, always mono (e.g. `32k` for small speech files) |
 | `--name-with-voice` | name files `<id>-<voice>.mp3` (for A/B comparison) |
 | `--visible-only` | only `visibility = 1` |
