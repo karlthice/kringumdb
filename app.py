@@ -40,6 +40,16 @@ def haversine(lat1, lon1, lat2, lon2):
     return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
 
+def has_location(gps):
+    """True if gps is a usable "lat,lon" coordinate. Empty, the NOLOC sentinel
+    (any case), and comma-less values all count as no location, so such items
+    are kept off the map, out of nearby results, and out of the export."""
+    gps = (gps or '').replace(' ', '')
+    if not gps or gps.upper() == 'NOLOC':
+        return False
+    return ',' in gps
+
+
 # --- Static serving ---
 
 @app.route('/')
@@ -251,7 +261,7 @@ def items_in_area(area_id):
 def nearby():
     data = request.get_json(force=True)
     gps = (data.get('gps') or '').replace(' ', '')
-    if ',' not in gps:
+    if not has_location(gps):
         return jsonify({'Nearby': []})
 
     try:
@@ -268,7 +278,7 @@ def nearby():
 
     for row in rows:
         item_gps = (row['gps'] or '').replace(' ', '')
-        if not item_gps or ',' not in item_gps:
+        if not has_location(item_gps):
             continue
         name = row['name'] or ''
         if name.startswith('*') or name.startswith('+'):
@@ -310,7 +320,7 @@ def export():
 
     for row in rows:
         item_gps = (row['gps'] or '').replace(' ', '')
-        if not item_gps:
+        if not has_location(item_gps):
             continue
         name_val = row['name'] or ''
         if name_val.startswith('*') or name_val.startswith('+'):
@@ -321,9 +331,7 @@ def export():
         if language == 'ENG' and (row['tag'] or '') == 'Örnefni':
             continue
 
-        lat, lon = '0', '0'
-        if ',' in item_gps:
-            lat, lon = item_gps.split(',')[0], item_gps.split(',')[1]
+        lat, lon = item_gps.split(',')[0], item_gps.split(',')[1]
 
         if language == 'ENG':
             story = row['story_eng'] or ''
@@ -356,15 +364,13 @@ def export():
     areas_out = []
     for row in area_rows:
         area_gps = (row['gps'] or '').replace(' ', '')
-        if not area_gps:
+        if not has_location(area_gps):
             continue
         caption_val = row['caption'] or ''
         if caption_val.startswith('*') or caption_val.startswith('+'):
             continue
 
-        lat, lon = '0', '0'
-        if ',' in area_gps:
-            lat, lon = area_gps.split(',')[0], area_gps.split(',')[1]
+        lat, lon = area_gps.split(',')[0], area_gps.split(',')[1]
 
         if language == 'ENG':
             description = row['description_eng'] or ''

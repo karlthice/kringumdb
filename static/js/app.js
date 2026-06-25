@@ -9,6 +9,16 @@ function arrayToString(arr) {
     return Array.isArray(arr) ? arr.join(";") : arr;
 }
 
+// True if gps is a usable "lat,lon" coordinate. Empty, the NOLOC sentinel
+// (any case), and non-numeric values count as no location, so such items/areas
+// are not placed on the map.
+function hasLocation(gps) {
+    gps = (gps || '').replace(' ', '');
+    if (!gps || gps.toUpperCase() === 'NOLOC' || gps.indexOf(',') < 0) return false;
+    var parts = gps.split(',');
+    return !isNaN(parseFloat(parts[0])) && !isNaN(parseFloat(parts[1]));
+}
+
 function doSearch(filter) {
     Render(filter);
 }
@@ -178,11 +188,10 @@ function doShowMap() {
             for (var i = 0; i < oData.Items.length; i++) {
                 var item = oData.Items[i];
                 var gps = (item.GPS || '').replace(' ', '');
-                if (!gps || gps.indexOf(',') < 0) continue;
+                if (!hasLocation(gps)) continue;
                 var parts = gps.split(',');
                 var lat = parseFloat(parts[0]);
                 var lon = parseFloat(parts[1]);
-                if (isNaN(lat) || isNaN(lon)) continue;
 
                 var marker = L.circleMarker([lat, lon], {
                     radius: 5,
@@ -208,12 +217,11 @@ function doShowMap() {
             for (var i = 0; i < areaData.Areas.length; i++) {
                 var area = areaData.Areas[i];
                 var gps = (area.GPS || '').replace(' ', '');
-                if (!gps || gps.indexOf(',') < 0) continue;
+                if (!hasLocation(gps)) continue;
                 var parts = gps.split(',');
                 var lat = parseFloat(parts[0]);
                 var lon = parseFloat(parts[1]);
                 var radius = parseInt(area.Radius) || 1000;
-                if (isNaN(lat) || isNaN(lon)) continue;
 
                 var color = AREA_COLORS[i % AREA_COLORS.length];
                 var circle = L.circle([lat, lon], {

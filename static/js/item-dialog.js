@@ -112,13 +112,22 @@ function doInsertUpdateItem(inElement, inItem) {
                     return false;
                 }
 
+                // Normalize GPS: a "lat,lng" coordinate or the NOLOC sentinel
+                // (any case) for items with no location. Anything else is invalid.
+                var gps = (inObject.GPS || '').trim();
+                if (/^noloc$/i.test(gps)) {
+                    gps = 'NOLOC';
+                } else if (!/^\s*-?\d+(\.\d+)?\s*,\s*-?\d+(\.\d+)?\s*$/.test(gps)) {
+                    gps = '';  // invalid -> fails the required-field check below
+                }
+
                 // Save - validate required fields
-                if (inObject.Name && inObject.GPS && inObject.Tag && inObject.Story) {
+                if (inObject.Name && gps && inObject.Tag && inObject.Story) {
                     API.call("items/save", {
                         id: inObject.ID,
                         name: inObject.Name,
                         name_eng: inObject.NameEng,
-                        gps: inObject.GPS,
+                        gps: gps,
                         tag: arrayToString(inObject.Tag),
                         fromdate: '',
                         todate: '',
