@@ -320,7 +320,7 @@ def export():
 
     for row in rows:
         item_gps = (row['gps'] or '').replace(' ', '')
-        if not has_location(item_gps):
+        if not item_gps:
             continue
         name_val = row['name'] or ''
         if name_val.startswith('*') or name_val.startswith('+'):
@@ -331,7 +331,12 @@ def export():
         if language == 'ENG' and (row['tag'] or '') == 'Örnefni':
             continue
 
-        lat, lon = item_gps.split(',')[0], item_gps.split(',')[1]
+        # NOLOC items have no coordinate: include them in the export but leave
+        # lat/lon empty so consumers keep them off the map (as the web map does).
+        if has_location(item_gps):
+            lat, lon = item_gps.split(',')[0], item_gps.split(',')[1]
+        else:
+            lat, lon = '', ''
 
         if language == 'ENG':
             story = row['story_eng'] or ''
