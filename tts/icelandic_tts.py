@@ -468,6 +468,19 @@ _TEXT_RULES = [
         (r"\bklst\b\.?", " klukkustundir"),
         (r"\bMW\b", " megavött"),
         (r"\bm\.?\s*y\.?\s*s\b\.?", " metra yfir sjávarmáli"),
+        # Linear units / minutes after a quantity ("5 km", "1536 m", "30 cm",
+        # "20 mín"). Anchored to a preceding number so the standalone "m" in
+        # m.a./m.y.s./o.fl. is never touched. Runs AFTER the km²/m² block above
+        # (those are already expanded) and lists the longer tokens before bare
+        # "m" so "km"/"cm"/"sm"/"mm" win. Output nouns are all in _UNIT_GENDER,
+        # so the Piper number-speller picks the right gender and the edge
+        # year-guard still skips "1536 metrar" as a height, not a year.
+        (r"(\d)\s*km\b", r"\1 kílómetrar"),
+        (r"(\d)\s*cm\b", r"\1 sentimetrar"),
+        (r"(\d)\s*sm\b", r"\1 sentimetrar"),
+        (r"(\d)\s*mm\b", r"\1 millimetrar"),
+        (r"(\d)\s*mín\b", r"\1 mínútur"),
+        (r"(\d)\s*m\b", r"\1 metrar"),
         # Percent:  25% -> "25 prósent"
         (r"\s*%", " prósent"),
         # Compass directions (standalone, case-sensitive). Longest first.
