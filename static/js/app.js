@@ -142,6 +142,7 @@ var TAG_COLORS = {
     'Kringum': '#20B2AA',
     'Gisting': '#808080',
     'Hlíðar': '#2E8B57',
+    'Sýn': '#FF1493',
 };
 
 function getTagColor(tag) {

@@ -3,7 +3,7 @@
  * Port of doInsertUpdateItem from Default.js
  */
 
-var TAG_LIST = ['Náttúra', 'Saga', 'Menning', 'Fólk', 'Ferð', 'Bók', 'Kringum', 'Gisting'];
+var TAG_LIST = ['Náttúra', 'Saga', 'Menning', 'Fólk', 'Ferð', 'Bók', 'Kringum', 'Gisting', 'Sýn'];
 
 function doInsertUpdateItem(inElement, inItem) {
   API.get("areas").then(function (areaData) {
