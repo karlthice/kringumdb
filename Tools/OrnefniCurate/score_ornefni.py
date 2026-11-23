@@ -21,7 +21,10 @@ Modes:
   (default)    score every unique description not yet scored
   --dry-run    print the prompt for one item and exit, no API call
 
-Needs ANTHROPIC_API_KEY in the environment or in the repo's .env file.
+Needs an Anthropic API key in ANTHROPIC_API_KEY, or in ORNEFNI_KEY, either in
+the environment or in the repo's .env file. Claude Code cloud sessions do not
+pass a variable named ANTHROPIC_API_KEY through to commands, so there the key
+goes in ORNEFNI_KEY.
 
 Usage:
   python score_ornefni.py --pilot 300
@@ -209,11 +212,12 @@ def main():
         return
 
     load_env_file(os.path.join(ROOT, '.env'))
-    if not os.environ.get('ANTHROPIC_API_KEY'):
-        sys.exit('ANTHROPIC_API_KEY is not set (looked in the environment and %s)'
+    api_key = os.environ.get('ANTHROPIC_API_KEY') or os.environ.get('ORNEFNI_KEY')
+    if not api_key:
+        sys.exit('No API key: set ANTHROPIC_API_KEY or ORNEFNI_KEY (looked in the environment and %s)'
                  % os.path.join(ROOT, '.env'))
     import anthropic
-    client = anthropic.Anthropic()
+    client = anthropic.Anthropic(api_key=api_key)
 
     lock = threading.Lock()
     counts = {'ok': 0, 'error': 0, 'in': 0, 'out': 0, 'cache_read': 0}

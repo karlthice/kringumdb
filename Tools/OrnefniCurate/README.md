@@ -24,7 +24,9 @@ python score_ornefni.py --pilot 300      # random sample of 300 descriptions
 python report_scores.py
 ```
 
-`score_ornefni.py` needs `ANTHROPIC_API_KEY` (environment or the repo's `.env`)
+`score_ornefni.py` needs an API key in `ANTHROPIC_API_KEY` or `ORNEFNI_KEY`
+(environment or the repo's `.env`; in Claude Code cloud sessions use
+`ORNEFNI_KEY`, because `ANTHROPIC_API_KEY` is not passed through to commands)
 and the `anthropic` Python package. It appends to `data/scores.jsonl` and skips
 descriptions already scored, so it can be stopped and restarted, and a full run
 after the pilot only scores the rest. `--dry-run` prints the prompt without
