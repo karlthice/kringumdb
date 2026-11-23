@@ -8,7 +8,7 @@ These are the steps for a cloud session to run the pilot. Do not change code or 
 - **Environment variable:** `ORNEFNI_KEY=<your Anthropic API key>`.
   In the last attempt, a variable named `ANTHROPIC_API_KEY` was saved on the
   environment but never reached the session's commands. Use the
-  `ORNEFNI_KEY` name instead; the scoring step passes it to the script.
+  `ORNEFNI_KEY` name instead; `score_ornefni.py` reads it directly.
 
 ## Steps
 
@@ -19,7 +19,7 @@ These are the steps for a cloud session to run the pilot. Do not change code or 
 3. `cd Tools/OrnefniCurate && python fetch_ornefni.py && python prefilter.py`
    (rebuilds `data/`, takes about 15 s)
 4. Score a seeded sample of 300 descriptions with Claude Haiku 5.5. The run is resumable and costs a few cents:
-   `env -u ANTHROPIC_BASE_URL ANTHROPIC_API_KEY="$ORNEFNI_KEY" python score_ornefni.py --pilot 300`
+   `env -u ANTHROPIC_BASE_URL python score_ornefni.py --pilot 300`
    (`env -u ANTHROPIC_BASE_URL` stops the session's own Claude endpoint
    setting from redirecting the script's API calls.)
 5. `python report_scores.py --examples 4`
