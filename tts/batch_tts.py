@@ -83,9 +83,11 @@ def _connect(db_path: Path) -> sqlite3.Connection:
     return conn
 
 
-# Tags that should never be rendered. "Örnefni" (place-name gazetteer) was bulk-
-# imported and is audio-out-of-scope. Tags are stored ';'-separated, so match as
-# a substring.
+# Primary tags that should never be rendered. Plain "Örnefni" (the LMÍ
+# place-name gazetteer) is audio-out-of-scope. Tags are stored ';'-separated and
+# only the first part (the primary tag, which the iOS app uses to decide whether
+# to offer audio) is matched: curated place names tagged "Saga;Örnefni" etc. are
+# rendered like any other Saga item.
 DEFAULT_EXCLUDE_TAGS = ["Örnefni"]
 
 
@@ -112,8 +114,9 @@ def fetch_items(
     if visible_only:
         where.append("visibility = 1")
     for tag in exclude_tags or []:
-        where.append("(tag IS NULL OR tag NOT LIKE ?)")
-        params.append(f"%{tag}%")
+        # Match the primary (first ';'-separated) tag only.
+        where.append("(tag IS NULL OR (tag <> ? AND tag NOT LIKE ?))")
+        params.extend([tag, f"{tag};%"])
     if ids:
         where.append(f"id IN ({','.join('?' * len(ids))})")
         params.extend(ids)
@@ -261,7 +264,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--ids", help="Comma-separated item ids to render (default: all with a story).")
     p.add_argument("--visible-only", action="store_true", help="Only items with visibility=1.")
     p.add_argument("--exclude-tag", default=",".join(DEFAULT_EXCLUDE_TAGS),
-                   help="Comma-separated tags to skip (substring match). Default: %(default)s. "
+                   help="Comma-separated primary tags to skip (first ';'-separated part). Default: %(default)s. "
                         "Pass '' to disable.")
     p.add_argument("--limit", type=int, help="Render at most N items (after filtering).")
     p.add_argument("--jobs", type=int, default=4, help="Worker processes (default: %(default)s).")

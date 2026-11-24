@@ -10,6 +10,12 @@ trimming. Each geometry is reduced to one point with the importer's rules
 (point -> the point, line -> middle vertex, polygon -> average of the first
 ring, multi -> first part), so the coordinates match the rows in kringum.db.
 
+The service rounds EPSG:4326 output to 4 decimals (5-11 m), so geometries are
+requested in ISN93 (EPSG:3057, metres, full precision) and converted to
+latitude/longitude here (Lambert conformal conic on GRS80; ISN93 coincides
+with WGS84 to well under a metre). Polygons are averaged after conversion,
+in degrees, as the importer always did.
+
 Every record keeps the LMÍ uuid, which is stable across releases and is the key
 the later curation steps use.
 
@@ -22,6 +28,7 @@ import argparse
 import collections
 import datetime
 import json
+import math
 import os
 import sys
 import time
@@ -49,6 +56,52 @@ LON_RANGE = (-40.0, 0.0)
 # Names outside it are flagged offshore=True.
 ISLAND_LAT = (62.5, 67.5)
 ISLAND_LON = (-25.5, -12.5)
+
+
+# ISN93 / Lambert 1993 (EPSG:3057): LCC 2SP on GRS80.
+_A = 6378137.0
+_F = 1 / 298.257222101
+_E = math.sqrt(2 * _F - _F * _F)
+_LAT1, _LAT2, _LAT0, _LON0 = (math.radians(v) for v in (64.25, 65.75, 65.0, -19.0))
+_X0 = _Y0 = 500000.0
+
+
+def _m(phi):
+    return math.cos(phi) / math.sqrt(1 - (_E * math.sin(phi)) ** 2)
+
+
+def _t(phi):
+    es = _E * math.sin(phi)
+    return math.tan(math.pi / 4 - phi / 2) / ((1 - es) / (1 + es)) ** (_E / 2)
+
+
+_N = (math.log(_m(_LAT1)) - math.log(_m(_LAT2))) / (math.log(_t(_LAT1)) - math.log(_t(_LAT2)))
+_FF = _m(_LAT1) / (_N * _t(_LAT1) ** _N)
+_RHO0 = _A * _FF * _t(_LAT0) ** _N
+
+
+def isn93_to_lonlat(x, y):
+    """(lon, lat) in degrees for ISN93 easting/northing in metres."""
+    dx, dy = x - _X0, _RHO0 - (y - _Y0)
+    rho = math.copysign(math.hypot(dx, dy), _N)
+    t = (rho / (_A * _FF)) ** (1 / _N)
+    lon = math.atan2(dx, dy) / _N + _LON0
+    phi = math.pi / 2 - 2 * math.atan(t)
+    for _ in range(15):
+        es = _E * math.sin(phi)
+        nxt = math.pi / 2 - 2 * math.atan(t * ((1 - es) / (1 + es)) ** (_E / 2))
+        if abs(nxt - phi) < 1e-12:
+            phi = nxt
+            break
+        phi = nxt
+    return math.degrees(lon), math.degrees(phi)
+
+
+def to_lonlat(c):
+    """Convert a nested GeoJSON coordinate array from ISN93 to lon/lat."""
+    if c and isinstance(c[0], (int, float)):
+        return list(isn93_to_lonlat(c[0], c[1]))
+    return [to_lonlat(x) for x in c]
 
 
 def representative(geom):
@@ -80,7 +133,7 @@ def clean_date(v):
 def get_page(layer, start, count, session):
     params = {
         'service': 'WFS', 'version': '2.0.0', 'request': 'GetFeature',
-        'typeNames': 'IS_50V:' + layer, 'srsName': 'EPSG:4326',
+        'typeNames': 'IS_50V:' + layer, 'srsName': 'EPSG:3057',
         'outputFormat': 'application/json', 'sortBy': 'id',
         'startIndex': start, 'count': count, 'CQL_FILTER': FILTER,
     }
@@ -105,7 +158,10 @@ def fetch_layer(layer, page_size, session):
         feats = page.get('features', [])
         for f in feats:
             p = f.get('properties', {})
-            rep = representative(f.get('geometry'))
+            g = f.get('geometry')
+            if g and g.get('coordinates'):
+                g = {'type': g['type'], 'coordinates': to_lonlat(g['coordinates'])}
+            rep = representative(g)
             if rep is None:
                 bad_geom += 1
                 continue
