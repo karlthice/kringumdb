@@ -10,7 +10,10 @@ this file on every import, so curated.json (committed) is the master copy:
 edit a story here, not in kringum.db, or the next import will overwrite it.
 
 Entries already in curated.json are kept as they are (they may have been
-edited by hand); only new uuids are added. --replace rebuilds from scratch.
+edited by hand); only new uuids are added. --replace rebuilds the entries from
+scratch. To drop a curated place name (for example a duplicate of a nearby
+one), move its entry from "items" to "dropped" with a "reason": it is never
+added back, and the next import turns its row into a plain Örnefni item.
 
 Usage: python build_curated.py [--replace]
 """
@@ -64,14 +67,17 @@ def main():
             if 'error' not in r:
                 stories[r['uuid']] = r
 
-    old = {}
-    if os.path.exists(OUT) and not args.replace:
-        old = json.load(open(OUT, encoding='utf-8'))['items']
+    old, dropped = {}, {}
+    if os.path.exists(OUT):
+        cur = json.load(open(OUT, encoding='utf-8'))
+        dropped = cur.get('dropped', {})
+        if not args.replace:
+            old = cur['items']
 
     out = dict(old)
     added = 0
     for uuid, r in sorted(stories.items()):
-        if r['skip'] or uuid in out:
+        if r['skip'] or uuid in out or uuid in dropped:
             continue
         s = scores[rep_of[uuid]]
         out[uuid] = {
@@ -93,9 +99,11 @@ def main():
             'updated': datetime.date.today().isoformat(),
             'count': len(out),
             'items': dict(sorted(out.items())),
+            'dropped': dict(sorted(dropped.items())),
         }, fh, ensure_ascii=False, indent=1)
     tags = collections.Counter(v['tag'] for v in out.values())
-    print('curated.json: %d entries (%d kept, %d added)' % (len(out), len(old), added))
+    print('curated.json: %d entries (%d kept, %d added), %d dropped'
+          % (len(out), len(old), added, len(dropped)))
     print('Tags: %s' % dict(tags.most_common()))
 
 

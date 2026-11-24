@@ -11,7 +11,10 @@ shows an audio button with nothing behind it).
 The curated text lives in `curated.json` (committed), keyed by each place name's
 LMÍ `uuid`. `Tools/OrnefniImport/import_ornefni.py` applies it on every import,
 so **edit curated stories in `curated.json`, not in kringum.db**: the next
-import overwrites the database copy.
+import overwrites the database copy. To drop a curated place name (such as a
+duplicate of a nearby one), move its entry from `items` to `dropped` with a
+`reason` and re-run the import: its row becomes a plain `Örnefni` item and
+keeps its id, and `build_curated.py` never adds it back.
 
 | Step | Script | Output |
 |---|---|---|
@@ -49,5 +52,6 @@ calling the API.
 
 Run on release IS 50V 19.11.2026 (fetched 2026-11-23): 57,682 place names,
 15,218 candidates (13,153 unique descriptions); 4,192 place names scored ≥ 3,
-4,028 written (164 skipped): 2,274 Saga, 1,469 Menning, 285 Náttúra. Cost:
+4,028 written (164 skipped); 6 same-name duplicates dropped, leaving 4,022:
+2,273 Saga, 1,464 Menning, 285 Náttúra. Cost:
 scoring $1.51 (Haiku 5.5), stories $51.53 (Opus 5.5).

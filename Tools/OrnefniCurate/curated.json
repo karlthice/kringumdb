@@ -1,7 +1,7 @@
 {
  "about": "Curated LMÍ place names for KringumDB, keyed by LMÍ uuid. Applied by Tools/OrnefniImport/import_ornefni.py. Edit stories here.",
  "updated": "2026-11-24",
- "count": 4028,
+ "count": 4022,
  "items": {
   "000440c2-f3dc-b291-cc6e-ff117b818d70": {
    "ornefni": "Messuborg",
@@ -5083,16 +5083,6 @@
    "category": "way_of_life",
    "model": "claude-opus-5-5"
   },
-  "212bcf7f-40c3-a3d0-22d8-f1a5483f5dda": {
-   "ornefni": "Hólar",
-   "tag": "Saga;Örnefni",
-   "name_eng": "Hólar, farm ruins",
-   "story_eng": "These are the ruins of the farm Hólar, which was inhabited from 1650 until it was abandoned during Stórabóla, the great smallpox epidemic, in 1707. A short way above the ruins still stands Hesthúsið á Hólum, the stable of Hólar, built at the same time as the farm. It is described as the oldest building in Iceland put up for working use.",
-   "story_is": "Rústir af býlinu Hólum, sem var í byggð frá 1650 en fór í eyði í Stórubólu árið 1707. Enn stendur Hesthúsið á Hólum stutt fyrir ofan rústirnar. Það er elsta hús landsins til atvinnunota og var byggt á sama tíma.",
-   "score": 4,
-   "category": "history",
-   "model": "claude-opus-5-5"
-  },
   "214427cf-1356-e098-768b-5cbc8a57a00b": {
    "ornefni": "Kúahellir",
    "tag": "Náttúra;Örnefni",
@@ -5591,16 +5581,6 @@
    "story_is": "Í ásnum átti áður að hafa verið geitakofi frá ábúanda í Vilborgarkoti. Enginn virðist vita nú hvar ásinn er. Norður af bæjarstæðinu og rétt austan vegar úr Gjótulág er þó ás eða háls með vallgróinni rúst sem gæti verið Geithálsinn eða Geitásinn.",
    "score": 3,
    "category": "way_of_life",
-   "model": "claude-opus-5-5"
-  },
-  "23e76af0-bd91-3ef3-a59d-65277f28ce89": {
-   "ornefni": "Vagnabrekka",
-   "tag": "Menning;Örnefni",
-   "name_eng": "Vagnabrekka, slope",
-   "story_eng": "Vagnabrekka (also Vagnbrekka) is the steep western slope of a large hill. The name means \"wagons' slope\". Its origin is uncertain, but some have guessed that it dates from the building of the cathedral at Hólar, when stone was hauled by wagon from the south and down from the mountain Hólabyrða to the bishop's seat.",
-   "story_is": "Stór hóll endar að vestanverðu með brattri brekku sem heitir Vagnabrekka. Óvíst er um uppruna nafnsins en menn hafa getið sér til að það sé frá byggingartíma Hóladómkirkju þegar ekið var grjóti sunnan og ofan úr Hólabyrðu heim á Staðinn.",
-   "score": 3,
-   "category": "name_origin",
    "model": "claude-opus-5-5"
   },
   "24032303-d276-dc6f-a8c2-b3488d601849": {
@@ -18313,16 +18293,6 @@
    "category": "folklore",
    "model": "claude-opus-5-5"
   },
-  "73cafa2e-68d4-65ad-6c93-9010840b8b9b": {
-   "ornefni": "Skriðugötur",
-   "tag": "Menning;Örnefni",
-   "name_eng": "Skriðugötur, footpath",
-   "story_eng": "Skriðugötur were old paths leading from Hafralækur southwest over the ridge to Skriðuhverfi. They also served as the route west from here. The two routes met on reaching Skollamýri, then ran to the upper end of Gilskjaftur and followed it on the south side. The people of Skriðuhverfi often travelled to the trading town by way of Fjallsvað, a track running below Selhólar on their south side. From there the route crossed the river Laxá at the Hólmavað ford and climbed onto the Hvammsheiði moor. That was also the trading route from here until the bridge was built at Uxastaðaey.",
-   "story_is": "Skriðugötur lágu frá Hafralæk suðvestur yfir hálsinn yfir í Skriðuhverfi og raunar einnig leið héðan vestur yfir, úr því komið er upp í Skollamýri, því að þar komu þær saman, en lágu svo að efra Gilskjaftinum og með honum að sunnan. Kaupstaðarleið Skriðhverfinga lá oft yfir á Fjallsvaði, götu sunnan undir Selhólum, yfir Laxá á Hólmavaði og upp á Hvammsheiði. Sú var og kaupstaðarleið héðan uns brúin kom á Uxastaðaey.",
-   "score": 3,
-   "category": "way_of_life",
-   "model": "claude-opus-5-5"
-  },
   "73cc693b-89f8-8356-5cc4-547b9b795abe": {
    "ornefni": "Fjóshólavogur",
    "tag": "Náttúra;Örnefni",
@@ -23773,16 +23743,6 @@
    "category": "history",
    "model": "claude-opus-5-5"
   },
-  "96a76587-146c-0819-b30d-b88c793d7bde": {
-   "ornefni": "Grafarhóll",
-   "tag": "Menning;Örnefni",
-   "name_eng": "Grafarhóll, home field",
-   "story_eng": "Just north of the farm, this knoll was remembered by the person who described it as one of their main childhood playgrounds. A thick layer of turf had once been cut from the top of the knoll to use as bedding under the milking ewes, which in the writer's memory were often milked in Barðhús, a little further down. The cut gave the knoll its name, which means \"pit knoll\".",
-   "story_is": "Grafarhóll, örskammt norður frá bæ, var eitt aðalleiksvið þess sem lýsti staðnum. Þar hafði verið stungið ofan af hólkollinum þykkur hnaus til íburðar undir kvíær, sem þá voru, eftir því sem hann mundi til, oft mjólkaðar í Barðhúsi litlu neðar, og var nafnið dregið af því.",
-   "score": 3,
-   "category": "name_origin",
-   "model": "claude-opus-5-5"
-  },
   "96be3ffe-2598-3b8b-1bef-8d035d0933c5": {
    "ornefni": "Kumlateigur",
    "tag": "Saga;Örnefni",
@@ -28591,16 +28551,6 @@
    "story_is": "Litli-Geysir gaus áður stöku sinnum 6–8 metra háu gosi. Nú er vatn leitt úr honum til upphitunar. Nafnið er eldra en elstu menn muna. Hann er suðaustur af Seyði.",
    "score": 3,
    "category": "name_origin",
-   "model": "claude-opus-5-5"
-  },
-  "b51d4f5a-c374-41ec-8e3c-26e1ed2874f9": {
-   "ornefni": "Stekkjartún",
-   "tag": "Menning;Örnefni",
-   "name_eng": "Stekkjartún, grassland",
-   "story_eng": "On the bank of the stream, east of the bridge, lies the old Stekkjartún, also called Stekkur, which belonged to the farm Svínavatn. A stekkur was a small fold where lambs were kept apart from the ewes in spring. Weaning the lambs this way, known as fráfærur, let the ewes be milked through the summer. The fold was used until about 1920, when fráfærur was given up for good. It sits at the front of a small hummocky patch called Stekkjartúnsþýfi, where the stream makes a wide bend to the south.",
-   "story_is": "Austur af brúnni liggur lækurinn í allstórri bugðu til suðurs og er sunnan við hann smáþýft svæði sem heitir Stekkjartúnsþýfi. Fremst í því, á lækjarbakkanum, er hið gamla Stekkjartún eða Stekkur frá Svínavatni, sem notað var fram um 1920, eða þar til fráfærurnar voru lagðar niður með öllu.",
-   "score": 3,
-   "category": "way_of_life",
    "model": "claude-opus-5-5"
   },
   "b5235d3c-20fc-1fd1-a8a5-82764b022c57": {
@@ -37373,16 +37323,6 @@
    "category": "history",
    "model": "claude-opus-5-5"
   },
-  "ec81cfbd-4032-5ae7-705d-c8c9fd63d051": {
-   "ornefni": "Eyði",
-   "tag": "Menning;Örnefni",
-   "name_eng": "Eyði, spit",
-   "story_eng": "Off the shore of Eyðisfjara lies a skerry called Eyði. It is dome-shaped, though the dome is flattened, fairly large and rather flat on top. At high tide it is so low that the sea washes over it if there is any swell. At low tide a sandbar runs out to the skerry, and, unlikely as it may seem, the bar is also called Eyði. Otherwise a channel about two metres wide, always filled with sea, separates the skerry from the shore. Sheep were sometimes cut off by the tide out on Eyði, but they came to no harm.",
-   "story_is": "Úti fyrir Eyðisfjöru er sker sem Eyði heitir. Það er kúpulaga en kúpan þó útflött. Skerið er allstórt um sig og nokkuð flatt að ofan. Um flæði er það ekki hærra en svo að yfir það gengur sjór ef nokkur kvika er, en um háfjöru er þar grandi út í Eyðið og heitir hann líka Eyði, þó ótrúlegt sé. Annars er um tveggja metra breið læna milli skersins og fjörunnar sem alltaf er sjór í. Fyrir kom að fé flæddi uppi í Eyðinu en það kom ekki að skaða.",
-   "score": 3,
-   "category": "location_only",
-   "model": "claude-opus-5-5"
-  },
   "ec934459-0637-5527-6078-ef40f3224083": {
    "ornefni": "Járngerðarhóll",
    "tag": "Saga;Örnefni",
@@ -40282,6 +40222,74 @@
    "score": 3,
    "category": "name_origin",
    "model": "claude-opus-5-5"
+  }
+ },
+ "dropped": {
+  "212bcf7f-40c3-a3d0-22d8-f1a5483f5dda": {
+   "ornefni": "Hólar",
+   "tag": "Saga;Örnefni",
+   "name_eng": "Hólar, farm ruins",
+   "story_eng": "These are the ruins of the farm Hólar, which was inhabited from 1650 until it was abandoned during Stórabóla, the great smallpox epidemic, in 1707. A short way above the ruins still stands Hesthúsið á Hólum, the stable of Hólar, built at the same time as the farm. It is described as the oldest building in Iceland put up for working use.",
+   "story_is": "Rústir af býlinu Hólum, sem var í byggð frá 1650 en fór í eyði í Stórubólu árið 1707. Enn stendur Hesthúsið á Hólum stutt fyrir ofan rústirnar. Það er elsta hús landsins til atvinnunota og var byggt á sama tíma.",
+   "score": 4,
+   "category": "history",
+   "model": "claude-opus-5-5",
+   "reason": "Duplicate of Hólar 2035e947 (43 m, same farm)"
+  },
+  "23e76af0-bd91-3ef3-a59d-65277f28ce89": {
+   "ornefni": "Vagnabrekka",
+   "tag": "Menning;Örnefni",
+   "name_eng": "Vagnabrekka, slope",
+   "story_eng": "Vagnabrekka (also Vagnbrekka) is the steep western slope of a large hill. The name means \"wagons' slope\". Its origin is uncertain, but some have guessed that it dates from the building of the cathedral at Hólar, when stone was hauled by wagon from the south and down from the mountain Hólabyrða to the bishop's seat.",
+   "story_is": "Stór hóll endar að vestanverðu með brattri brekku sem heitir Vagnabrekka. Óvíst er um uppruna nafnsins en menn hafa getið sér til að það sé frá byggingartíma Hóladómkirkju þegar ekið var grjóti sunnan og ofan úr Hólabyrðu heim á Staðinn.",
+   "score": 3,
+   "category": "name_origin",
+   "model": "claude-opus-5-5",
+   "reason": "Duplicate of Vagnabrekka 68e3c53e (34 m)"
+  },
+  "73cafa2e-68d4-65ad-6c93-9010840b8b9b": {
+   "ornefni": "Skriðugötur",
+   "tag": "Menning;Örnefni",
+   "name_eng": "Skriðugötur, footpath",
+   "story_eng": "Skriðugötur were old paths leading from Hafralækur southwest over the ridge to Skriðuhverfi. They also served as the route west from here. The two routes met on reaching Skollamýri, then ran to the upper end of Gilskjaftur and followed it on the south side. The people of Skriðuhverfi often travelled to the trading town by way of Fjallsvað, a track running below Selhólar on their south side. From there the route crossed the river Laxá at the Hólmavað ford and climbed onto the Hvammsheiði moor. That was also the trading route from here until the bridge was built at Uxastaðaey.",
+   "story_is": "Skriðugötur lágu frá Hafralæk suðvestur yfir hálsinn yfir í Skriðuhverfi og raunar einnig leið héðan vestur yfir, úr því komið er upp í Skollamýri, því að þar komu þær saman, en lágu svo að efra Gilskjaftinum og með honum að sunnan. Kaupstaðarleið Skriðhverfinga lá oft yfir á Fjallsvaði, götu sunnan undir Selhólum, yfir Laxá á Hólmavaði og upp á Hvammsheiði. Sú var og kaupstaðarleið héðan uns brúin kom á Uxastaðaey.",
+   "score": 3,
+   "category": "way_of_life",
+   "model": "claude-opus-5-5",
+   "reason": "Duplicate of Skriðugötur 86b04f97 (555 m, same path)"
+  },
+  "96a76587-146c-0819-b30d-b88c793d7bde": {
+   "ornefni": "Grafarhóll",
+   "tag": "Menning;Örnefni",
+   "name_eng": "Grafarhóll, home field",
+   "story_eng": "Just north of the farm, this knoll was remembered by the person who described it as one of their main childhood playgrounds. A thick layer of turf had once been cut from the top of the knoll to use as bedding under the milking ewes, which in the writer's memory were often milked in Barðhús, a little further down. The cut gave the knoll its name, which means \"pit knoll\".",
+   "story_is": "Grafarhóll, örskammt norður frá bæ, var eitt aðalleiksvið þess sem lýsti staðnum. Þar hafði verið stungið ofan af hólkollinum þykkur hnaus til íburðar undir kvíær, sem þá voru, eftir því sem hann mundi til, oft mjólkaðar í Barðhúsi litlu neðar, og var nafnið dregið af því.",
+   "score": 3,
+   "category": "name_origin",
+   "model": "claude-opus-5-5",
+   "reason": "Duplicate of Grafarhóll fe04f45f (16 m, same description)"
+  },
+  "b51d4f5a-c374-41ec-8e3c-26e1ed2874f9": {
+   "ornefni": "Stekkjartún",
+   "tag": "Menning;Örnefni",
+   "name_eng": "Stekkjartún, grassland",
+   "story_eng": "On the bank of the stream, east of the bridge, lies the old Stekkjartún, also called Stekkur, which belonged to the farm Svínavatn. A stekkur was a small fold where lambs were kept apart from the ewes in spring. Weaning the lambs this way, known as fráfærur, let the ewes be milked through the summer. The fold was used until about 1920, when fráfærur was given up for good. It sits at the front of a small hummocky patch called Stekkjartúnsþýfi, where the stream makes a wide bend to the south.",
+   "story_is": "Austur af brúnni liggur lækurinn í allstórri bugðu til suðurs og er sunnan við hann smáþýft svæði sem heitir Stekkjartúnsþýfi. Fremst í því, á lækjarbakkanum, er hið gamla Stekkjartún eða Stekkur frá Svínavatni, sem notað var fram um 1920, eða þar til fráfærurnar voru lagðar niður með öllu.",
+   "score": 3,
+   "category": "way_of_life",
+   "model": "claude-opus-5-5",
+   "reason": "Duplicate of Stekkjartún 03a86147 (227 m, same fold)"
+  },
+  "ec81cfbd-4032-5ae7-705d-c8c9fd63d051": {
+   "ornefni": "Eyði",
+   "tag": "Menning;Örnefni",
+   "name_eng": "Eyði, spit",
+   "story_eng": "Off the shore of Eyðisfjara lies a skerry called Eyði. It is dome-shaped, though the dome is flattened, fairly large and rather flat on top. At high tide it is so low that the sea washes over it if there is any swell. At low tide a sandbar runs out to the skerry, and, unlikely as it may seem, the bar is also called Eyði. Otherwise a channel about two metres wide, always filled with sea, separates the skerry from the shore. Sheep were sometimes cut off by the tide out on Eyði, but they came to no harm.",
+   "story_is": "Úti fyrir Eyðisfjöru er sker sem Eyði heitir. Það er kúpulaga en kúpan þó útflött. Skerið er allstórt um sig og nokkuð flatt að ofan. Um flæði er það ekki hærra en svo að yfir það gengur sjór ef nokkur kvika er, en um háfjöru er þar grandi út í Eyðið og heitir hann líka Eyði, þó ótrúlegt sé. Annars er um tveggja metra breið læna milli skersins og fjörunnar sem alltaf er sjór í. Fyrir kom að fé flæddi uppi í Eyðinu en það kom ekki að skaða.",
+   "score": 3,
+   "category": "location_only",
+   "model": "claude-opus-5-5",
+   "reason": "Duplicate of Eyði 611851a4 (38 m, same description)"
   }
  }
 }
